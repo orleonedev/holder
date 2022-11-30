@@ -32,12 +32,11 @@ public class ParolaGiustaManager : MonoBehaviour
     void Start()
     {
 		Application.targetFrameRate = 60;
-		definitionsAndWords = new Dictionary<string, string>();
-		definitionsAndWords.Add("Formaggio fresco, ingrediente principale della pizza", "MOZZARELLA");
-		definitionsAndWords.Add("La 'Polare' che orienta di notte", "STELLA");
+		definitionsAndWords = CreateDictionary(CSVData.Instance.holderWordList.wordobject, size: 4);
 		string randomDefinition = definitionsAndWords.ElementAt(Random.Range(0, definitionsAndWords.Count)).Key;
 		wordDefinition.GetComponentInChildren<TMP_Text>().text = randomDefinition;
 		wordToFind = definitionsAndWords[randomDefinition];
+		definitionsAndWords.Remove(randomDefinition);
 		WordCharacterCount = wordToFind.Count();
 		wordInserted = new char[WordCharacterCount];
 		keyboard.GetComponent<KeyboardScript>().wordToShuffle = wordToFind;
@@ -78,7 +77,13 @@ public class ParolaGiustaManager : MonoBehaviour
 				else{
 					print("sbagliato");
 				}
-				ResetGame();
+				if (definitionsAndWords.Count != 0 ){
+					//ResetGame()
+					NewScheda();
+				} else {
+					print("FINITA GAME SESSION");
+				}
+				
 			}
 		}
 	}
@@ -89,6 +94,27 @@ public class ParolaGiustaManager : MonoBehaviour
 		characterInserted--;
 	}
 
+	private void NewScheda(){
+		for(int i = 0; i < WordCharacterCount; i++){
+			Destroy(answerCharacterHolders[i].gameObject);
+		}
+		answerCharacterHolders.Clear();
+		string randomDefinition = definitionsAndWords.ElementAt(Random.Range(0, definitionsAndWords.Count)).Key;
+		wordDefinition.GetComponentInChildren<TMP_Text>().text = randomDefinition;
+		wordToFind = definitionsAndWords[randomDefinition];
+		definitionsAndWords.Remove(randomDefinition);
+		WordCharacterCount = wordToFind.Count();
+		wordInserted = new char[WordCharacterCount];
+		for(int i = 0; i < WordCharacterCount; i++){
+			GameObject answerHolder = Instantiate(AnswerCharacterPrefab, AnswerLayout.GetComponent<RectTransform>());
+			answerHolder.GetComponentInChildren<AnswerCharacterScript>().CharacterPosition = i;
+			answerCharacterHolders.Add(answerHolder);
+		}
+		characterInserted = 0;
+		keyboard.GetComponent<KeyboardScript>().wordToShuffle = wordToFind;
+		keyboard.GetComponent<KeyboardScript>().ResetKeyboard();
+		keyWordPair.Clear();
+	}
 	private void ResetGame(){
 		for(int i = 0; i < WordCharacterCount; i++){
 			Destroy(answerCharacterHolders[i].gameObject);
@@ -108,5 +134,20 @@ public class ParolaGiustaManager : MonoBehaviour
 		keyboard.GetComponent<KeyboardScript>().wordToShuffle = wordToFind;
 		keyboard.GetComponent<KeyboardScript>().ResetKeyboard();
 		keyWordPair.Clear();
+	}
+
+	private Dictionary<string,string> CreateDictionary(CSVData.WordObject[] Data, int size){
+		Dictionary<string,string> filteredWords = new Dictionary<string, string>();
+		CSVData.WordObject[] CopyData = Data;
+		for (int i=0; i<size; i++){
+			CSVData.WordObject random = CopyData.ElementAt(Random.Range(0, CopyData.Count()));
+			print(random.Word);
+			string desc = random.Des_1;
+			string word = random.Word;
+			filteredWords.Add(desc,word);
+			CopyData = CopyData.Where(val => val != random).ToArray();
+		}
+
+		return filteredWords;
 	}
 }

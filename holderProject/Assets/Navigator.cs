@@ -28,6 +28,9 @@ public class Navigator : MonoBehaviour
             case "LaParolaGiusta":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "AccoppiaLeParole":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

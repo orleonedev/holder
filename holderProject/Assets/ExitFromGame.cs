@@ -17,7 +17,7 @@ public class ExitFromGame : MonoBehaviour
         
     }
 
-    public void loadMainScene() {
-        SceneManager.LoadScene("AppMainScene");
+    public void exit() {
+        Navigator.Instance.exitGame();
     }
 }

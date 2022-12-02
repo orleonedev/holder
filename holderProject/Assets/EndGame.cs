@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EndGame : MonoBehaviour
 {
-    [SerializeField]
-    ExitFromGame button;
     public bool isOn = false;
     public int timer = 60*3;
 
@@ -23,7 +21,7 @@ public class EndGame : MonoBehaviour
             timer -= 1; 
             if (timer < 0) {
             isOn = false;
-            button.loadMainScene();
+            Navigator.Instance.exitGame();
         }
         }
         

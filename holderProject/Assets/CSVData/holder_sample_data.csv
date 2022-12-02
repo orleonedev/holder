@@ -74,7 +74,7 @@ lampone ;cibo ;frutto ;;frutto di bosco di colore rosso ;;;alta ;concreto ;estat
 lenticchia ;cibo ;legume;;legume dalla forma sferica e piatta  di colore marrone ;;;alta ;concreto;autunno;;cucina ;TRUE
 limonata ;bevanda ;;;bevanda analcolica fatta con il succo del limone ;;;alta ;concreto ;Estate;;cucina ;
 Macedonia;pranzo;dessert;;Miscuglio di vari tipi di frutta tagliata a pezzi o a fettine, condita con zucchero, succo di limone o liquore;;;alto;concreto;Estate;;Cucina;
-Mandarino 2;frutto;albero;natura;Albero della famiglia delle Rutacee (Citrus nobilis), originario della Cina meridionale e diffusamente coltivato nell'area occidentale del Mediterraneo, con foglie piccole e fiori bianchi e profumati, il cui frutto è un esperidio sferico con buccia aranciata, dalla polpa dolce e profumata;;;alto;concreto;Inverno;;Cucina;
+Mandarino;frutto;albero;natura;Albero della famiglia delle Rutacee (Citrus nobilis), originario della Cina meridionale e diffusamente coltivato nell'area occidentale del Mediterraneo, con foglie piccole e fiori bianchi e profumati, il cui frutto è un esperidio sferico con buccia aranciata, dalla polpa dolce e profumata;;;alto;concreto;Inverno;;Cucina;
 Mantello;soprabito;indumento;armadio;Indumento maschile e femminile, ampio, più o meno lungo, da portare sul vestito, aperto davanti e senza maniche, che si aggancia al collo e ricade drappeggiato;;;medio;concreto;Inverno;;Camera da letto;
 Naturale;Aggettivo;;;Non artificiale;;;alta;Astratto;;;;
 Necessario;Aggettivo;;;Di cui non si può fare senza;;;alta;Astratto;;;;
@@ -89,7 +89,7 @@ Nostro;Aggettivo;Aggettivo possessivo;Possesso;Che appartiene a noi;Aggettivo po
 Numeroso;Aggettivo;Quantità;;Costituito da un numero elevato di elementi;;;alta;Astratto;;;;
 orecchino ;accessorio ;;;accessorio che si porta all'orecchio ;;;alta ;concreto ;;;Camera da letto;TRUE
 orzata ;bevanda ;;;bevanda di orzo bollito in acqua e zucchero ;;;alta ;concreto ;Estate;;Cucina;
-pandoro ;dolce ;cibo ;<;Dolce tradizionale veronese, molto lievitato, a forma di tronco di cono con evidenti costole;;;basso ;concreto ;inverno;;Cucina ;TRUE
+pandoro ;dolce ;cibo ;;Dolce tradizionale veronese, molto lievitato, a forma di tronco di cono con evidenti costole;;;basso ;concreto ;inverno;;Cucina ;TRUE
 panettone ;dolce ;cibo ;;Dolce tradizionale milanese, spec. natalizio, a forma di cupola, preparato con farina, uova, zucchero, burro, cedro candito e uva sultanina;;;alto ;concreto ;inverno ;;Cucina;TRUE
 pareo ;indumento ;abbigliamento;;Indumento di origine tahitiana consistente in un grande riquadro di stoffa stampato a colori vivaci che si avvolge attorno al corpo, usato generalm. come copricostume;;;alto ;concreto;Estate;;Camera da letto ;
 pastiera ;cibo ;;;Torta a base di pasta frolla, ripiena di ricotta, cioccolata, grano macerato e canditi, tipica di Napoli;;;medio ;concreto;Primavera ;;Cucina;TRUE

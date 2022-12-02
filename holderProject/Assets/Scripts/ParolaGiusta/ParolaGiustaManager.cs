@@ -6,8 +6,25 @@ using System.Linq;
 
 public class ParolaGiustaManager : MonoBehaviour
 {
+	public enum wordType {
+		Concrete,
+		Abstract,
+		Mixed
+	}
 	private static ParolaGiustaManager instance;
 	public static ParolaGiustaManager Instance {get { return instance; } }
+	
+	[SerializeField]
+	public static int size;
+	[SerializeField]
+	public static bool showWordSize;
+	[SerializeField]
+	public static bool withImage;
+	[SerializeField]
+	public static wordType type;
+	[SerializeField]
+	public static int timeLimit;
+
 	[SerializeField]
 	GameObject keyboard;
 	[SerializeField]
@@ -16,6 +33,8 @@ public class ParolaGiustaManager : MonoBehaviour
 	GameObject AnswerLayout;
 	[SerializeField]
 	GameObject AnswerCharacterPrefab;
+	[SerializeField]
+	GameObject endgame;
 	Dictionary<string, string> definitionsAndWords;
 	string wordToFind;
 
@@ -32,7 +51,8 @@ public class ParolaGiustaManager : MonoBehaviour
     void Start()
     {
 		Application.targetFrameRate = 60;
-		definitionsAndWords = CreateDictionary(CSVData.Instance.holderWordList.wordobject, size: 4);
+		setParameters();
+		definitionsAndWords = CreateDictionary(CSVData.Instance.holderWordList.wordobject);
 		string randomDefinition = definitionsAndWords.ElementAt(Random.Range(0, definitionsAndWords.Count)).Key;
 		wordDefinition.GetComponentInChildren<TMP_Text>().text = randomDefinition;
 		wordToFind = definitionsAndWords[randomDefinition];
@@ -81,6 +101,7 @@ public class ParolaGiustaManager : MonoBehaviour
 					//ResetGame()
 					NewScheda();
 				} else {
+					endgame.GetComponent<EndGame>().startEndGame();
 					print("FINITA GAME SESSION");
 				}
 				
@@ -136,7 +157,7 @@ public class ParolaGiustaManager : MonoBehaviour
 		keyWordPair.Clear();
 	}
 
-	private Dictionary<string,string> CreateDictionary(CSVData.WordObject[] Data, int size){
+	private Dictionary<string,string> CreateDictionary(CSVData.WordObject[] Data){
 		Dictionary<string,string> filteredWords = new Dictionary<string, string>();
 		CSVData.WordObject[] CopyData = Data;
 		for (int i=0; i<size; i++){
@@ -149,5 +170,13 @@ public class ParolaGiustaManager : MonoBehaviour
 		}
 
 		return filteredWords;
+	}
+
+	public void setParameters (){
+		size = 2;
+	 	showWordSize = true;
+	 	withImage = false;
+	 	type = wordType.Mixed;
+	 	timeLimit = 0;
 	}
 }

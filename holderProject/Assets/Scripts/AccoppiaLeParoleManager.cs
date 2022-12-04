@@ -30,6 +30,10 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 	[SerializeField]
 	GameObject linePrefab;
 	GameObject tmp;
+
+	[SerializeField]
+	GameObject endgame;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -79,6 +83,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 			ListOfValues.RemoveAt(secondRandom);
 		}
 		print(DictOfWords.Count);
+		nSchede -= 1;
 	}
 
 	// Update is called once per frame
@@ -164,9 +169,12 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 		} else {
 			print("almeno una sbagliata");
 		}
-		if (nSchede > 1) {
-			nSchede -= 1;
+		if (nSchede > 0) {
 			ResetGame();
+		} else {
+			nSchede = 2;
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA GAME SESSION");
 		}
 		
 	}
@@ -277,6 +285,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 			ListOfValues.RemoveAt(secondRandom);
 		}
 		print(DictOfWords.Count);
+		nSchede -= 1;
 	}
 
 	public void CleanElements(){

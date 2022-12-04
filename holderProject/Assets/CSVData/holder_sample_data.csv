@@ -1,120 +1,232 @@
-Lemma;Categoria;Categoria_2;Categoria_3;Descrizione;Descrizione_2;Descrizione_3;Frequenza;Concreto_Astratto;Stagione;Camera;Camera_2;HasImage
-Affamato;Aggettivo;Fame;Persona;Lo è chi ha fame;;;media ;Astratto;;;;
-Aggressivo;Aggettivo;;;Chi è incline ad assalire o aggredire;Prodotto che esercita un'azione forte che potrebbe anche essere dannosa;;alta;Astratto;;;;
-Agrodolce;Aggettivo;Gusto;Sapore;Dal sapore agro e dolce insieme;;;alta;Astratto;;;;
-Amarena;Frutto;;;Varietà di cieliegia di colore rosso scuro e dal sapore acidulo;;;alta;Concreto;Estate;;Cucina;TRUE
-Amichevole;Aggettivo;;;Atteggiamento confidenziale;;;alta;Astratto;;;;
-Ananas;Frutto;Frutto esotico;;Frutto a forma di pigna con la polpa gialla e un ciuffo di foglie sulla sommità;;;alta;Concreto;Estate;;Cucina;TRUE
-Anguria;Frutto;Frutto estivo;;Grosso frutto tondeggiante con scorza liscia di colore verde, polpa rossa acquosa e piccoli semini neri;;;alta;Concreto;Estate;;Cucina;TRUE
-Aperto;Aggettivo;;;Non chiuso;;;alta;Astratto;;;;
-Arancia;Frutto;Agrume;;Frutto con buccia arancione e rugosa, la cui polpa si mangia a spicchi o come spremuta;;;alta;Concreto;Inverno;;Cucina;TRUE
-Arrabbiato;Aggettivo;Umore;;Adirato, incollerito;;;alta;Astratto;;;;
-Asparagi;Cibo ;Ortaggi;Verdura;Ortaggio di colore verde, dalla forma lunga e sottile;;;alta;Concreto;Primavera;;Cucina;TRUE
-bracciale ;accessorio ;oggetto;;gioiello da polso ;;;alta ;Concreto;;;Camera da letto;TRUE
-Cachi;Cibo;Frutto;Mangiare;Frutto commestibile di colore giallo rossiccio o aranciato, con polpa zuccherina;;;alta;Concreto;Autunno;;Cucina;TRUE
-Calloso;Aggettivo;Modalità;Misura;Indurito, che è pieno di calli;;;alta;concreto;;;;
-Camicia;Indumento;Abbigliamento;;Indumento maschile e femminile che copre il busto, di tessuto leggero di vario colore e disegno, con maniche lunghe o corte;;;alta;concreto;Primavera;;Camera da letto;TRUE
-Caminetto;Oggetto;Calore;Clima;Piccolo camino all'interno di un'abitazione, usato per riscaldamento e a scopo decorativo;;;alta;concreto;Inverno;;Stanza da pranzo;
-Camino;Oggetto;Calore;Materiale;Impianto per il riscaldamento domestico e la cottura dei cibi, formato da un piano in materiale refrattario, dove si accende il fuoco, una cappa e una canna fumaria, spesso costruito a ridosso di una parete e rivestito in pietra o marmo a scopo ornamentale;;;alta;concreto;Inverno;;Stanza da pranzo;TRUE
-Cannonata;Aggettivo;Modalità;;Colpo di cannone;;;alta;Concreto;;;;
-Canottiera;Abbigliamento ;Indumento;Corpo;Maglietta da uomo o da donna, senza maniche, molto scollata;;;alta;Concreto;Estate;;Camera da letto;TRUE
-Cantabile;Aggettivo;Musica;Note;Motivetto melodioso che può essere cantato;;;alta;Astratto;;;;
-Capellone;Aggettivo;Persona;Testa;Chi ha molti capelli;;;alta;Concreto;;;;
-Capitone;Animale;Natura;Mare;Anguilla femmina, di grosse dimensioni, prelibata come piatto tradizionale per il cenone natalizio nelle regioni centromeridionali;;;alta;Concreto;Inverno ;;Cucina;
-Capolavoro;Aggettivo;Arte;Cultura;La migliore opera di un artista;;;alta;Astratto;;;;
-Cappotto;Oggetto;Abbigliamento;Persona;Soprabito invernale di tessuto pesante, per uomo o per donna;;;alta;Concreto;Inverno;;Camera da letto;TRUE
-Carente;Aggettivo;Modalità;;Sinonimo di mancante, privo, insufficiente;;;media;Astratto;;;;
-Cattolico;Aggettivo;Modalità;Persona;Persona che professa la religione Cristiana;Qualsiasi cosa che si riferisce alla Chiesa romana;;alta;Concreto;;;;
-Centesimo;Aggettivo;;;Che in una serie ordinata occupa il posto corrispondente al numero cardinale cento;;;alta;Astratto;;;;
-Cioccolata;Bere;Alimentazione;Bevanda;Bevanda ottenuta facendo sciogliere il cacao nel latte;;;alta;Concreto;Inverno ;;Cucina ;TRUE
-Cocomero;Frutto;Cibo;Mangiare;Grosso frutto di forma ovale di colore verde esternamente con polpa rossa e semi neri ;;;alta;Concreto;Estate;;Cucina;TRUE
-Coesione;Aggettivo;Gruppo;;Compattezza, stretto legame, accordo tra le diverse parti di un gruppo;;;bassa;Astratto;;;;
-Coetaneo;Aggettivo;;;Che, chi ha la medesima età di altro o altri;;;bassa;Astratto;;;;
-Collaboratore;Aggettivo;Persona;Mestiere;Chi collabora;;;alta;Concreto;;;;
-Competitivo;Aggettivo;Modalità;Persona;Che compete con altri, che è animato da spirito di competizione;;;bassa;Astratto;;;;
-Conveniente;Aggettivo;Modalità;Economia;Ciò che è vantaggioso, specialmente dal punto di vista economico;;;alta;Concreto;;;;
-Coperta;Oggetto;Strumento;;Panno che si stende sul letto di vario materiale, di lana o di cotone;;;alta;Concreto;Inverno;;Camera da letto;TRUE
-Copricostume;Oggetto;Abbigliamento;Donna;Abito femminile leggero, di solito corto, che si indossa sul costume da bagno per recarsi in spiaggia;;;alta;Concreto;Estate;;Camera da letto;
-Coraggioso;Aggettivo;Umore;Persona;Persona che dimostra coraggio;;;alta;Astratto;;;;
-Costoso;Aggettivo;;;Di ciò che ha gran costo, di alto prezzo;;;alta;Astratto;;;;
-Cravatta;Abbigliamento;Uomo;Collo;Accessorio del vestiario maschile costituito da una striscia di tessuto, che si annoda in diversi modi attorno al collo;;;alta;Concreto;;;;TRUE
-Creativo;Aggettivo;Carattere;;Persona che ha la capacità di creare;;;alta;Astratto;;;;
-Crudo;Aggettivo;Modalità;;Di cibi, non cotto o poco cotto;;;alta;concreto;;;;
-Decotto;Bollito;Fallito;Infuso;Alimento bollito a lungo;Bevanda medicinale ottenuta facendo bollire in acqua per un certo tempo una o più sostanze al fine di estrarne le parti attive e solubili;;medio;astratto;Inverno ;;Cucina;
-fagioli ;cibo ;legumi ;;i borlotti sono una varietà di questo legume ;;;alta ;concreto;autunno ;;cucina ;TRUE
-fagiolini;cibo ;verdura ;;varietà di fagiolo con baccello verde sottile e allungato  totalmente commestibile ;;;alta ;concreto;primavera ;;cucina;TRUE
-fava;cibo ;legumi;;seme commestibile di colore verde e dalla forma di un grosso fagiolo appiattito ;;;alta ;concreto;Primavera ;;cucina ;TRUE
-fico ;cibo ;frutto ;;frutto dalla polpa molto dolce , con buccia verde nera o rossicia , che si mangia sia fresco che essiccato ;;;alta ;concreto ;estate ;;Cucina;TRUE
-fragola ;cibo ;frutto ;;frutto di colore rosso preparato spesso con zucchero limone o panna ;;;alta ;concreto ;primavera ;;cucina;TRUE
-freddo ;aggettivo ;;;temperatura bassa ;;;alta ;astratto ;Inverno;;;
-Galante;Aggettivo;;;Lo è un uomo gentile nel corteggiamento;;;alta;Astratto;;;;
-Gambaletto;Indumento;;;Calza che arriva dal piede fino a poco sotto il ginocchio;;;alta;Concreto;Primavera ;;Camera da letto;
-Gateau;CIbo;Patate;;Sformato a base di patate cotto al forno, tipico della cucina Campana, che viene servito come piatto unico;;;alta;Concreto;Inverno ;;Cucina;TRUE
-Gelato;Cibo;Dolce;;Dolce freddo che si può mangiare in coppetta oppure sul cono;;;alta;Concreto;Estate;;Cucina;TRUE
-Generoso;Aggettivo;;;Chi è altruista e disponibile ad aiutare gli altri;;;alta;Astratto;;;;
-Gentile;Aggettivo;Qualità;;Chi è garbato, affidabile, cortese;;;alta;Astratto;;;;
-Ghiacciolo;Cibo;Cibo freddo;;Gelato a base di acqua e sciroppo;;;alta;Concreto;Estate;;Cucina;TRUE
-Giacca;Abbigliamento;Indumento;;Si indossa sopra la camicia;;;alta;Concreto;;;Camera da letto;TRUE
-Giapponese;Aggettivo;Lingua;;Abitante, nativo del Giappone;Lingua parlata in Giappone;;alta;Astratto;;;;
-Gilè;Abbigliamento;Indumento;;Capo di abbigliamento costituito da un corpetto senza maniche e abbottonato sul davanti;;;alta;Concreto;Primavera ;;Camera da letto;TRUE
-Giovane;Aggettivo;Età;;Chi è nell'età tra l'adolescenza e la maturità;;;alta;Astratto;;;;
-Giubbotto;Abbigliamento;Indumento;;Giacca corta sportiva, in pelle o stoffa, chiusa da bottoni o cerniera;;;alta;Concreto;Inverno ;;Camera da letto;TRUE
-Guanti;Abbigliamento;Accessorio;;Accessorio di abbigliamento che si indossa sulle mani;;;alta;Concreto;Inverno ;;Camera da letto;TRUE
-Impermeabile;Abbigliamento;Aggettivo;Pioggia;Capo di abbigliamento che ripara dalla pioggia;Ciò che non si lascia attraversare dai liquidi;;alta;Concreto;Autunno;;Camera da letto ;TRUE
-Impiccione;Aggettivo;Persona;;Chi si interessa dei fatti altrui;;;alta;Astratto;;;;
-Impossibile;Aggettivo;;;Assurdo, inammissibile;;;alta;Astratto;;;;
-Imprevedibile;Aggettivo;;;Qualcosa che non ci si aspetta, che stupisce e sorprende;;;alta;Astratto;;;;
-Impulsivo;Aggettivo;Persona;Carattere;Chi agisce d'istinto;;;alta;Astratto;;;;
-Inarrestabile;Aggettivo;;;Che non si può fermare;;;media;Astratto;;;;
-Incognito;Aggettivo;Identità;;Che non è conosciuto o non rivela la propria identità;;;media;Astratto;;;;
-Indeciso;Aggettivo;Persona;;Chi non riesce a prendere una decisione;;;alta;Astratto;;;;
-Inglese;Aggettivo;Lingua;Materia;Che è caratteristico dell'Inghilterra;Lingua parlata in Inghilterra;;alta;Astratto;;;;
-Intatto;Aggettivo;;;Integro in ogni sua parte;;;alta;Astratto;;;;
-lampone ;cibo ;frutto ;;frutto di bosco di colore rosso ;;;alta ;concreto ;estate ;;Cucina;TRUE
-lenticchia ;cibo ;legume;;legume dalla forma sferica e piatta  di colore marrone ;;;alta ;concreto;autunno;;cucina ;TRUE
-limonata ;bevanda ;;;bevanda analcolica fatta con il succo del limone ;;;alta ;concreto ;Estate;;cucina ;
-Macedonia;pranzo;dessert;;Miscuglio di vari tipi di frutta tagliata a pezzi o a fettine, condita con zucchero, succo di limone o liquore;;;alto;concreto;Estate;;Cucina;
-Mandarino;frutto;albero;natura;Albero della famiglia delle Rutacee (Citrus nobilis), originario della Cina meridionale e diffusamente coltivato nell'area occidentale del Mediterraneo, con foglie piccole e fiori bianchi e profumati, il cui frutto è un esperidio sferico con buccia aranciata, dalla polpa dolce e profumata;;;alto;concreto;Inverno;;Cucina;
-Mantello;soprabito;indumento;armadio;Indumento maschile e femminile, ampio, più o meno lungo, da portare sul vestito, aperto davanti e senza maniche, che si aggancia al collo e ricade drappeggiato;;;medio;concreto;Inverno;;Camera da letto;
-Naturale;Aggettivo;;;Non artificiale;;;alta;Astratto;;;;
-Necessario;Aggettivo;;;Di cui non si può fare senza;;;alta;Astratto;;;;
-Nespola;Frutto;;;Frutto di forma ovale e colore bruno, contenente quattro o cinque noccioli, raccolto acerbo in autunno e lasciato maturare nella paglia;;;alta;Concreto;Primavera;;Cucina;
-Neutro;Aggettivo;;;Non ben definito, che sta a metà tra due opposti;;;alta;Astratto;;;;
-Nitido;Aggettivo;Qualità;;Pulito, trasparete, limpido;Un ricordo ben presente in memoria;;media;Astratto;;;;
-Nocciola;Frutto;Frutta secca;Cibo;Frutta secca ampiamente usata nella preparazione dei dolci;;;alta;Concreto;Inverno;;Cucina;TRUE
-Nocciolina;Frutta secca;Cibo;Frutto;Frutto dell'arachide;;;alta;Concreto;Inverno;;Cucina;TRUE
-Noce;Albero;Frutto;Frutta secca;Albero che può raggiungere altezze molte elevate, dal fusto dritto, tronco liscio, chioma ampia e folta, grosse foglie e frutti a drupa;Frutto costituito da un rivestimento esterno verde che racchiude un duro guscio legnoso e rugoso diviso in due metà al cui interno vi è un gheriglio commestibile;;alta;Concreto;Autunno;;Cucina;TRUE
-Nocepesca;Cibo;Frutto;;Frutto simile alla pesca ma con buccia liscia;;;alta;Concreto;Estate;;Cucina;
-Nostro;Aggettivo;Aggettivo possessivo;Possesso;Che appartiene a noi;Aggettivo possessivo di prima persona plurale;;alta;Astratto;;;;
-Numeroso;Aggettivo;Quantità;;Costituito da un numero elevato di elementi;;;alta;Astratto;;;;
-orecchino ;accessorio ;;;accessorio che si porta all'orecchio ;;;alta ;concreto ;;;Camera da letto;TRUE
-orzata ;bevanda ;;;bevanda di orzo bollito in acqua e zucchero ;;;alta ;concreto ;Estate;;Cucina;
-pandoro ;dolce ;cibo ;;Dolce tradizionale veronese, molto lievitato, a forma di tronco di cono con evidenti costole;;;basso ;concreto ;inverno;;Cucina ;TRUE
-panettone ;dolce ;cibo ;;Dolce tradizionale milanese, spec. natalizio, a forma di cupola, preparato con farina, uova, zucchero, burro, cedro candito e uva sultanina;;;alto ;concreto ;inverno ;;Cucina;TRUE
-pareo ;indumento ;abbigliamento;;Indumento di origine tahitiana consistente in un grande riquadro di stoffa stampato a colori vivaci che si avvolge attorno al corpo, usato generalm. come copricostume;;;alto ;concreto;Estate;;Camera da letto ;
-pastiera ;cibo ;;;Torta a base di pasta frolla, ripiena di ricotta, cioccolata, grano macerato e canditi, tipica di Napoli;;;medio ;concreto;Primavera ;;Cucina;TRUE
-pelliccia;oggetto;;;Mantello di alcuni Mammiferi, caratterizzato da pelo più o meno lungo e morbido;;;alto ;concreto;Inverno;;Camera da letto;TRUE
-pesca ;frutto ;;;Frutto del pesco;Il pescare, il catturare pesci o altri animali acquatici;;alto ;concreto;Estate ;;Cucina ;TRUE
-pigiama ;abbigliamento ;;;Indumento maschile o femminile da letto, formato da un paio di pantaloni e da una casacca o da una giacca abbottonata o legata in vita;;;alto ;concreto;;;Bagno ;TRUE
-plaid ;panno ;coperta ;;Coperta di dimensioni ridotte o ampio scialle di lana morbida, di solito con disegni scozzesi;;;alto ;concreto;Inverno ;;Camera da letto ;
-plurale;aggettivo;sostantivo;;Che in riferimento alla categoria grammaticale del numero, indica una quantità superiore a uno;;;alto;astratto;;;;
-Raccapriciante;Aggettivo;Brutto;;Che fa inorridire;;;media;Astratto;;;;
-Radicchio;Cibo;Ortaggio;;Varietà di cicoria, di colore rosso, che si mangia cruda come insalata oppure cotta;;;alta;Concreto;Inverno;;Cucina;
-Rammollito;Aggettivo;;;Persona priva di carattere e forza;;;media;Astratto;;;;
-Rampicante;Aggettivo;Natura;Pianta;Pianta che per svilupparsi verticalmente si aggrappa a un sostegno;;;alta;Concreto;;;;
-Rapa;Pianta;Cibo;Ortaggio;Radice carnosa di forma tondeggiante ricoperta da una pellicina violacea o di altro colore in base alla varietà;;;alta;Concreto;Inverno;;Cucina;
-Ravanello;Cibo;Ortaggio;;Radice commestibile rotondeggiante rossa o bianca, dal sapore forte;;;alta;Concreto;Primavera;;Cucina;
-Ribelle;Aggettivo;Carattere;Persona;Chi rifiuta ogni forma di autorità ;;;alta;Astratto;;;;
-Rinomato;Aggettivo;Fama;Notorietà;Che è molto conosciuto e stimato;;;alta;Astratto;;;;
-Risotto;Cibo;Ricetta;;Primo piatto a base di riso cotto lentamente in un liquido (brodo, vino o acqua) che viene riassorbito nel corso della cottura, insieme a vari condimenti;;;alta;Concreto;Inverno ;;Cucina;
-spinacio ;cibo ;ortaggio ;;ortaggio dalle foglie triangolari rugose di color verde scuro, ricche di ferro, che si mangiano cotte;;;alta ;concreto ;Primavera ;;Cucina;
-Teiera;oggetto;bollitore;;Recipiente panciuto con beccuccio, manico e coperchio, per preparare e servire il tè;;;medio;concreto;Inverno ;;Teiera ;TRUE
-Thermos;bottiglia;contenitore;oggetto;Recipiente, di solito in forma di bottiglia con tappo a chiusura ermetica, a doppia parete argentata con intercapedine a vuoto spinto per impedire la dispersione del calore e consentire di mantenere un liquido alla temperatura originaria;;;alto;concreto;Inverno ;;Cucina;
-Tisana;bevanda;camomilla;;Bevanda calmante o emolliente preparata per infusione o decotto con varie sostanze vegetali;;;alto;concreto;Inverno ;;Cucina;TRUE
-Vellutata;Cibo;Gastronomia;Ricetta;Passato di verdure molto cremoso;;;alta;Concreto;Inverno ;;Cucina;
-Vestiario;Abbigliamento;Categoria;;Complesso delle vesti, degli abiti di una persona;;;alta;Astratto;;;Camera da letto;
-Visciola;Frutto;;;Tipo di ciliegia piccola, di colore rosso scuro e dal sapore acidulo;;;alta;Concreto;Estate;;Cucina;
-Visiera;Accessorio;Cappello;;Parte del berretto che sporge in avanti per riparare il viso dalla luce e dalla pioggia;;;alta;Concreto;;;;
-Zucca;Cibo;Ortaggio;;Il frutto della pianta, di colore arancione, forma sferica o allungata, liscio o verrucoso, usato ancora immaturo nell'alimentazione per le sue proprietà diuretiche e rinfrescanti;;;alta;Concreto;Autunno;;Cucina;TRUE
-Zucchina;Cibo;Ortaggio;;Varietà di zucca dalla forma allungata e buccia di colore verde;;;alta;Concreto;Estate;;Cucina;TRUE
-Zuppa;Cibo;Piatto;;Vivanda brodosa preparata con vari ingredienti e servita con fettine di pane spesso tostate o fritte;;;alta;Concreto;Inverno;;Cucina;
+Lemma;Categoria;Categoria_2;Categoria_3;Descrizione;Descrizione_2;Descrizione_3;Frequenza;Concreto_Astratto;Stagione;Camera;HasImage
+Abat-jour;Arredamento;Paralume;Camera da letto;Lampada con paralume;;;media ;Concreto;;;TRUE
+Abbottonare;Verbo;Gesto;;Chiudere un indumento infilando i botttoni negli appositi occhielli;;;alta;Concreto;;;TRUE
+Accappatoio;Oggetto;Biancheria;Bagno;Indumento che si indossa dopo il bagno per asciugarsi;;;alta;Concreto;;;TRUE
+Accendino;Oggetto;Fiamma;;Serve per accendere le sigarette;;;alta;Concreto;;;TRUE
+Aceto;Condimento;Cucina;;Liquido ottenuto dalla fermentazione di alcolici usato per condire o conservare alimenti;;;alta;Concreto;;;TRUE
+Acquario;Contenitore;Vasca;;Vasca in cui si tengono in vita animali e piante acquatiche;;;alta;Concreto;;;TRUE
+Acrobata;Persona;Atleta;;Chi compie esercizi di agilità, equilibrio e destrezza;;;media ;Concreto;;;TRUE
+Affamato;Aggettivo;Fame;Persona;Lo è chi ha fame;;;media ;Astratto;;;
+Africa;Continente;;;Il continente del deserto del Sahara;;;media ;Concreto;;;TRUE
+Agenda;Oggetto;;;Libretto dove si segnano i propri appuntamenti e impegni;;;alta;Concreto;;;TRUE
+Aggressivo;Aggettivo;;;Chi è incline ad assalire o aggredire;Prodotto che esercita un'azione forte che potrebbe anche essere dannosa;;alta;Astratto;;;
+Aglio;Pianta;Condimento;Cucina;Pianta il cui bulbo, suddiviso in spicchi e dall'odore forte, è usato come condimento;Condimento usato in alternativa alla cipolla;;alta;Concreto;;;TRUE
+Agnello;Animale;;;Il piccolo della pecora fino a un anno d'età;;;alta;Concreto;;;TRUE
+Ago;Oggetto;Strumento;;Strumento d'acciaio piccolo e sottile usato per cucire;;;alta;Concreto;;;TRUE
+Agricoltore;Persona;Mestiere;;Chi coltiva la terra ;;;alta;Concreto;;;TRUE
+Agrodolce;Aggettivo;Gusto;Sapore;Dal sapore agro e dolce insieme;;;alta;Astratto;;;
+Albergo;Edificio;;;Edificio attrezzato per fornire alloggio;;;alta;Concreto;;;TRUE
+Albero;Pianta;;;Pianta alta formata da radici, tronco e rami con foglie;;;alta;Concreto;;;TRUE
+Albicocca;Frutto;;;Frutto con buccia vellutata e polpa tenera e dolce di colore arancione;;;alta;Concreto;Estate;;TRUE
+Alce;Animale;Mammifero;Ruminante;Grande mammifero ruminante con muso allungato e grandi corna palmate che vive nelle regioni nordiche;;;bassa;Concreto;;;TRUE
+Alligatore;Animale;Rettile;;Grosso rettile dell'ordine dei coccodrilli;;;media ;Concreto;;;TRUE
+Altalena;Oggetto;Giostra;;Giostra su cui i bambini possono sedersi e dondolarsi oppure farsi spingere;;;alta;Concreto;;;TRUE
+Amaca;Oggetto;Giardino;;Lettino pensile formato da una rete di corda o da una stuoia rettangolare solitamente legate a due tronchi d'albero;;;media ;Concreto;;;TRUE
+Amarena;Frutto;;Cucina;Varietà di cieliegia di colore rosso scuro e dal sapore acidulo;;;alta;Concreto;Estate;;
+Ambulanza;Veicolo;Mezzo di trasporto;;Veicolo di primo soccorso destinato al trasporto urgente di malati o feriti;;;alta;Concreto;;;TRUE
+Amichevole;Aggettivo;;;Atteggiamento confidenziale;;;alta;Astratto;;;
+Ananas;Frutto;Frutto esotico;Cucina;Frutto a forma di pigna con la polpa gialla e un ciuffo di foglie sulla sommità;;;alta;Concreto;Estate;;TRUE
+Anatra;Animale;Uccello;;Uccello acquatico con zampe corte, piedi palmati adatti al nuoto e becco largo e appiattito;;;alta;Concreto;;;TRUE
+Ancora;Strumento;Oggetto;Mare;Pesante arnese che serve a far presa sul fondo marino tenendo ferma la nave;;;alta;Concreto;;;TRUE
+Anguria;Frutto;Frutto estivo;Cucina;Grosso frutto tondeggiante con scorza liscia di colore verde, polpa rossa acquosa e piccoli semini neri;;;alta;Concreto;Estate;;
+Aperto;Aggettivo;;;Non chiuso;;;alta;Astratto;;;
+Arancia;Frutto;Agrume;Cucina;Frutto con buccia arancione e rugosa, la cui polpa si mangia a spicchi o come spremuta;;;alta;Concreto;Inverno;;
+Arrabbiato;Aggettivo;Umore;;Adirato, incollerito;;;alta;Astratto;;;
+Asparagi;Cibo ;Cucina;Verdura;Ortaggio di colore verde, dalla forma lunga e sottile;;;alta;Concreto;Primavera;;
+babbo;Genitore;Padre ;;Chi ha il compito di curare la crescita e l'educazione di un figlio.;;;alta ;concreto;;;TRUE
+Bacca ;Frutto;;;Frutto completamente carnoso, senza nocciolo,con un solo seme o più semi.;;;Alta;concreto;;;TRUE
+Baccello;Frutto;Guscio;; Guscio dalla  forma allungata , nella cui cavità si allineano più semi.;;;Media;Concreto;;;TRUE
+Bacinella ;Vaschetta;Bagno;;Recipinte per liquidi ,di dimensioni modeste e di materiali diversi, che serve per più usi.;;;alta;Concreto;;;TRUE
+balcone;casa ;;;struttura che sporge dal muro esterno di un edificio, protetta da una ringhiera.;;;alta ;Concreto;;;TRUE
+balena;animale ;;;genere di grandi mammiferi marini dell'ordine dei Cetacei;;;media ;Concreto;;;TRUE
+bambola;giocattolo;;Cameretta;fantoccio di aspetto femminile usato come giocattolo.;;;alta;Concreto;;;TRUE
+banana ;frutto ;;Cucina;frutto del banano, giallo, con polpa compatta e dolce. ;;;alta ;Concreto;;;TRUE
+barca;mezzo di trasporto;mare ;;galleggiante di forme limitate capace di trasportare cose o persone .;;;alta ;Concreto;;;TRUE
+basilico ;pianta ;natura;Cucina;pianta erbacea della famiglia delle Labiate usata in cucina .;;;alta ;Concreto;;;TRUE
+bastone;oggetto ;strumento ;;pezzo di legno usato per appoggiarsi  camminando.;;;alta ;Concreto;;;TRUE
+battesimo ;rito ;religione ;;il primo sacramento ;;;alta ;Concreto;;;TRUE
+baule ;cassa ;;;grande cassa con coperchio per trasportare cose personali ;;;media ;Concreto;;;TRUE
+bavaglino ;tovagliolo ;bambino;Cucina;piccolo tovagliolo che si lega al collo dei bambini perchè non si sporchino;;;alta ;Concreto;;;TRUE
+befana ;donna ;epifania ;;vecchia immaginaria che nella notte dell'epifania porta doni ai bambini ;;;alta ;astratto;inverno ;;TRUE
+benzina ;liquido ;carburante ;;miscela liquida usata come carburante ;;;alta ;Concreto;;;TRUE
+benzinaio ;persona ;mestiere ;;chi è adetto a un distributore di benzina ;;;alta ;Concreto;;;TRUE
+bere ;verbo ;gesto;azione ;ingerire un liquido ;;;alta ;Concreto;;;TRUE
+bibbia ;libro ;religione ;;complesso dei libri del vecchio e del nuovo testamento riconosciuti come  sacri dai cristiani.;;;alta ;Concreto;;;TRUE
+biberon ;bottiglia ;bambino ;Cucina;bottiglietta munita di tettarella , usata nell'allattamento artificiale ;;;alta ;Concreto;;;TRUE
+bicchiere ;oggetto ;strumento ;Cucina;recipiente di varie forme e materiale , usato per bere ;;;alta ;Concreto;;;TRUE
+bicicletta ; veicolo ;;;veicolo a due ruote di uguale diametro azionato a pedali ;;;alta ;Concreto;;;TRUE
+bidet ;arredamento;;Bagno;vaschetta di forma più o meno ovale usata per lavare le parti intime ;;;alta ;Concreto;;;TRUE
+bracciale ;accessorio ;oggetto;Camera da letto;gioiello da polso ;;;alta ;Concreto;;;
+Cabina;Luogo;Viaggio;;Sulle spiagge e nelle piscine, casotto di legno o di altro materiale destinato ai bagnanti;;;media;Concreto;Estate;;TRUE
+Cacciavite;Attrezzo da lavoro;Mani;Ripostiglio;Arnese per stringere o allentare le viti;;;alta;Concreto;;;TRUE
+Cachi;Cibo;Frutto;Cucina;Frutto commestibile di colore giallo rossiccio o aranciato, con polpa zuccherina;;;alta;Concreto;Autunno;;TRUE
+Cacio;Cibo;Formaggio;Cucina;Tipologia di formaggio toscano;;;alta;Concreto;;;TRUE
+Cactus;Pianta;Natura;Hobby;Genere di piante  grasse con fusto sempreverde carnoso, aculei e fiori colorati;;;alta;Concreto;;;TRUE
+Caffè;Bevanda;Bere;Cucina;Polvere aromatica che si ottiene dalla torrefazione e macinazione dei semi;;;alta;Concreto;;;TRUE
+Caffettiera;Utensile;Bere;Cucina;Strumento con filtro per preparare il caffè;;;alta;Concreto;;;TRUE
+Calamaro;Animale;Pesce;Cibo;Elemento chimico di simbolo Ca;;;alta;Concreto;;;TRUE
+Calcolatrice;Lavoro;Logica;Strumento di calcolo;Strumento elettronico per eseguire e registrare calcoli matematici;;;alta;Concreto;;;TRUE
+Caldarrosta;Cibo;Frutto;Mangiare;Castagna arrostita,in una padella bucherellata posta sulla brace;Forte, ardente;;alta;Concreto;Autunno;;TRUE
+Calendario;Strumento di calcolo;Logica;Cucina;Sistema convenzionale per orientarci nel tempo, che contiene mesi, giorni e anno.;Tabella in cui sono registrati ordinatamente i giorni di ciascun anno, i mesi e spesso con l'indicazione del Santo festeggiato in ciascun giorno, delle ricorrenze festive religiose e civili.;;alta;Concreto;;;TRUE
+Calloso;Aggettivo;Modalità;Misura;Indurito, che è pieno di calli;;;alta;concreto;;;
+Calzino;Piede;Indumento;Camera da letto;Calza corta che giunge poco sopra la caviglia;;;alta;Concreto;;;TRUE
+Camicia;Indumento;Abbigliamento;Camera da letto;Indumento maschile e femminile che copre il busto, di tessuto leggero di vario colore e disegno, con maniche lunghe o corte;;;alta;concreto;Primavera;;
+Caminetto;Oggetto;Calore;Stanza da pranzo;Piccolo camino all'interno di un'abitazione, usato per riscaldamento e a scopo decorativo;;;alta;concreto;Inverno;;
+Camino;Oggetto;Calore;;Impianto per il riscaldamento domestico e la cottura dei cibi, formato da un piano in materiale refrattario, dove si accende il fuoco, una cappa e una canna fumaria, spesso costruito a ridosso di una parete e rivestito in pietra o marmo a scopo ornamentale;;;alta;concreto;Inverno;;
+Cammello;Animale;Natura;;Quadrupede proprio dei paesi desertici, di due specie: una a due gobbe dorsali e l'altra a una gobba dorsale ;;;alta;concreto;;;TRUE
+Campana;Materiale;Oggetto;Musica;Strumento di metallo, spec. di bronzo, a forma di vaso rovesciato, che suona quando viene percosso nella parte inferiore da un battaglio appeso all'interno o da un martello mosso dall'esterno;;;alta;Concreto;;;TRUE
+Candela;Oggetto;Luce;Stanza da pranzo;Cilindro di cera o altra sostanza che si accende per illuminare;;;alta;Concreto;;;TRUE
+Cannonata;Aggettivo;Modalità;;Colpo di cannone;;;alta;Concreto;;;
+Canoa;Sport;Mare;Mezzo di trasporto;Imbarcazione leggera da canottaggio di forma affusolata, a uno, a due, o a quattro rematori, con pagaia.;;;alta;Concreto;;;TRUE
+Canottiera;Abbigliamento ;Indumento;Camera da letto;Maglietta da uomo o da donna, senza maniche, molto scollata;;;alta;Concreto;Estate;;TRUE
+Cantabile;Aggettivo;Musica;Note;Motivetto melodioso che può essere cantato;;;alta;Astratto;;;
+Capellone;Aggettivo;Persona;Testa;Chi ha molti capelli;;;alta;Concreto;;;
+Capitone;Animale;Cucina;Mare;Anguilla femmina, di grosse dimensioni, prelibata come piatto tradizionale per il cenone natalizio nelle regioni centromeridionali;;;alta;Concreto;Inverno ;;
+Capolavoro;Aggettivo;Arte;Cultura;La migliore opera di un artista;;;alta;Astratto;;;
+Cappotto;Oggetto;Abbigliamento;Camera da letto;Soprabito invernale di tessuto pesante, per uomo o per donna;;;alta;Concreto;Inverno;;
+Caramella;Cibo ;Mangiare;Cucina;Cibo industrale fatto con zucchero e coloranti in vari gusti, che piace molto ai bambini;;;media;Concreto;;;TRUE
+Carente;Aggettivo;Modalità;;Sinonimo di mancante, privo, insufficiente;;;media;Astratto;;;
+Cassettiera;Oggetto;Camera da letto;Arredamento;Mobile da camera costituito da numerosi cassetti sovrapposti, per riporvi oggetti di vestiario e biancheria;;;media;Concreto;;;TRUE
+Cattolico;Aggettivo;Modalità;Persona;Persona che professa la religione Cristiana;Qualsiasi cosa che si riferisce alla Chiesa romana;;alta;Concreto;;;
+Cavatappi;Oggetto;Strumento;Cucina;Arnese di metallo per sturare bottiglie;;;alta;Concreto;;;TRUE
+Centesimo;Aggettivo;;;Che in una serie ordinata occupa il posto corrispondente al numero cardinale cento;;;alta;Astratto;;;
+Chitarra;Musica;Strumento ;Suono;Strumento musicale dotato di lungo manico sul quale sono tese le corde, usato spec. come accompagnamento;;;media;Concreto;;;TRUE
+Cintura;Indumento;Abbigliamento;Camera da letto;Striscia dotata di una fibbia, che si mette alla vita per stringere i pantaloni;;;alta;Concreto;;;TRUE
+Cioccolata;Cucina;Alimentazione;Bevanda;Bevanda ottenuta facendo sciogliere il cacao nel latte;;;alta;Concreto;Inverno ;;
+Cioccolato;Mangiare;Cucina;Dolce;Prodotto alimentare composto di polvere di cacao, zucchero e altre sostanze;;;alta;Concreto;;;TRUE
+Cocomero;Frutto;Cibo;Mangiare;Grosso frutto di forma ovale di colore verde esternamente con polpa rossa e semi neri ;;;alta;Concreto;Estate;;
+Coesione;Aggettivo;Gruppo;;Compattezza, stretto legame, accordo tra le diverse parti di un gruppo;;;bassa;Astratto;;;
+Coetaneo;Aggettivo;;;Che, chi ha la medesima età di altro o altri;;;bassa;Astratto;;;
+Collaboratore;Aggettivo;Persona;Mestiere;Chi collabora;;;alta;Concreto;;;
+Competitivo;Aggettivo;Modalità;Persona;Che compete con altri, che è animato da spirito di competizione;;;bassa;Astratto;;;
+Conveniente;Aggettivo;Modalità;Economia;Ciò che è vantaggioso, specialmente dal punto di vista economico;;;alta;Concreto;;;
+Coperta;Oggetto;Strumento;Camera da letto;Panno che si stende sul letto di vario materiale, di lana o di cotone;;;alta;Concreto;Inverno;;
+Copricostume;Oggetto;Abbigliamento;Camera da letto;Abito femminile leggero, di solito corto, che si indossa sul costume da bagno per recarsi in spiaggia;;;alta;Concreto;Estate;;
+Coraggioso;Aggettivo;Umore;Persona;Persona che dimostra coraggio;;;alta;Astratto;;;
+Costoso;Aggettivo;;;Di ciò che ha gran costo, di alto prezzo;;;alta;Astratto;;;
+Cravatta;Abbigliamento;Uomo;Collo;Accessorio del vestiario maschile costituito da una striscia di tessuto, che si annoda in diversi modi attorno al collo;;;alta;Concreto;;;
+Creativo;Aggettivo;Carattere;;Persona che ha la capacità di creare;;;alta;Astratto;;;
+Crudo;Aggettivo;Modalità;;Di cibi, non cotto o poco cotto;;;alta;concreto;;;
+Dado;Oggetto;Giocare;;Oggetto di forma cubica o a base quadrata recante sulle sei facce una numerazione progressiva, con punti colorati da 1 a 6.;;;alta;concreto;;;TRUE
+Damigiana;vino;olio;Cantina;Recipiente di vetro per liquidi, di forma approssimativamente sferica, simile a un grosso fiasco, rivestito di vimini;;;medio;concreto;;;TRUE
+Decotto;Bollito;Fallito;Infuso;Alimento bollito a lungo;Bevanda medicinale ottenuta facendo bollire in acqua per un certo tempo una o più sostanze al fine di estrarne le parti attive e solubili;;medio;astratto;Inverno ;;
+Delfino;Animale;Pesce;Mare;Mammifero marino dei Cetacei (Delphinus delphis), con corpo affusolato, muso terminante in rostro e un'unica pinna dorsale;;;alto ;concreto;;;TRUE
+Dente;osso;bocca;carie;Ciascuno degli organi infissi nelle ossa mascellari dell'uomo e dei vertebrati, adibiti alla masticazione e, in alcuni animali, alla difesa;;;alto;concreto;;;TRUE
+Diamante;oggetto;prezioso;lusso;Gioiello prezioso;;;medio;concreto;;;TRUE
+Dinosauro;animale;preistoria;;ogni Rettile preistorico (Dinosaurus), di dimensioni generalm. gigantesche, vissuto durante l'era mesozoica;;;basso;concreto;;;TRUE
+Dito;corpo;ossa;mani;Ciascuna delle appendici terminali articolate delle mani e dei piedi dell'uomo e di altri animali;;;alto;concreto;;;TRUE
+Doccia;acqua;Bagno;pulizia;Impianto idraulico impiegato per ottenere un getto d'acqua, in genere a spruzzo, che si dirige sul corpo per igiene o per cura;;;alto;concreto;;;TRUE
+Dormire;sonno;notte;riposare;Essere nel sonno;;;alto;concretto;;;TRUE
+Elefante;animale;zoo;dumbo; Grande mammifero dell'ordine dei Proboscidati, proprio dell'Africa centrale e orientale e dell'India;;;alto;concreto;;;TRUE
+Erba;prato;fiori;verde;Pianta con fusto molle e non legnoso, generalm. piuttosto bassa;;;alto;concreto;;;TRUE
+fagioli ;cibo ;legumi ;Cucina;i borlotti sono una varietà di questo legume ;;;alta ;concreto;autunno ;;
+fagiolini;cibo ;verdura ;Cucina;varietà di fagiolo con baccello verde sottile e allungato  totalmente commestibile ;;;alta ;concreto;primavera ;;
+fantasma;spirito ;;;spettro immaginato dalla fantasia popolare ;;;alta ;astratto ;;;TRUE
+farfalla ;animale ;insetto ;;insetto con ali colorate ;;;alta ;concreto;;;TRUE
+fava;cibo ;legumi;Cucina;seme commestibile di colore verde e dalla forma di un grosso fagiolo appiattito ;;;alta ;concreto;Primavera ;;
+felpa ;indumento ;;;indumento a maniche lunghe che può avere cappuccio e cerniera  ;;;alta ;concreto ;Autunno ;;TRUE
+fenicottero ;animale ;uccello ;;grande uccello con lunghissime zampe e piumaggio roseo ;;;media ;concreto;;;TRUE
+fiammifero ;oggetto ;;;piccola asticella di legno che serve per accendere il fuoco ;;;alta ;concreto ;;;TRUE
+fiasco ;oggetto ;;;recipiente per liquidi di vetro con collo lungo e pancia ovale ;;;alta ;concreto ;;;TRUE
+fico ;cibo ;frutto ;Cucina;frutto dalla polpa molto dolce , con buccia verde nera o rossicia , che si mangia sia fresco che essiccato ;;;alta ;concreto ;estate ;;
+fieno ;erba ;vallata;;erba essiccata e usata come pastura per il bestiame ;;;alta ;concreto ;;;TRUE
+finocchio ;cibo ;ortaggio ;Cucina;ortaggio dalla forma tondeggiante di colore bianco e di sapore e odore aromatici ;;;alta ;concreto;;;TRUE
+fionda ;oggetto ;;;arma da lancio formata da due strisce di cuoio e una tasca al centro in cui si mette il proiettile che viene poi lanciato ;;;alta ;concreto ;;;TRUE
+fiore ;pianta ;;;lo sono le rose i girasoli e le margherite ;;;alta;concreto ;;;TRUE
+flauto ;strumento musicale ;;;strumento musicale a fiato a forma di tubo in cui il suono viene modulato mediate la chiusura e l'apertura dei fori ;;;alta ;concreto ;;;TRUE
+foca;animale ;;;mammifero marino con occhi grandi , baffi e zampe a forma di pinne ;;;alta ;concreto ;;;TRUE
+foglia;natura;parte della pianta ;;cade in autunno dall'albero ;;;alta ;concreto ;;;TRUE
+forbice ;oggetto ;;Bagno;oggetto per tagliare;;;alta ;concreto;;;TRUE
+forchetta;oggetto ;;Cucina;posata formata da un manico e da due o più denti che servono per infilzare cibi solidi ;;;alta ;concreto ;;;TRUE
+formaggio ;cibo ;;Cucina;prodotto alimentare ottenuto dalla coagulazione del latte ;;;alta ;concreto;;;TRUE
+fragola ;cibo ;frutto ;Cucina;frutto di colore rosso preparato spesso con zucchero limone o panna ;;;alta ;concreto ;primavera ;;TRUE
+freddo ;aggettivo ;;;temperatura bassa ;;;alta ;astratto ;Inverno;;
+frigorifero ;elettrodomestico ;;cucina ;elettrodomestico per la conservazione a bassa temperatura di prodotti  deperibili ;;;alta ;concreto ;;;TRUE
+fungo ;cibo ;;Cucina;può essere porcino o champignon;;;alta ;concreto;;;TRUE
+fusillo ;cibo ;pasta ;Cucina;tipo di pasta a spirale ;;;alta;concreto;;;TRUE
+Gabbia;Oggetto;Struttura;;Struttura, con le pareti formate da sbarre, in cui si rinchiudono gli animali;;;alta;Concreto;;;TRUE
+Gabbiano;Animale;Uccello;Uccello Acquatico;Uccello acquatico con grandi ali bianche e zampe palmate;;;alta;Concreto;;;TRUE
+Gabinetto;Arredamento;;Bagno;Apparecchio sanitario che elimina i rifiuti organici umani;;;alta;Concreto;;;TRUE
+Galante;Aggettivo;;;Lo è un uomo gentile nel corteggiamento;;;alta;Astratto;;;
+Gallina;Animale ;Volatile;;La femmina del gallo;;;alta;Concreto;;;TRUE
+Gallo;Animale;Volatile;;Il maschio adulto dei polli;;;alta;Concreto;;;TRUE
+Gambaletto;Indumento;;Camera da letto;Calza che arriva dal piede fino a poco sotto il ginocchio;;;alta;Concreto;Primavera ;;
+Gamberetto;Animale;Crostaceo;Cucina;Piccolo crostaceo commestibile che nuota all'indietro;;;alta;Concreto;;;TRUE
+Gateau;CIbo;Patate;Cucina;Sformato a base di patate cotto al forno, tipico della cucina Campana, che viene servito come piatto unico;;;alta;Concreto;Inverno ;;
+Gelato;Cibo;Dolce;Cucina;Dolce freddo che si può mangiare in coppetta oppure sul cono;;;alta;Concreto;Estate;;
+Generoso;Aggettivo;;;Chi è altruista e disponibile ad aiutare gli altri;;;alta;Astratto;;;
+Gentile;Aggettivo;Qualità;;Chi è garbato, affidabile, cortese;;;alta;Astratto;;;
+Ghiacciolo;Cibo;Cibo freddo;Cucina;Gelato a base di acqua e sciroppo;;;alta;Concreto;Estate;;TRUE
+Ghianda;Frutto;Natura;;Frutto della quercia, di forma ovale e protetto da un involucro legnoso detto cupola;;;media;Concreto;;;TRUE
+Ghirlanda;Oggetto;;;Corona intrecciata di foglie, fiori, erbe;;;alta;Concreto;;;TRUE
+Giacca;Abbigliamento;Indumento;Camera da letto;Si indossa sopra la camicia;;;alta;Concreto;;;TRUE
+Giapponese;Aggettivo;Lingua;;Abitante, nativo del Giappone;Lingua parlata in Giappone;;alta;Astratto;;;
+Giardiniere;Persona;Mestiere;;Addetto alla coltivazione, disposizione e cura dei giardini;;;alta;Concreto;;;TRUE
+Gilè;Abbigliamento;Indumento;Camera da letto;Capo di abbigliamento costituito da un corpetto senza maniche e abbottonato sul davanti;;;alta;Concreto;Primavera ;;TRUE
+Giornale;Oggetto;;Salone;Quotidiano d'informazione a stampa;;;alta;Concreto;;;TRUE
+Giovane;Aggettivo;Età;;Chi è nell'età tra l'adolescenza e la maturità;;;alta;Astratto;;;
+Girasole;Fiore;Natura;;Fiore dall'alto fusto e dai petali gialli che tendono a volgersi verso il sole;;;alta;Concreto;Estate;;TRUE
+Giubbotto;Abbigliamento;Indumento;Camera da letto;Giacca corta sportiva, in pelle o stoffa, chiusa da bottoni o cerniera;;;alta;Concreto;Inverno ;;
+Gondola;Veicolo;Imbarcazione;Venezia;Tipica imbarcazione veneziana;;;media;Concreto;;;TRUE
+Gonna;Abbigliamento;Indumento;Camera da letto;Indumento femminile di varia lunghezza che copre dalla vita in giù;;;alta;Concreto;;;TRUE
+Granchio;Animale;Crostaceo;;Crostaceo con il carapace largo e appiattito, cinque paia di zampe e due robuste chele;;;alta;Concreto;;;TRUE
+Guanti;Abbigliamento;Accessorio;Camera da letto;Accessorio di abbigliamento che si indossa sulle mani;;;alta;Concreto;Inverno ;;TRUE
+Guidare;Verbo;Azione;;Condurre un automobile;;;alta;Concreto;;;TRUE
+Impermeabile;Abbigliamento;Aggettivo;Pioggia;Capo di abbigliamento che ripara dalla pioggia;Ciò che non si lascia attraversare dai liquidi;;alta;Concreto;Autunno;;
+Impiccione;Aggettivo;Persona;;Chi si interessa dei fatti altrui;;;alta;Astratto;;;
+Impossibile;Aggettivo;;;Assurdo, inammissibile;;;alta;Astratto;;;
+Imprevedibile;Aggettivo;;;Qualcosa che non ci si aspetta, che stupisce e sorprende;;;alta;Astratto;;;
+Impulsivo;Aggettivo;Persona;Carattere;Chi agisce d'istinto;;;alta;Astratto;;;
+Inarrestabile;Aggettivo;;;Che non si può fermare;;;media;Astratto;;;
+Incognito;Aggettivo;Identità;;Che non è conosciuto o non rivela la propria identità;;;media;Astratto;;;
+Indeciso;Aggettivo;Persona;;Chi non riesce a prendere una decisione;;;alta;Astratto;;;
+Inglese;Aggettivo;Lingua;Materia;Che è caratteristico dell'Inghilterra;Lingua parlata in Inghilterra;;alta;Astratto;;;
+Intatto;Aggettivo;;;Integro in ogni sua parte;;;alta;Astratto;;;
+lampone ;cibo ;frutto ;Cucina;frutto di bosco di colore rosso ;;;alta ;concreto ;estate ;;
+lenticchia ;cibo ;legume;Cucina;legume dalla forma sferica e piatta  di colore marrone ;;;alta ;concreto;autunno;;
+limonata ;bevanda ;;Cucina;bevanda analcolica fatta con il succo del limone ;;;alta ;concreto ;Estate;;
+Macedonia;pranzo;dessert;Cucina;Miscuglio di vari tipi di frutta tagliata a pezzi o a fettine, condita con zucchero, succo di limone o liquore;;;alto;concreto;Estate;;
+Mandarino;frutto;albero;natura;Albero della famiglia delle Rutacee (Citrus nobilis), originario della Cina meridionale e diffusamente coltivato nell'area occidentale del Mediterraneo, con foglie piccole e fiori bianchi e profumati, il cui frutto è un esperidio sferico con buccia aranciata, dalla polpa dolce e profumata;;;alto;concreto;Inverno;;
+Mantello;soprabito;indumento;armadio;Indumento maschile e femminile, ampio, più o meno lungo, da portare sul vestito, aperto davanti e senza maniche, che si aggancia al collo e ricade drappeggiato;;;medio;concreto;Inverno;;
+Naturale;Aggettivo;;;Non artificiale;;;alta;Astratto;;;
+Necessario;Aggettivo;;;Di cui non si può fare senza;;;alta;Astratto;;;
+Nespola;Frutto;;Cucina;Frutto di forma ovale e colore bruno, contenente quattro o cinque noccioli, raccolto acerbo in autunno e lasciato maturare nella paglia;;;alta;Concreto;Primavera;;
+Neutro;Aggettivo;;;Non ben definito, che sta a metà tra due opposti;;;alta;Astratto;;;
+Nitido;Aggettivo;Qualità;;Pulito, trasparete, limpido;Un ricordo ben presente in memoria;;media;Astratto;;;
+Nocciola;Frutto;Frutta secca;Cucina;Frutta secca ampiamente usata nella preparazione dei dolci;;;alta;Concreto;Inverno;;
+Nocciolina;Frutta secca;Cibo;Cucina;Frutto dell'arachide;;;alta;Concreto;Inverno;;
+Noce;Albero;Frutto;Cucina;Albero che può raggiungere altezze molte elevate, dal fusto dritto, tronco liscio, chioma ampia e folta, grosse foglie e frutti a drupa;Frutto costituito da un rivestimento esterno verde che racchiude un duro guscio legnoso e rugoso diviso in due metà al cui interno vi è un gheriglio commestibile;;alta;Concreto;Autunno;;
+Nocepesca;Cibo;Frutto;Cucina;Frutto simile alla pesca ma con buccia liscia;;;alta;Concreto;Estate;;
+Nostro;Aggettivo;Aggettivo possessivo;Possesso;Che appartiene a noi;Aggettivo possessivo di prima persona plurale;;alta;Astratto;;;
+Numeroso;Aggettivo;Quantità;;Costituito da un numero elevato di elementi;;;alta;Astratto;;;
+orecchino ;accessorio ;;Camera da letto;accessorio che si porta all'orecchio ;;;alta ;concreto ;;;
+orzata ;bevanda ;;Cucina;bevanda di orzo bollito in acqua e zucchero ;;;alta ;concreto ;Estate;;
+pandoro ;dolce ;cibo ;Cucina;Dolce tradizionale veronese, molto lievitato, a forma di tronco di cono con evidenti costole;;;basso ;concreto ;inverno;;
+panettone ;dolce ;cibo ;Cucina;Dolce tradizionale milanese, spec. natalizio, a forma di cupola, preparato con farina, uova, zucchero, burro, cedro candito e uva sultanina;;;alto ;concreto ;inverno ;;
+pareo ;indumento ;abbigliamento;Camera da letto;Indumento di origine tahitiana consistente in un grande riquadro di stoffa stampato a colori vivaci che si avvolge attorno al corpo, usato generalm. come copricostume;;;alto ;concreto;Estate;;
+pastiera ;cibo ;;Cucina;Torta a base di pasta frolla, ripiena di ricotta, cioccolata, grano macerato e canditi, tipica di Napoli;;;medio ;concreto;Primavera ;;
+pelliccia;oggetto;Armadio;Camera da letto;Mantello di alcuni Mammiferi, caratterizzato da pelo più o meno lungo e morbido;;;alto ;concreto;Inverno;;
+pesca ;frutto ;;Cucina;Frutto del pesco;Il pescare, il catturare pesci o altri animali acquatici;;alto ;concreto;Estate ;;
+pigiama ;abbigliamento ;;Camera da letto;Indumento maschile o femminile da letto, formato da un paio di pantaloni e da una casacca o da una giacca abbottonata o legata in vita;;;alto ;concreto;;;
+plaid ;panno ;coperta ;Camera da letto;Coperta di dimensioni ridotte o ampio scialle di lana morbida, di solito con disegni scozzesi;;;alto ;concreto;Inverno ;;
+plurale;aggettivo;sostantivo;;Che in riferimento alla categoria grammaticale del numero, indica una quantità superiore a uno;;;alto;astratto;;;
+Raccapriciante;Aggettivo;Brutto;;Che fa inorridire;;;media;Astratto;;;
+Radicchio;Cibo;Ortaggio;Cucina;Varietà di cicoria, di colore rosso, che si mangia cruda come insalata oppure cotta;;;alta;Concreto;Inverno;;
+Rammollito;Aggettivo;;;Persona priva di carattere e forza;;;media;Astratto;;;
+Rampicante;Aggettivo;Natura;Pianta;Pianta che per svilupparsi verticalmente si aggrappa a un sostegno;;;alta;Concreto;;;
+Rapa;Ortaggio;Cibo;Cucina;Radice carnosa di forma tondeggiante ricoperta da una pellicina violacea o di altro colore in base alla varietà;;;alta;Concreto;Inverno;;
+Ravanello;Cibo;Ortaggio;Cucina;Radice commestibile rotondeggiante rossa o bianca, dal sapore forte;;;alta;Concreto;Primavera;;
+Ribelle;Aggettivo;Carattere;Persona;Chi rifiuta ogni forma di autorità ;;;alta;Astratto;;;
+Rinomato;Aggettivo;Fama;Notorietà;Che è molto conosciuto e stimato;;;alta;Astratto;;;
+Risotto;Cibo;Ricetta;Cucina;Primo piatto a base di riso cotto lentamente in un liquido (brodo, vino o acqua) che viene riassorbito nel corso della cottura, insieme a vari condimenti;;;alta;Concreto;Inverno ;;
+spinacio ;cibo ;ortaggio ;Cucina;ortaggio dalle foglie triangolari rugose di color verde scuro, ricche di ferro, che si mangiano cotte;;;alta ;concreto ;Primavera ;;
+Teiera;oggetto;bollitore;;Recipiente panciuto con beccuccio, manico e coperchio, per preparare e servire il tè;;;medio;concreto;Inverno ;;
+Thermos;bottiglia;contenitore;oggetto;Recipiente, di solito in forma di bottiglia con tappo a chiusura ermetica, a doppia parete argentata con intercapedine a vuoto spinto per impedire la dispersione del calore e consentire di mantenere un liquido alla temperatura originaria;;;alto;concreto;Inverno ;;
+Tisana;bevanda;camomilla;Cucina;Bevanda calmante o emolliente preparata per infusione o decotto con varie sostanze vegetali;;;alto;concreto;Inverno ;;
+Vellutata;Cibo;Gastronomia;Ricetta;Passato di verdure molto cremoso;;;alta;Concreto;Inverno ;;
+Vestiario;Abbigliamento;Categoria;;Complesso delle vesti, degli abiti di una persona;;;alta;Astratto;;Camera da letto;
+Visciola;Frutto;;Cucina;Tipo di ciliegia piccola, di colore rosso scuro e dal sapore acidulo;;;alta;Concreto;Estate;;
+Visiera;Accessorio;Cappello;;Parte del berretto che sporge in avanti per riparare il viso dalla luce e dalla pioggia;;;alta;Concreto;;;
+Zucca;Cibo;Ortaggio;Cucina;Il frutto della pianta, di colore arancione, forma sferica o allungata, liscio o verrucoso, usato ancora immaturo nell'alimentazione per le sue proprietà diuretiche e rinfrescanti;;;alta;Concreto;Autunno;;
+Zucchina;Cibo;Ortaggio;Cucina;Varietà di zucca dalla forma allungata e buccia di colore verde;;;alta;Concreto;Estate;;
+Zuppa;Cibo;Piatto;Cucina;Vivanda brodosa preparata con vari ingredienti e servita con fettine di pane spesso tostate o fritte;;;alta;Concreto;Inverno;;

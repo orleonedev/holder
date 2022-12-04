@@ -9,7 +9,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 	public static AccoppiaLeParoleManager Instance { get { return instance; } }
 
 	public static int size = 6;
-	public static int nSchede = 10;
+	public static int nSchede = 2;
 
 	[SerializeField]
 	GameObject AccoppiaParolePrefab;
@@ -164,7 +164,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 		} else {
 			print("almeno una sbagliata");
 		}
-		if (nSchede > 0) {
+		if (nSchede > 1) {
 			nSchede -= 1;
 			ResetGame();
 		}
@@ -220,15 +220,22 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 	private Dictionary<string,string> CreateDictionary(CSVData.WordObject[] Data){
 		Dictionary<string, string> filteredDict = new Dictionary<string, string>();
 		CSVData.WordObject[] CopyData = Data;
-
+		CSVData.WordObject[] filteredList = CopyData;
+		CSVData.WordObject random1;
 		for (int i = 0; i < size; i++){
-			CSVData.WordObject random1 = CopyData.ElementAt(Random.Range(0, CopyData.Count()));
-			CopyData = CopyData.Where(val => val != random1).ToArray();
-			CSVData.WordObject[] filteredList = CopyData.Where( c => 
-			( c.Cat_1 != "" && ( (c.Cat_1 == random1.Cat_1) || (c.Cat_1 == random1.Cat_2) || (c.Cat_1 == random1.Cat_3) )) ||
-			( c.Cat_2 != "" && ( (c.Cat_2 == random1.Cat_1) || (c.Cat_2 == random1.Cat_2) || (c.Cat_2 == random1.Cat_3) )) ||
-			( c.Cat_3 != "" && ( (c.Cat_3 == random1.Cat_1) || (c.Cat_3 == random1.Cat_2) || (c.Cat_3 == random1.Cat_3) )) 
-			).ToArray();
+			print("data n "+ CopyData.Count());
+			do
+			{
+				random1 = CopyData.ElementAt(Random.Range(0, CopyData.Count()));
+				CopyData = CopyData.Where(val => val != random1).ToArray();
+				filteredList = CopyData.Where( c => 
+				( c.Cat_1 != "" && ( (c.Cat_1 == random1.Cat_1) || (c.Cat_1 == random1.Cat_2) || (c.Cat_1 == random1.Cat_3) )) ||
+				( c.Cat_2 != "" && ( (c.Cat_2 == random1.Cat_1) || (c.Cat_2 == random1.Cat_2) || (c.Cat_2 == random1.Cat_3) )) ||
+				( c.Cat_3 != "" && ( (c.Cat_3 == random1.Cat_1) || (c.Cat_3 == random1.Cat_2) || (c.Cat_3 == random1.Cat_3) )) 
+				).ToArray();
+				print(random1.Word + "cat:" + random1.Cat_1 + " " + random1.Cat_2 +" " + random1.Cat_3 + " filtered n "+filteredList.Count());
+			} while ( filteredList.Count() == 0 );
+			
 			CSVData.WordObject random2 = filteredList.ElementAt(Random.Range(0, filteredList.Count()));
 			CopyData = CopyData.Where(val => val != random2).ToArray();
 			print(random1.Word + " - " + random2.Word);
@@ -241,13 +248,9 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 	}
 
 	private void ResetGame(){
+		CleanElements();
 		DictOfWords = CreateDictionary(CSVData.Instance.holderWordList.wordobject);
-		ListOfKeys = new List<string>();
-		ListOfValues = new List<string>();
-		KeysGameObj = new List<GameObject>();
-		ValuesGameObj = new List<GameObject>();
-		selectedWords = new Dictionary<GameObject, GameObject>();
-		wordState = false;
+		
 
 		var copyOfDictWords = DictOfWords.ToDictionary(entry => entry.Key,
 											   entry => entry.Value);
@@ -274,5 +277,30 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 			ListOfValues.RemoveAt(secondRandom);
 		}
 		print(DictOfWords.Count);
+	}
+
+	public void CleanElements(){
+
+		//canvas is gameObject
+		for (var i = gameObject.transform.childCount - 1; i >= 0; i--)
+        {
+            // only destroy tagged object
+            if (gameObject.transform.GetChild(i).gameObject.tag == "Line")
+            Destroy(gameObject.transform.GetChild(i).gameObject);
+        }
+
+		for (var i = FirstVerticalLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(FirstVerticalLayout.transform.GetChild(i).gameObject);
+		}
+		for (var i = SecondVerticalLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(SecondVerticalLayout.transform.GetChild(i).gameObject);
+		}
+		ListOfKeys = new List<string>();
+		ListOfValues = new List<string>();
+		KeysGameObj = new List<GameObject>();
+		ValuesGameObj = new List<GameObject>();
+		selectedWords = new Dictionary<GameObject, GameObject>();
+		wordState = false;
+
 	}
 }

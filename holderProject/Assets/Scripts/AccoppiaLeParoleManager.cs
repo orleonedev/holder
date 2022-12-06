@@ -45,19 +45,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 		ValuesGameObj = new List<GameObject>();
 		selectedWords = new Dictionary<GameObject, GameObject>();
 		wordState = false;
-		//Dictionary<string,string> copyOfDictWords = DictOfWords;
-		//DictOfWords.Add("Muratore", "Cazzuola");
-		//DictOfWords.Add("Cuoco", "Pentola");
-		//DictOfWords.Add("Libraio", "Libro");
-		//DictOfWords.Add("Centralinista", "Telefono");
-		//DictOfWords.Add("Macchinista", "Treno");
-		//DictOfWords.Add("Infermiera", "Siringa");
-		//DictOfWords.Add("Insegnante", "Penna");
-		//DictOfWords.Add("Biberon", "Latte");
-		//DictOfWords.Add("Penna", "Inchiostro");
-		//DictOfWords.Add("Crostata", "Marmellata");
-		//DictOfWords.Add("Armadio", "Vestiti");
-		//DictOfWords.Add("Vaso", "Fiore");
+		
 		var copyOfDictWords = DictOfWords.ToDictionary(entry => entry.Key,
 											   entry => entry.Value);
 		for (int i = 0; i < size; i++)
@@ -249,7 +237,6 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 			print(random1.Word + " - " + random2.Word);
 			filteredDict.Add(random1.Word,random2.Word);
 			
-
 		}
 
 		return filteredDict;

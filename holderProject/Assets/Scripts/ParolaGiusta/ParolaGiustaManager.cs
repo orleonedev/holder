@@ -14,15 +14,11 @@ public class ParolaGiustaManager : MonoBehaviour
 	private static ParolaGiustaManager instance;
 	public static ParolaGiustaManager Instance {get { return instance; } }
 	
-	[SerializeField]
+	
 	public static int size;
-	[SerializeField]
 	public static bool showWordSize;
-	[SerializeField]
 	public static bool withImage;
-	[SerializeField]
 	public static wordType type;
-	[SerializeField]
 	public static int timeLimit;
 
 	[SerializeField]

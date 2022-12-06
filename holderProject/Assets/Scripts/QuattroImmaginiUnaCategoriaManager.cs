@@ -28,14 +28,20 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
 	private int WordCharacterCount;
 	Dictionary<int, int> keyWordPair;
 
+	[SerializeField]
+	GameObject endgame;
+
+	public static int imagesNumber = 4;
+	public static int size = 5;
+
     // Start is called before the first frame update
     void Start()
     {
 		Application.targetFrameRate = 60;
-		wordAndImages = new Dictionary<string, string[]>();
-		wordAndImages.Add("MESTIERE", new string[]{"Image 1", "Image 2", "Image 3", "Image 4"});
-		wordAndImages.Add("FRUTTA", new string[]{"Image 5", "Image 6", "Image 7", "Image 8"});
-		wordAndImages.Add("ANIMALE", new string[]{"Image 9", "Image 10", "Sol 1", "Sol 2"});
+		wordAndImages = CreateDictionary(CSVData.Instance.FilteredWithImages());
+		//wordAndImages.Add("MESTIERE", new string[]{"Image 1", "Image 2", "Image 3", "Image 4"});
+		//wordAndImages.Add("FRUTTA", new string[]{"Image 5", "Image 6", "Image 7", "Image 8"});
+		//wordAndImages.Add("ANIMALE", new string[]{"Image 9", "Image 10", "Sol 1", "Sol 2"});
 		string randomWord = wordAndImages.ElementAt(Random.Range(0, wordAndImages.Count)).Key;
 		//wordDefinition.GetComponentInChildren<TMP_Text>().text = randomWord;
 		wordToFind = randomWord;
@@ -48,9 +54,11 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
 			answerCharacterHolders.Add(answerHolder);
 		}
 		for(int i = 0; i < ImagesLayout.transform.childCount; i++){
-			ImagesLayout.transform.GetChild(i).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + wordAndImages[wordToFind][i]);
+			print("immagine: " + wordAndImages[wordToFind][i]);
+			ImagesLayout.transform.GetChild(i).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Images/abatjour-guidare/" + wordAndImages[wordToFind][i]);
 		}
 		keyWordPair = new Dictionary<int, int>();
+		wordAndImages.Remove(randomWord);
 	}
     // Update is called once per frame
     void Update()
@@ -82,7 +90,13 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
 				else{
 					print("sbagliato");
 				}
-				ResetGame();
+				if (wordAndImages.Count != 0){
+					ResetGame();
+				} else {
+					endgame.GetComponent<EndGame>().startEndGame();
+					print("FINITA GAME SESSION");
+				}
+				
 			}
 		}
 	}
@@ -108,11 +122,71 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
 			answerCharacterHolders.Add(answerHolder);
 		}
 		for(int i = 0; i < ImagesLayout.transform.childCount; i++){
-			ImagesLayout.transform.GetChild(i).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + wordAndImages[wordToFind][i]);
+			print("immagine: " + wordAndImages[wordToFind][i]);
+			ImagesLayout.transform.GetChild(i).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Images/abatjour-guidare/" + wordAndImages[wordToFind][i]);
 		}
 		characterInserted = 0;
 		keyboard.GetComponent<KeyboardScript>().wordToShuffle = wordToFind;
 		keyboard.GetComponent<KeyboardScript>().ResetKeyboard();
 		keyWordPair.Clear();
+		wordAndImages.Remove(randomWord);
+	}
+
+	public Dictionary<string, string[]> CreateDictionary(CSVData.WordObject[] Data){
+		List<string> imagesName = new List<string>();
+		Dictionary<string,string[]> sessionDict = new Dictionary<string, string[]>();
+		CSVData.WordObject[] CopyData = Data;
+		CSVData.WordObject[] filteredData = CopyData;
+		string categoryToUse;
+		List<string> categoriesUsed = new List<string>();
+
+		for (int i = 0; i < size; i++){
+			imagesName.Clear();
+			CSVData.WordObject random = new CSVData.WordObject();
+			do
+			{
+				random = CopyData.ElementAt(Random.Range(0, CopyData.Count()));
+				
+				List<string> categories = new List<string>();
+				categories.Add(random.Cat_1);
+				if (random.Cat_2 != ""){
+					categories.Add(random.Cat_2);
+				}
+				if (random.Cat_3 != ""){
+					categories.Add(random.Cat_3);
+				}
+				print(categories.Count);
+				categoryToUse = categories.ElementAt(Random.Range(0,categories.Count));
+				print("try: "+ categoryToUse);
+				filteredData = CopyData.Where(c => 
+					c != random && ( 
+					c.Cat_1 == categoryToUse || c.Cat_2 == categoryToUse || c.Cat_3 == categoryToUse
+					)
+				).ToArray();
+				print(filteredData.Count());
+			} while ((filteredData.Count() < imagesNumber-1) || categoriesUsed.Contains(categoryToUse));
+
+			imagesName.Add(random.Word.ToLower());
+			categoriesUsed.Add(categoryToUse);
+
+			for (int j = 0; j < imagesNumber-1; j++)
+			{
+				CSVData.WordObject another = filteredData.ElementAt(Random.Range(0, filteredData.Count()));
+				imagesName.Add(another.Word.ToLower());
+				filteredData = filteredData.Where(c=> c!=another).ToArray();
+			}
+			print("added: "+ categoryToUse);
+			sessionDict.Add(categoryToUse,imagesName.ToArray());
+			
+		}
+
+
+
+		return sessionDict;
+	}
+
+	public void setParameters(){
+		size = 5;
+		imagesNumber = 4;
 	}
 }

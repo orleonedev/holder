@@ -27,50 +27,44 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 	[SerializeField]
 	GameObject linePrefab;
 	GameObject tmp;
+
+	[SerializeField]
+	GameObject endgame;
+
+	public static int size = 4;
+	public static int nSchede = 2;
 	// Start is called before the first frame update
 	void Start()
 	{
 		Application.targetFrameRate = 60;
-		DictOfWords = new Dictionary<string, string>();
+		DictOfWords = CreateDictionary(CSVData.Instance.FilteredWithImages());
 		ListOfKeys = new List<string>();
 		ListOfValues = new List<string>();
 		KeysGameObj = new List<GameObject>();
 		ValuesGameObj = new List<GameObject>();
 		selectedImages = new Dictionary<GameObject, GameObject>();
 		wordState = false;
-		//Dictionary<string,string> copyOfDictWords = DictOfWords;
-		DictOfWords.Add("Image 1", "Sol 1");
-		DictOfWords.Add("Image 2", "Sol 2");
-		DictOfWords.Add("Image 3", "Sol 3");
-		DictOfWords.Add("Image 4", "Sol 4");
-		DictOfWords.Add("Image 5", "Sol 5");
-		DictOfWords.Add("Image 6", "Sol 6");
-		/*DictOfWords.Add("Insegnante", "Penna");
-		DictOfWords.Add("Biberon", "Latte");
-		DictOfWords.Add("Penna", "Inchiostro");
-		DictOfWords.Add("Crostata", "Marmellata");
-		DictOfWords.Add("Armadio", "Vestiti");
-		DictOfWords.Add("Vaso", "Fiore");*/
+		
 		var copyOfDictWords = DictOfWords.ToDictionary(entry => entry.Key,
 											   entry => entry.Value);
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < size; i++)
 		{
 			string randomWord = copyOfDictWords.ElementAt(Random.Range(0, copyOfDictWords.Count)).Key;
 			ListOfKeys.Add(randomWord);
 			ListOfValues.Add(copyOfDictWords[randomWord]);
 			copyOfDictWords.Remove(randomWord);
 		}
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < size; i++)
 		{
 			GameObject Word1tmp = Instantiate(AccoppiaImmaginiPrefab, FirstVerticalLayout.GetComponent<RectTransform>().transform);
 			GameObject Word2tmp = Instantiate(AccoppiaImmaginiPrefab, SecondVerticalLayout.GetComponent<RectTransform>().transform);
 			int firstRandom = Random.Range(0, ListOfKeys.Count);
 			int secondRandom = Random.Range(0, ListOfValues.Count);
 			Word1tmp.GetComponentInChildren<TMP_Text>().text = ListOfKeys[firstRandom];
-			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "testImages/" + ListOfKeys[firstRandom] );
+			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfKeys[firstRandom] );
 			Word1tmp.gameObject.tag = "FirstLayoutAccoppia";
 			Word2tmp.GetComponentInChildren<TMP_Text>().text = ListOfValues[secondRandom];
-			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "testImages/" + ListOfValues[secondRandom] );
+			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfValues[secondRandom] );
 			Word2tmp.gameObject.tag = "SecondLayoutAccoppia";
 			KeysGameObj.Add(Word1tmp);
 			ValuesGameObj.Add(Word2tmp);
@@ -78,6 +72,7 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 			ListOfValues.RemoveAt(secondRandom);
 		}
 		print(DictOfWords.Count);
+		nSchede -= 1;
 	}
 
 	// Update is called once per frame
@@ -123,13 +118,91 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 				selectedImagesCount++;
 				wordState = !wordState;
 				DebugDict();
-				if (selectedImages.Count == 3)
+				if (selectedImages.Count == size)
 				{
-					CheckResult();
+					AnotherCheckResult();
 				}
 			}
 		}
 	}
+
+	private void AnotherCheckResult(){
+		CSVData.WordObject[] CopyData = CSVData.Instance.FilteredWithImages();
+
+		bool correct = true;
+		for (int i = 0; i < selectedImages.Count && correct; i++)
+		{
+			var first = selectedImages.ElementAt(i).Key.GetComponentInChildren<TMP_Text>().text;
+			var second = selectedImages.ElementAt(i).Value.GetComponentInChildren<TMP_Text>().text;
+			
+
+			var word1 = CopyData.Where(c => c.Word == first).First();
+			var word2 = CopyData.Where(c => c.Word == second).First();
+
+			if (
+				( word1.Cat_1 != "" && ( (word1.Cat_1 == word2.Cat_1) || (word1.Cat_1 == word2.Cat_2) || (word1.Cat_1 == word2.Cat_3) )) ||
+			( word1.Cat_2 != "" && ( (word1.Cat_2 == word2.Cat_1) || (word1.Cat_2 == word2.Cat_2) || (word1.Cat_2 == word2.Cat_3) )) ||
+			( word1.Cat_3 != "" && ( (word1.Cat_3 == word2.Cat_1) || (word1.Cat_3 == word2.Cat_2) || (word1.Cat_3 == word2.Cat_3) )) 
+			
+			) {
+				correct = true;
+
+			} else {
+				correct = false;
+			}
+			print ( first + " - " + second + " = " + correct);
+		}
+
+		if (correct) {
+			print("tutte esatte");
+		} else {
+			print("almeno una sbagliata");
+		}
+		if (nSchede > 0) {
+			ResetGame();
+		} else {
+			nSchede = 2;
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA GAME SESSION");
+		}
+		
+	}
+
+	private void ResetGame(){
+		CleanElements();
+		DictOfWords = CreateDictionary(CSVData.Instance.FilteredWithImages());
+		
+
+		var copyOfDictWords = DictOfWords.ToDictionary(entry => entry.Key,
+											   entry => entry.Value);
+		for (int i = 0; i < size; i++)
+		{
+			string randomWord = copyOfDictWords.ElementAt(Random.Range(0, copyOfDictWords.Count)).Key;
+			ListOfKeys.Add(randomWord);
+			ListOfValues.Add(copyOfDictWords[randomWord]);
+			copyOfDictWords.Remove(randomWord);
+		}
+		for (int i = 0; i < size; i++)
+		{
+			GameObject Word1tmp = Instantiate(AccoppiaImmaginiPrefab, FirstVerticalLayout.GetComponent<RectTransform>().transform);
+			GameObject Word2tmp = Instantiate(AccoppiaImmaginiPrefab, SecondVerticalLayout.GetComponent<RectTransform>().transform);
+			int firstRandom = Random.Range(0, ListOfKeys.Count);
+			int secondRandom = Random.Range(0, ListOfValues.Count);
+			Word1tmp.GetComponentInChildren<TMP_Text>().text = ListOfKeys[firstRandom];
+			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfKeys[firstRandom] );
+			Word1tmp.gameObject.tag = "FirstLayoutAccoppia";
+			Word2tmp.GetComponentInChildren<TMP_Text>().text = ListOfValues[secondRandom];
+			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfValues[secondRandom] );
+			Word2tmp.gameObject.tag = "SecondLayoutAccoppia";
+			KeysGameObj.Add(Word1tmp);
+			ValuesGameObj.Add(Word2tmp);
+			ListOfKeys.RemoveAt(firstRandom);
+			ListOfValues.RemoveAt(secondRandom);
+		}
+		print(DictOfWords.Count);
+		nSchede -= 1;
+	}
+
 	private void CheckResult()
 	{
 		bool correct = true;
@@ -175,5 +248,61 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 			print(entry.Key.GetComponentInChildren<TMP_Text>().text + " : " + entry.Value.GetComponentInChildren<TMP_Text>().text);
 		}
 		print("Count of words : " + selectedImages.Count);
+	}
+
+	public Dictionary<string,string> CreateDictionary(CSVData.WordObject[] Data){
+		Dictionary<string, string> filteredDict = new Dictionary<string, string>();
+		CSVData.WordObject[] CopyData = Data;
+		CSVData.WordObject[] filteredList = CopyData;
+		CSVData.WordObject random1;
+
+
+		for (int i = 0; i < size; i++){
+			print("data n "+ CopyData.Count());
+			do
+			{
+				random1 = CopyData.ElementAt(Random.Range(0, CopyData.Count()));
+				CopyData = CopyData.Where(val => val != random1).ToArray();
+				filteredList = CopyData.Where( c => 
+				( c.Cat_1 != "" && ( (c.Cat_1 == random1.Cat_1) || (c.Cat_1 == random1.Cat_2) || (c.Cat_1 == random1.Cat_3) )) ||
+				( c.Cat_2 != "" && ( (c.Cat_2 == random1.Cat_1) || (c.Cat_2 == random1.Cat_2) || (c.Cat_2 == random1.Cat_3) )) ||
+				( c.Cat_3 != "" && ( (c.Cat_3 == random1.Cat_1) || (c.Cat_3 == random1.Cat_2) || (c.Cat_3 == random1.Cat_3) )) 
+				).ToArray();
+				print(random1.Word + "cat:" + random1.Cat_1 + " " + random1.Cat_2 +" " + random1.Cat_3 + " filtered n "+filteredList.Count());
+			} while ( filteredList.Count() == 0 );
+			
+			CSVData.WordObject random2 = filteredList.ElementAt(Random.Range(0, filteredList.Count()));
+			CopyData = CopyData.Where(val => val != random2).ToArray();
+			print(random1.Word + " - " + random2.Word);
+			filteredDict.Add(random1.Word,random2.Word);
+			
+		}
+
+		return filteredDict;
+	}
+
+	public void CleanElements(){
+
+		//canvas is gameObject
+		for (var i = gameObject.transform.childCount - 1; i >= 0; i--)
+        {
+            // only destroy tagged object
+            if (gameObject.transform.GetChild(i).gameObject.tag == "Line")
+            Destroy(gameObject.transform.GetChild(i).gameObject);
+        }
+
+		for (var i = FirstVerticalLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(FirstVerticalLayout.transform.GetChild(i).gameObject);
+		}
+		for (var i = SecondVerticalLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(SecondVerticalLayout.transform.GetChild(i).gameObject);
+		}
+		ListOfKeys = new List<string>();
+		ListOfValues = new List<string>();
+		KeysGameObj = new List<GameObject>();
+		ValuesGameObj = new List<GameObject>();
+		selectedImages = new Dictionary<GameObject, GameObject>();
+		wordState = false;
+
 	}
 }

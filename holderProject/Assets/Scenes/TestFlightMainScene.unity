@@ -352,6 +352,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: loadGame
       objectReference: {fileID: 0}
+    - target: {fileID: 267789690815910371, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 4Immagini1Categoria
+      objectReference: {fileID: 0}
     - target: {fileID: 267789690815910373, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -438,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267789690815910374, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_Name
-      value: GameRow
+      value: 4Img1CatGameRow
       objectReference: {fileID: 0}
     - target: {fileID: 267789690820829445, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -464,6 +468,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 267789691173810253, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_text
+      value: 4 Immagini 1 Categoria
+      objectReference: {fileID: 0}
     - target: {fileID: 267789691173810255, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -551,6 +559,11 @@ PrefabInstance:
     - target: {fileID: 267789692050837202, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_text
+      value: "L\u2019esercizio proposto richiede alla persona di identificare una
+        categoria attraverso le 4 immagini proposte."
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986573, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2849,7 +2862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267789691173810253, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_text
-      value: Accoppia Le Parole
+      value: Accoppia le Parole
       objectReference: {fileID: 0}
     - target: {fileID: 267789691173810255, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2941,12 +2954,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_text
-      value: "L\u2019esercizio proposto richiede alla persona di selezione due stimoli
-        presenti in due diverse colonne accomunati dalla stessa categoria."
+      value: "L\u2019esercizio proposto richiede alla persona di selezionare due
+        stimoli presenti in due diverse colonne accomunati dalla stessa categoria."
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 29.4
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_fontSizeBase
@@ -2958,7 +2971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_enableWordWrapping
@@ -6094,6 +6107,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: loadGame
       objectReference: {fileID: 0}
+    - target: {fileID: 267789690815910371, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: AccoppiaLeImmagini
+      objectReference: {fileID: 0}
     - target: {fileID: 267789690815910373, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6180,7 +6197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267789690815910374, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_Name
-      value: GameRow
+      value: AccoppiaLeImmaginiGameRow
       objectReference: {fileID: 0}
     - target: {fileID: 267789690820829445, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6206,6 +6223,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 267789691173810253, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_text
+      value: Accoppia le Immagini
+      objectReference: {fileID: 0}
     - target: {fileID: 267789691173810255, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6293,6 +6314,15 @@ PrefabInstance:
     - target: {fileID: 267789692050837202, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_text
+      value: "L\u2019esercizio proposto richiede alla persona di selezionare due
+        stimoli presenti in due diverse colonne accomunati dalla stessa categoria."
+      objectReference: {fileID: 0}
+    - target: {fileID: 267789692211986571, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_fontSize
+      value: 29.4
       objectReference: {fileID: 0}
     - target: {fileID: 267789692211986573, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6664,6 +6694,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267789691173810255, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 267789691266513409, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}
+      propertyPath: m_Spacing
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 267789691266513410, guid: 3c2ec9ff94567418d96c36af594833e1, type: 3}

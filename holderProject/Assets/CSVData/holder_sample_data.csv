@@ -62,7 +62,7 @@ Cacciavite;Attrezzo da lavoro;Mani;Ripostiglio;Arnese per stringere o allentare 
 Cachi;Cibo;Frutto;Cucina;Frutto commestibile di colore giallo rossiccio o aranciato, con polpa zuccherina;;;alta;Concreto;Autunno;;TRUE
 Cacio;Cibo;Formaggio;Cucina;Tipologia di formaggio toscano;;;alta;Concreto;;;TRUE
 Cactus;Pianta;Natura;Hobby;Genere di piante  grasse con fusto sempreverde carnoso, aculei e fiori colorati;;;alta;Concreto;;;TRUE
-Caffè;Bevanda;Bere;Cucina;Polvere aromatica che si ottiene dalla torrefazione e macinazione dei semi;;;alta;Concreto;;;TRUE
+Caffe;Bevanda;Bere;Cucina;Polvere aromatica che si ottiene dalla torrefazione e macinazione dei semi;;;alta;Concreto;;;TRUE
 Caffettiera;Utensile;Bere;Cucina;Strumento con filtro per preparare il caffè;;;alta;Concreto;;;TRUE
 Calamaro;Animale;Pesce;Cibo;Elemento chimico di simbolo Ca;;;alta;Concreto;;;TRUE
 Calcolatrice;Lavoro;Logica;Strumento di calcolo;Strumento elettronico per eseguire e registrare calcoli matematici;;;alta;Concreto;;;TRUE
@@ -162,7 +162,7 @@ Ghirlanda;Oggetto;;;Corona intrecciata di foglie, fiori, erbe;;;alta;Concreto;;;
 Giacca;Abbigliamento;Indumento;Camera da letto;Si indossa sopra la camicia;;;alta;Concreto;;;TRUE
 Giapponese;Aggettivo;Lingua;;Abitante, nativo del Giappone;Lingua parlata in Giappone;;alta;Astratto;;;
 Giardiniere;Persona;Mestiere;;Addetto alla coltivazione, disposizione e cura dei giardini;;;alta;Concreto;;;TRUE
-Gilè;Abbigliamento;Indumento;Camera da letto;Capo di abbigliamento costituito da un corpetto senza maniche e abbottonato sul davanti;;;alta;Concreto;Primavera ;;TRUE
+Gile;Abbigliamento;Indumento;Camera da letto;Capo di abbigliamento costituito da un corpetto senza maniche e abbottonato sul davanti;;;alta;Concreto;Primavera ;;TRUE
 Giornale;Oggetto;;Salone;Quotidiano d'informazione a stampa;;;alta;Concreto;;;TRUE
 Giovane;Aggettivo;Età;;Chi è nell'età tra l'adolescenza e la maturità;;;alta;Astratto;;;
 Girasole;Fiore;Natura;;Fiore dall'alto fusto e dai petali gialli che tendono a volgersi verso il sole;;;alta;Concreto;Estate;;TRUE

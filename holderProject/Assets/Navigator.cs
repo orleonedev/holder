@@ -37,6 +37,9 @@ public class Navigator : MonoBehaviour
             case "AccoppiaLeImmagini":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "TrovaIntrusoParole":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

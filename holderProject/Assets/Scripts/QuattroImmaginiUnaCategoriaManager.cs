@@ -39,11 +39,7 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
     {
 		Application.targetFrameRate = 60;
 		wordAndImages = CreateDictionary(CSVData.Instance.FilteredWithImages());
-		//wordAndImages.Add("MESTIERE", new string[]{"Image 1", "Image 2", "Image 3", "Image 4"});
-		//wordAndImages.Add("FRUTTA", new string[]{"Image 5", "Image 6", "Image 7", "Image 8"});
-		//wordAndImages.Add("ANIMALE", new string[]{"Image 9", "Image 10", "Sol 1", "Sol 2"});
 		string randomWord = wordAndImages.ElementAt(Random.Range(0, wordAndImages.Count)).Key;
-		//wordDefinition.GetComponentInChildren<TMP_Text>().text = randomWord;
 		wordToFind = randomWord;
 		WordCharacterCount = wordToFind.Count();
 		wordInserted = new char[WordCharacterCount];

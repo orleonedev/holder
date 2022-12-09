@@ -40,6 +40,9 @@ public class Navigator : MonoBehaviour
             case "TrovaIntrusoParole":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "AnelloDellaCatena":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

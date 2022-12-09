@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204cdeacc912a4380a053a5bc550d483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAssetData: {fileID: 4900000, guid: 4d96c1198400641a9bfc1851e2bc5d81, type: 3}
+  textAssetData: {fileID: 4900000, guid: 9b21c00bff8e14afea4e88af3dc89ea5, type: 3}
   holderWordList:
+    wordobject: []
+  ImagesWordList:
     wordobject: []

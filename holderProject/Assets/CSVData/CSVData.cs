@@ -29,7 +29,7 @@ public class CSVData : MonoBehaviour
         public Frequency freq;
         public string Concr_Abstr;
         public string Season;
-        public string Room;
+        public string Anello;
         public bool HasImage;
 
     }
@@ -44,11 +44,14 @@ public class CSVData : MonoBehaviour
 
     public WordList ImagesWordList = new WordList();
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
         loadData();
         ImagesWordList.wordobject = FilteredWithImages();
+        
         
     }
 
@@ -59,20 +62,20 @@ public class CSVData : MonoBehaviour
     public void loadData(){
         string[] data = textAssetData.text.Split(new string[]{";","\n"}, StringSplitOptions.None);
 
-        int tableSize = data.Length / 12 - 1;
+        int tableSize = data.Length / 13 - 1;
         holderWordList.wordobject = new WordObject[tableSize];
 
         for (int i = 0; i < tableSize; i++)
         {
             holderWordList.wordobject[i] = new WordObject();
-            holderWordList.wordobject[i].Word = data[12 * (i+1)].ToUpper().Trim();
-            holderWordList.wordobject[i].Cat_1 = data[12 * (i+1) + 1].ToUpper().Trim();
-            holderWordList.wordobject[i].Cat_2 = data[12 * (i+1) + 2].ToUpper().Trim();
-            holderWordList.wordobject[i].Cat_3 = data[12 * (i+1) + 3].ToUpper().Trim();
-            holderWordList.wordobject[i].Des_1 = data[12 * (i+1) + 4];
-            holderWordList.wordobject[i].Des_2 = data[12 * (i+1) + 5];
-            holderWordList.wordobject[i].Des_3 = data[12 * (i+1) + 6];
-            switch (data[12 * (i+1) + 7]){
+            holderWordList.wordobject[i].Word = data[13 * (i+1) + 1].ToUpper().Trim();
+            holderWordList.wordobject[i].Cat_1 = data[13 * (i+1) + 2].ToUpper().Trim();
+            holderWordList.wordobject[i].Cat_2 = data[13 * (i+1) + 3].ToUpper().Trim();
+            holderWordList.wordobject[i].Cat_3 = data[13 * (i+1) + 4].ToUpper().Trim();
+            holderWordList.wordobject[i].Des_1 = data[13 * (i+1) + 5];
+            holderWordList.wordobject[i].Des_2 = data[13 * (i+1) + 6];
+            holderWordList.wordobject[i].Des_3 = data[13 * (i+1) + 7];
+            switch (data[13 * (i+1) + 8]){
                 case "bassa":
                 holderWordList.wordobject[i].freq = WordObject.Frequency.low;
                 break;
@@ -86,16 +89,33 @@ public class CSVData : MonoBehaviour
                 holderWordList.wordobject[i].freq = WordObject.Frequency.low;
                 break;
             }
-            holderWordList.wordobject[i].Concr_Abstr = data[12 * (i+1) + 8].ToUpper().Trim();
-            holderWordList.wordobject[i].Season = data[12 * (i+1) + 9].ToUpper().Trim();
-            holderWordList.wordobject[i].Room = data[12 * (i+1) + 10].ToUpper().Trim();
-            holderWordList.wordobject[i].HasImage = (data[12 * (i+1) + 11].Trim() == "TRUE");
+            holderWordList.wordobject[i].Concr_Abstr = data[13 * (i+1) + 9].ToUpper().Trim();
+            holderWordList.wordobject[i].Season = data[13 * (i+1) + 10].ToUpper().Trim();
+            holderWordList.wordobject[i].HasImage = (data[13 * (i+1) + 11].Trim() == "1");
+            holderWordList.wordobject[i].Anello = data[13 * (i+1) + 12].ToUpper().Trim();
+            
             
             
         }
     }
 
     public CSVData.WordObject[] FilteredWithImages(){
-        return Instance.holderWordList.wordobject.Where(c => c.HasImage == true).ToArray();
+        CSVData.WordObject[] RealList = Instance.holderWordList.wordobject.Where(c => 
+        (c.HasImage == true) &&
+        // Use Normalization if working with macos filesystem
+        (
+            #if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+c.Word.ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+c.Word.ToLower()))
+            #endif
+       )
+       ).ToArray();
+
+        return RealList;
+    }
+
+    public CSVData.WordObject[] FilteredForAnello(){
+        return Instance.holderWordList.wordobject.Where(c=> c.Anello != "0").ToArray();
     }
 }

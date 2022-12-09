@@ -33,14 +33,17 @@ public class AnelloDellaCatenaManager : MonoBehaviour
 	List<GameObject> definitionsGameObjectsContainer;
 	Dictionary<int, int> keyWordPair;
 
+	[SerializeField]
+	GameObject endgame;
+
+	public static int nSchede = 5;
+	public static int nhints = 2;
+
     // Start is called before the first frame update
     void Start()
     {
         Application.targetFrameRate = 60;
-		definitionsAndWords = new Dictionary<string, List<string>>();
-		definitionsAndWords.Add("PESCA", new List<string>{"FRUTTO", "PASSATEMPO"});
-		definitionsAndWords.Add("CAPPUCCINO", new List<string>{"FRATE", "BEVANDA"});
-		definitionsAndWords.Add("VIOLA", new List<string>{"FIORE", "STRUMENTO", "COLORE"});
+		definitionsAndWords = CreateDictionary(CSVData.Instance.FilteredForAnello());
 		string randomWord = definitionsAndWords.ElementAt(Random.Range(0, definitionsAndWords.Count)).Key;
 		List<string> definitionsOfWord = definitionsAndWords[randomWord];
 		definitionsGameObjectsContainer = new List<GameObject>();
@@ -59,6 +62,7 @@ public class AnelloDellaCatenaManager : MonoBehaviour
 			answerCharacterHolders.Add(answerHolder);
 		}
 		keyWordPair = new Dictionary<int, int>();
+		definitionsAndWords.Remove(wordToFind);
     }
 
     // Update is called once per frame
@@ -89,7 +93,13 @@ public class AnelloDellaCatenaManager : MonoBehaviour
 				else{
 					print("sbagliato");
 				}
-				ResetGame();
+				if (definitionsAndWords.Count != 0){
+					ResetGame();
+				} else {
+					endgame.GetComponent<EndGame>().startEndGame();
+					print("FINITA SESSIONE");
+				}
+				
 			}
 		}
 	}
@@ -105,15 +115,12 @@ public class AnelloDellaCatenaManager : MonoBehaviour
 			Destroy(answerCharacterHolders[i].gameObject);
 		}
 		answerCharacterHolders.Clear();
-		print(answerCharacterHolders.Count);
-		List<string> definitionsOfWord = definitionsAndWords[wordToFind];
-		for(int i = 0; i < definitionsOfWord.Count; i++){
-			print(definitionsOfWord[i]);
+		for(int i = 0; i < nhints; i++){
 			Destroy(definitionsGameObjectsContainer[i].gameObject);
 		}
 		definitionsGameObjectsContainer.Clear();
 		string randomWord = definitionsAndWords.ElementAt(Random.Range(0, definitionsAndWords.Count)).Key;
-		definitionsOfWord = definitionsAndWords[randomWord];
+		List<string> definitionsOfWord = definitionsAndWords[randomWord];
 		for(int i = 0; i < definitionsOfWord.Count; i++){
 			GameObject tmpDefinition = Instantiate(DefinitionPrefab, DefinitionsLayout.transform.GetComponent<RectTransform>());
 			tmpDefinition.GetComponent<TMP_Text>().text = definitionsOfWord[i];
@@ -131,5 +138,64 @@ public class AnelloDellaCatenaManager : MonoBehaviour
 		keyboard.GetComponent<KeyboardScript>().wordToShuffle = wordToFind;
 		keyboard.GetComponent<KeyboardScript>().ResetKeyboard();
 		keyWordPair.Clear();
+		definitionsAndWords.Remove(wordToFind);
+	}
+
+	public Dictionary<string, List<string>> CreateDictionary(CSVData.WordObject[] Data ){
+		Dictionary<string, List<string>> newDict = new Dictionary<string, List<string>>();
+		CSVData.WordObject[] CopyData = Data;
+
+		for (int i = 0; i < nSchede; i++)
+		{
+			CSVData.WordObject wordToFind = CopyData.ElementAt(Random.Range(0,CopyData.Count()));
+			List<CSVData.WordObject> sameWordList = CopyData.Where(c=> c.Anello == wordToFind.Anello).ToList();
+			List<string> categories = new List<string>();
+			print("parola: "+ wordToFind.Word);
+			sameWordList.ForEach(delegate(CSVData.WordObject word){
+				List<string> tmp = new List<string>();
+				if (!tmp.Contains(word.Cat_1)){
+					print("Aggiungo cat 1: " + word.Cat_1 );
+					#if UNITY_IOS || UNITY_EDITOR_OSX
+					tmp.Add(word.Cat_1.Normalize(System.Text.NormalizationForm.FormD));
+					#else 
+					tmp.Add(word.Cat_1);
+					#endif
+				}
+				
+				if (word.Cat_2 != "" && !tmp.Contains(word.Cat_2 )){
+					print("Aggiungo cat 2: " + word.Cat_2 );
+					#if UNITY_IOS || UNITY_EDITOR_OSX
+					tmp.Add(word.Cat_2.Normalize(System.Text.NormalizationForm.FormD));
+					#else 
+					tmp.Add(word.Cat_2);
+					#endif
+				}
+				if (word.Cat_3 != "" && !tmp.Contains(word.Cat_3)){
+					print("Aggiungo cat 3: " + word.Cat_3 );
+					#if UNITY_IOS || UNITY_EDITOR_OSX
+					tmp.Add(word.Cat_3.Normalize(System.Text.NormalizationForm.FormD));
+					#else 
+					tmp.Add(word.Cat_3);
+					#endif
+				}
+
+				categories.Add(tmp.ElementAt(Random.Range(0,tmp.Count)));
+			});
+
+			List<string> hints = new List<string>();
+			for (int j = 0; j < nhints; j++)
+			{
+				string hint = categories.ElementAt(Random.Range(0,categories.Count));
+				print("aggiungo: " + hint);
+				hints.Add(hint);
+				categories.Remove(hint);
+			}
+
+			newDict.Add(wordToFind.Word, hints);
+			CopyData = CopyData.Where(c=> c.Anello != wordToFind.Anello).ToArray();
+		}
+
+		return newDict;
+
 	}
 }

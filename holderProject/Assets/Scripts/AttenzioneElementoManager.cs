@@ -42,8 +42,8 @@ public class AttenzioneElementoManager : MonoBehaviour
 		colorOfImageToTouch = colors[rndColor];
 		ElementToTouch.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + imageNameToTouch);
 		ElementToTouch.GetComponent<UnityEngine.UI.Image>().color = colorOfImageToTouch;
-		GridSizeX = 6;
-		GridSizeY = 6;
+		GridSizeX = 4;
+		GridSizeY = 4;
 		amountOfCorrectAnswers = 3;
 		correctAnswersRegistered = 0;
 		answersRegistered = 0;

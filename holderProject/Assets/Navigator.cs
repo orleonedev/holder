@@ -46,6 +46,9 @@ public class Navigator : MonoBehaviour
             case "TrovaIntrusoImmagini":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "DoveVisto":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

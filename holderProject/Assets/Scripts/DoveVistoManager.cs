@@ -37,6 +37,11 @@ public class DoveVistoManager : MonoBehaviour
 	List<GameObject> buttonObj;
 	int imagesPlaced;
 
+	public static int nSchede = 4;
+
+	[SerializeField]
+	GameObject endgame;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -66,6 +71,7 @@ public class DoveVistoManager : MonoBehaviour
 		firstRun = true;
 		imagesPlaced = 0;
 		SetupGrid();
+		nSchede -= 1;
 	}
 
 	// Update is called once per frame
@@ -218,5 +224,54 @@ public class DoveVistoManager : MonoBehaviour
 				correct = false;
 		}
 		print("Il risultato è " + correct);
+		if(nSchede > 0){
+			newScheda();
+		}
+		else {
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA SESSIONE");
+		}
+	}
+
+	public void newScheda(){
+		ClearEverything();
+
+		imageNames = new List<string>();
+		colors = new List<Color>();
+		gridObj = new List<GameObject>();
+		correctPositions = new List<int>();
+		buttonObj = new List<GameObject>();
+		selectedImage = null;
+		colors.Add(Color.black);
+		colors.Add(Color.green);
+		colors.Add(Color.red);
+		colors.Add(Color.blue);
+		colors.Add(Color.magenta);
+		colors.Add(Color.yellow);
+		imageNames.Add("Circle");
+		imageNames.Add("Cube");
+		int rndImg = Random.Range(0, imageNames.Count);
+		int rndColor = Random.Range(0, colors.Count);
+		imageNameToTouch = imageNames[rndImg];
+		colorOfImageToTouch = colors[rndColor];
+		GridSizeX = 3;
+		GridSizeY = 3;
+		amountOfCorrectAnswersToGenerate = 3;
+		secondsToWait = 3;
+		firstRun = true;
+		imagesPlaced = 0;
+		SetupGrid();
+		nSchede -= 1;
+	}
+
+	void ClearEverything(){
+		Label.GetComponentInChildren<TMP_Text>().text = "Guarda attentamente";
+		
+		for (var i = GridLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(GridLayout.transform.GetChild(i).gameObject);
+		}
+		for (var j = ButtonHLayout.transform.childCount - 1; j >= 0; j--){
+  			Object.Destroy(ButtonHLayout.transform.GetChild(j).gameObject);
+		}
 	}
 }

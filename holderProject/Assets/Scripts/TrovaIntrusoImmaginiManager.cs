@@ -14,39 +14,37 @@ public class TrovaIntrusoImmaginiManager : MonoBehaviour
 	[SerializeField]
 	GameObject TrovaIntrusoImmaginiPrefab;
 	List<Dictionary<string, bool>> dictOfWords;
-	int amountOfRows;
+	List<Dictionary<string,bool>> copyOfDictWords;
+	
 	int CorrectAnswers;
 	int answersCount;
+
+	public static int nSchede = 4;
+	public static int nImages = 4;
+
+	[SerializeField]
+	GameObject endgame;
 	// Start is called before the first frame update
 	void Start()
 	{
 		Application.targetFrameRate = 60;
-		amountOfRows = Random.Range(1, 3);
+		
 		CorrectAnswers = 0;
 		answersCount = 0;
-		dictOfWords = new List<Dictionary<string, bool>>();
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "Image 1" , false }, { "Image 2" , false }, { "Image 3" , false }, { "Sol 1" , true }, });
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "Image 4" , false }, { "Image 5" , false }, { "Image 6" , false }, { "Sol 2" , true }, });
-		/*dictOfWords.Add(new Dictionary<string, bool>(){ { "ITALIA" , false }, { "GERMANIA" , false }, { "AFRICA" , true }, { "RUSSIA" , false }, });
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "SCOPA" , false }, { "ASPIRAPOLVERE" , false }, { "TAGLIAERBA" , true }, { "LUCIDATRICE" , false }, });
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "PRANZO" , false }, { "CENA" , false }, { "COLAZIONE" , false }, { "POLPETTA" , true }, });
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "RISOTTO" , false }, { "PIZZA" , false }, { "MINESTRONE" , false }, { "GELATO" , true }, });
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "GATTO" , false }, { "CANARINO" , false }, { "LEONE" , true }, { "CANE" , false }, });
-		dictOfWords.Add(new Dictionary<string, bool>(){ { "OCCHI" , false }, { "GAMBE" , true }, { "NASO" , false }, { "BOCCA" , false }, });*/
-		var copyOfDictWords = dictOfWords.ToList();
-		for(int i = 0; i < amountOfRows; i++){
-			int rnd = Random.Range(0, copyOfDictWords.Count);
-			System.Random rng = new System.Random();
-			copyOfDictWords[rnd] = copyOfDictWords[rnd].OrderBy(a => rng.Next()).ToDictionary(entry => entry.Key,
+		dictOfWords = CreateDictionary(CSVData.Instance.FilteredWithImages());
+		copyOfDictWords = dictOfWords.ToList();
+		
+		int rnd = Random.Range(0, copyOfDictWords.Count);
+		System.Random rng = new System.Random();
+		copyOfDictWords[rnd] = copyOfDictWords[rnd].OrderBy(a => rng.Next()).ToDictionary(entry => entry.Key,
 											   entry => entry.Value);
-			for(int j = 0; j < copyOfDictWords[rnd].Count; j++){
-				GameObject Wordtmp = Instantiate(TrovaIntrusoImmaginiPrefab, GridLayout.GetComponent<RectTransform>().transform);
-				//Wordtmp.GetComponentInChildren<TMP_Text>().text = copyOfDictWords[rnd].ElementAt(j).Key;
-				Wordtmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "testImages/" + copyOfDictWords[rnd].ElementAt(j).Key );
-				Wordtmp.GetComponentInChildren<TrovaIntrusoImmaginiScript>().outOfPlace = copyOfDictWords[rnd].ElementAt(j).Value;
+		for(int j = 0; j < copyOfDictWords[rnd].Count; j++){
+			GameObject Wordtmp = Instantiate(TrovaIntrusoImmaginiPrefab, GridLayout.GetComponent<RectTransform>().transform);
+			Wordtmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + copyOfDictWords[rnd].ElementAt(j).Key );
+			Wordtmp.GetComponentInChildren<TrovaIntrusoImmaginiScript>().outOfPlace = copyOfDictWords[rnd].ElementAt(j).Value;
 			}
-			copyOfDictWords.RemoveAt(rnd);
-		}
+		copyOfDictWords.RemoveAt(rnd);
+		
 		print(dictOfWords.Count);
 		print(copyOfDictWords.Count);
 	}
@@ -66,10 +64,102 @@ public class TrovaIntrusoImmaginiManager : MonoBehaviour
 		answersCount++;
 		if(outOfPlace)
 			CorrectAnswers++;
-		if(answersCount == amountOfRows)
-			CheckResult();
+		
+		CheckResult();
+		if (answersCount == dictOfWords.Count){
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA SESSIONE");
+		} else {
+			newScheda();
+		}
+
 	}
-	public void CheckResult(){
-		print(CorrectAnswers + " di " + amountOfRows + " risposte sono corrette");
+	  public void CheckResult(){
+	  	print(CorrectAnswers + " di " + answersCount + " risposte sono corrette");
+	  }
+
+	  public void newScheda(){
+
+		for (var i = GridLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(GridLayout.transform.GetChild(i).gameObject);
+		}
+
+		int rnd = Random.Range(0, copyOfDictWords.Count);
+		System.Random rng = new System.Random();
+		copyOfDictWords[rnd] = copyOfDictWords[rnd].OrderBy(a => rng.Next()).ToDictionary(entry => entry.Key,
+											   entry => entry.Value);
+		for(int j = 0; j < copyOfDictWords[rnd].Count; j++){
+			GameObject Wordtmp = Instantiate(TrovaIntrusoImmaginiPrefab, GridLayout.GetComponent<RectTransform>().transform);
+			Wordtmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + copyOfDictWords[rnd].ElementAt(j).Key );
+			Wordtmp.GetComponentInChildren<TrovaIntrusoImmaginiScript>().outOfPlace = copyOfDictWords[rnd].ElementAt(j).Value;
+			}
+		copyOfDictWords.RemoveAt(rnd);
+		
+		print(dictOfWords.Count);
+		print(copyOfDictWords.Count);
+	  }
+
+	public List<Dictionary<string,bool>> CreateDictionary(CSVData.WordObject[] Data) {
+		List<Dictionary<string,bool>> newDictList = new List<Dictionary<string,bool>>();
+		CSVData.WordObject[] CopyData = Data;
+		CSVData.WordObject[] filteredData = CopyData;
+		string categoryToUse;
+		List<string> categoriesUsed = new List<string>();
+
+		for (int i = 0; i < nSchede; i++)
+		{
+			CSVData.WordObject random1 = new CSVData.WordObject();
+			do
+			{
+				random1 = CopyData.ElementAt(Random.Range(0,CopyData.Count()));
+				List<string> categories = new List<string>();
+				categories.Add(random1.Cat_1);
+				if (random1.Cat_2 != ""){
+					categories.Add(random1.Cat_2);
+				}
+				if (random1.Cat_3 != ""){
+					categories.Add(random1.Cat_3);
+				}
+				
+				categoryToUse = categories.ElementAt(Random.Range(0,categories.Count));
+				
+				filteredData = CopyData.Where(c => 
+					c != random1 && ( 
+					c.Cat_1 == categoryToUse || c.Cat_2 == categoryToUse || c.Cat_3 == categoryToUse
+					)
+				).ToArray();
+
+
+			} while (filteredData.Count() < nImages-2 || categoriesUsed.Contains(categoryToUse));
+
+			List<string> sameCategoryWords = new List<string>();
+			sameCategoryWords.Add(random1.Word);
+			for (int j = 0; j < nImages-2; j++)
+			{
+				CSVData.WordObject anotherRandom = filteredData.ElementAt(Random.Range(0,filteredData.Count()));
+				sameCategoryWords.Add(anotherRandom.Word);
+				filteredData = filteredData.Where(c => c != anotherRandom).ToArray();
+			}
+			
+			CopyData = CopyData.Where(c=> !sameCategoryWords.Contains(c.Word)).ToArray();
+
+			Dictionary<string,bool> row = new Dictionary<string, bool>();
+			sameCategoryWords.ForEach(delegate(string sameCategoryWord){
+				row.Add(sameCategoryWord, false);
+			});
+			
+			CSVData.WordObject[] likelyIntruder = CopyData.Where(c=> 
+			(c.Cat_1 != categoryToUse) && (c.Cat_2 != categoryToUse) && (c.Cat_3 != categoryToUse)).ToArray();
+			CSVData.WordObject intrude = likelyIntruder.ElementAt(Random.Range(0,likelyIntruder.Count()));
+			row.Add(
+				intrude.Word,
+				true
+			);
+			CopyData = CopyData.Where(c=> c != intrude).ToArray();
+			newDictList.Add(row);
+		}
+
+
+		return newDictList;
 	}
 }

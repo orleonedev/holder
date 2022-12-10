@@ -43,6 +43,9 @@ public class Navigator : MonoBehaviour
             case "AnelloDellaCatena":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "TrovaIntrusoImmagini":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

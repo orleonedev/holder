@@ -149,7 +149,7 @@ public class TrovaIntrusoParoleManager : MonoBehaviour
 			
 			CSVData.WordObject[] likelyIntruder = CopyData.Where(c=> 
 			(c.Cat_1 != categoryToUse) && (c.Cat_2 != categoryToUse) && (c.Cat_3 != categoryToUse)).ToArray();
-			CSVData.WordObject intrude = likelyIntruder.ElementAt(Random.Range(0,CopyData.Count()));
+			CSVData.WordObject intrude = likelyIntruder.ElementAt(Random.Range(0,likelyIntruder.Count()));
 			row.Add(
 				intrude.Word,
 				true

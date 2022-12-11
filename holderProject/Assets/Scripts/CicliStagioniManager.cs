@@ -19,18 +19,19 @@ public class CicliStagioniManager : MonoBehaviour
 	GameObject autunnoBtn;
 	[SerializeField]
 	GameObject invernoBtn;
+	[SerializeField]
+	GameObject endgame;
 	Dictionary<string,string> dictWithSolutions;
+	Dictionary<string,string> dictWithSolutionsCopy;
+	public static int nSchede = 4;
 	string correctSeasonOfWord;
 	int answersGiven;
 	int correctAnswers;
     // Start is called before the first frame update
     void Start()
     {
-        dictWithSolutions = new Dictionary<string, string>();
-		dictWithSolutions.Add("Image 1", "PRIMAVERA");
-		dictWithSolutions.Add("Image 2", "ESTATE");
-		dictWithSolutions.Add("Image 3", "AUTUNNO");
-		dictWithSolutions.Add("Image 4", "INVERNO");
+        dictWithSolutions = CreateDictionary(CSVData.Instance.FilteredForSeasonWithImages());
+		dictWithSolutionsCopy = dictWithSolutions;
 		NewWord();
     }
 
@@ -49,11 +50,41 @@ public class CicliStagioniManager : MonoBehaviour
 		}
 		answersGiven++;
 		print(correctAnswers + " di " + answersGiven + " sono corrette");
-		NewWord();
+		if (dictWithSolutionsCopy.Count != 0){
+			NewWord();
+		}
+		else{
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA SESSIONE");
+		}
+		
 	}
 	void NewWord(){
-		int rnd = Random.Range(0 , dictWithSolutions.Count);
-		ImmagineDaIndovinare.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "testImages/" + dictWithSolutions.ElementAt(rnd).Key );
-		correctSeasonOfWord = dictWithSolutions[dictWithSolutions.ElementAt(rnd).Key];
+		int rnd = Random.Range(0 , dictWithSolutionsCopy.Count);
+		var sprite = (
+            #if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+dictWithSolutionsCopy.ElementAt(rnd).Key.ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+dictWithSolutionsCopy.ElementAt(rnd).Key.ToLower()))
+            #endif
+       );
+		ImmagineDaIndovinare.GetComponent<UnityEngine.UI.Image>().sprite = sprite;
+		correctSeasonOfWord = dictWithSolutionsCopy[dictWithSolutionsCopy.ElementAt(rnd).Key];
+		print(dictWithSolutionsCopy.ElementAt(rnd).Key + " - " + correctSeasonOfWord);
+		dictWithSolutionsCopy.Remove(dictWithSolutionsCopy.ElementAt(rnd).Key);
+	}
+
+	public Dictionary<string,string> CreateDictionary(CSVData.WordObject[] Data){
+		Dictionary<string,string> newDict = new Dictionary<string, string>();
+		CSVData.WordObject[] CopyData = Data;
+
+		for (int i = 0; i < nSchede; i++)
+		{
+			CSVData.WordObject random = CopyData.ElementAt(Random.Range(0,CopyData.Count()));
+			newDict.Add(random.Word, random.Season);
+			CopyData = CopyData.Where(c=> c!=random).ToArray();
+		}
+
+		return newDict;
 	}
 }

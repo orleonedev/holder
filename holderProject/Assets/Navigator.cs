@@ -49,6 +49,18 @@ public class Navigator : MonoBehaviour
             case "DoveVisto":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "CosaCera":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "CicliEStagioni":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "ScegliStagione":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "AttenzioneElemento":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

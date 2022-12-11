@@ -308,8 +308,8 @@
 ;Baffo;persona ;uomo;;parte della barba che l'uomo lascia crescere in varia misura e forma sul labbro superirore ;;;alta ;Concreto;;1;0
 ;Bagagliaio;auto;;;nei veicoli,scomparto destinato a contenere i bagagli .;;;alta ;Concreto;;0;0
 ;Bagnare;verbo ;;;spargere acqua o altro liquido su qualcosa o qualcuno;;;alta ;Concreto;;0;0
-;Bagnasciuga;spiaggia ;;;zona di una spiaggia marina o di una riva lacustre dove vengono a rompersi le onde. ;;;media ;astratto;estate;0;0
-;bagnino;persona ;mestiere;;persona addetta alla sorveglianza e all'assistenza dei bagnanti sulle spiagge.;;;alta ;Concreto;estate;1;0
+;Bagnasciuga;spiaggia ;;;zona di una spiaggia marina o di una riva lacustre dove vengono a rompersi le onde. ;;;media ;astratto;Estate;0;0
+;bagnino;persona ;mestiere;;persona addetta alla sorveglianza e all'assistenza dei bagnanti sulle spiagge.;;;alta ;Concreto;Estate;1;0
 ;bagno;stanza ;;;stanza attrezzata per fare il bagno;;;alta;Concreto;;0;16
 ;bagno;azione ;;;immersione di un corpo solido in uno liquido ;;;alta ;Concreto;;0;16
 ;bagnomaria;cottura;Cucina;;metodo di cottura;;;alta;Concreto;;0;0
@@ -347,7 +347,7 @@
 ;baule ;cassa ;;;grande cassa con coperchio per trasportare cose personali ;;;media ;Concreto;;1;0
 ;bavaglino ;tovagliolo ;bambino;Cucina;piccolo tovagliolo che si lega al collo dei bambini perchè non si sporchino;;;alta ;Concreto;;1;0
 ;becco ;animale;uccello ;;estremità della bocca degli uccelli.;;;alta ;Concreto;;0;0
-;befana ;donna ;epifania ;;vecchia immaginaria che nella notte dell'epifania porta doni ai bambini ;;;alta ;astratto;inverno ;1;0
+;befana ;donna ;epifania ;;vecchia immaginaria che nella notte dell'epifania porta doni ai bambini ;;;alta ;astratto;Inverno;1;0
 ;bellezza ;qualità ;;;carattere , condizione di chi , di ciò che è bello ;;;alta ;astratto;;0;0
 ;bello ;aggettivo ;;;che ha un aspetto gradevole , che piace ;;;alta ;astratto ;;0;0
 ;benda ;oggetto ;;;striscia di garza o di tela sottile ,usata per fasciare ferite o parti malate del corpo .;;;alta ;Concreto;;0;0
@@ -386,7 +386,7 @@
 ;biglietto;cartoncino ;;;cartoncino utilizzato per l'accesso ai luoghi di spettacolo o sui mezzi pubblici ;;;alta ;Concreto;;0;17
 ;bignè;cibo ;dolce ;Cucina;dolcetto di farina, rotondo e gonfio, ripieno di crema o cioccolato;;;alta ;Concreto;;1;0
 ;bigotto ;aggettivo ;bacchettone ;;chi osserva in modo esagerato e ostentato le pratiche del culto religioso;;;bassa;astratto;;0;0
-;bikini;donna ;moda;mare ;costume da bagno femminile ;;;alta ;Concreto;estate ;1;0
+;bikini;donna ;moda;mare ;costume da bagno femminile ;;;alta ;Concreto;Estate;1;0
 ;bilancia;strumento ;;;strumento per pesare ;;;alta ;Concreto;;0;18
 ;bilancia;segno zodiacale ;;;segno zodiacale di chi è nato tra il 23 settembre e il 22 ottobre;;;alta;astratto;;0;18
 ;biliardo ;gioco ;strumento ;;tavola rettangolare ,con quale si gioca con palle lanciate per mezzo di lunghe stecche.;;;alta ;Concreto;;1;0
@@ -558,7 +558,7 @@
 ;Calunnia;Modalità;Sostantivo;Evento;Accusa consapevolmente falsa contro qualcuno per infamarlo o comunque recargli danno;Maldicenza, insinuazione, pettegolezzo, chiacchiera;;Alta;Astratto;;0;0
 ;Calvizia;Persona;Modalità;;Perdita graduale e definitiva dei capelli;;;Alta;Astratto;;0;0
 ;Calvo;Persona;Uomo;;Che è privo in tutto o in parte dei capelli;;;Alta;Concreto;;0;0
-;Calza;Indumento;Corpo;Persona;Indumento che fascia il piede e una porzione della gamba, fatto a maglia, di varia materia;;;Alta;Concreto;Inverno/Autunno;0;0
+;Calza;Indumento;Corpo;Persona;Indumento che fascia il piede e una porzione della gamba, fatto a maglia, di varia materia;;;Alta;Concreto;Inverno;0;0
 ;Calzamaglia;Indumento;Corpo ;Persona;Indumento di maglia di lana, cotone o fibre sintetiche, costituito da calze lunghe che fasciano il corpo fino alla vita;;;Alta;Concreto;Inverno;0;0
 ;Calzante;Modalità;Aggettivo;;Indumento che calza bene;;;Alta;Astratto;;0;0
 ;Calzare;Indumento;Corpo;Uomo;Calzatura liturgica di seta o laminata d'oro o d'argento, riservata al papa, ai cardinali, usata nelle funzioni solenni.;;;Bassa;Concreto;;0;28
@@ -740,7 +740,7 @@
 ;Capitolazione;Aggettivo;;;Convenzione tra i comandanti di eserciti nella quale sono stabiliti i patti della resa ;;;bassa;Concreto;;0;0
 ;Capitolino;Cultura;Storia;;Del Campidoglio;;;alta;Concreto;;0;0
 ;Capitolo;Cultura;Studio;;Ciascuna delle suddivisioni del testo di un'opera, superiore al paragrafo;;;alta;Concreto;;0;0
-;Capitone;Animale;mare;cucina ;Anguilla femmina, di grosse dimensioni, prelibata come piatto tradizionale per il cenone natalizio nelle regioni centromeridionali;;;alta;Concreto;Inverno ;0;0
+;Capitone;Animale;mare;cucina ;Anguilla femmina, di grosse dimensioni, prelibata come piatto tradizionale per il cenone natalizio nelle regioni centromeridionali;;;alta;Concreto;Inverno;0;0
              C;Capo;Testa;Persona;Corpo umano;Nel corpo umano, la parte più elevata, unita al busto per mezzo del collo;Parte del corpo umano considerata sede delle funzioni intellettuali;;alta;Concreto;;0;40
 ;Capo;Mestiere;Persona;Ruolo;Persona che esercita funzioni direttive e di comando su altre persone o in una comunità;;;alta;Concreto;;0;40
 ;Capoarea;Mestiere;Persona;Ruolo;In azienda chi ha il ruolo di responsabile del controllo e del coordinamento di un gruppo di venditori che agiscono in una determinata area geografica;;;media;Concreto;;0;0
@@ -835,7 +835,7 @@
 ;Carismatico;Aggettivo;Persona;;Di persona, che possiede carisma;;;alta;Astratto;;0;0
 ;Carità;Religione;Azione;;Attività organizzata da gruppi religiosi o laici per assistere i bisognosi;;;alta;Astratto;;0;0
 ;Caritatevole;Modalità;;;Che agisce con carità;;;alta;Astratto;;0;0
-;Carnevale;Religione;Festa;Evento;Periodo dell'anno che precede la Quaresima;;;alta;Astratto;Inverno ;0;0
+;Carnevale;Religione;Festa;Evento;Periodo dell'anno che precede la Quaresima;;;alta;Astratto;Inverno;0;0
 ;Carnivoro;Modalità;;;Che si nutre di carne;;;alta;Concreto;;0;0
 ;Carpa;Animale;Pesce;;Pesce d'acqua dolce;;;media;Concreto;;0;0
 ;Carpenteria;Luogo;;;L'officina del carpentiere;;;alta;Concreto;;0;0
@@ -871,7 +871,7 @@
 ;Cassiera;Mestiere;Persona;Lavoro;Chi, in un pubblico esercizio, si trova alla cassa;;;alta;Concreto;;1;0
 ;Cassonetto;Oggetto;;;Ampio recipiente munito di coperchio, per il deposito e la raccolta dei rifiuti urbani;;;media;Concreto;;1;0
 ;Castagna;Frutto;Cibo;Mangiare;Frutto del castagno;;;alta;Concreto;Autunno;1;0
-;Castagnaccio;Cibo;Mangiare;;Schiacciata di farina di castagne, con pinoli, uvetta e rosmarino, cotta in forno;;;bassa;Concreto;Autunno ;0;0
+;Castagnaccio;Cibo;Mangiare;;Schiacciata di farina di castagne, con pinoli, uvetta e rosmarino, cotta in forno;;;bassa;Concreto;Autunno;0;0
 ;Castagneto;Natura;Luogo;;Terreno dove sono piantati alberi di castagno;;;alta;Concreto;;0;0
 ;Castano;Colore;;;Colore dei capelli, occhi ;;;alta;Astratto;;0;0
 ;Castello;Luogo;Edile;Edificio;Costruzione fortificata, residenza del re;;;media;Concreto;;1;0
@@ -1044,7 +1044,7 @@
 ;Cinturino;Oggetto;Indumento;;Striscia sottile di diversi materiali che serve a chiiudere o allacciare, come quello dell'orologio;;;alta;Concreto;;0;0
 ;Ciocca;Parte del corpo;Capelli;;Ciuffetto di capelli;;;alta;Concreto;;0;0
 ;Ciocco;Oggetto;;;Grosso pezzo di legno da ardere;;;alta;Concreto;;0;0
-;Cioccolata;Bevanda;Alimentazione;Cucina;Bevanda ottenuta facendo sciogliere il cacao nel latte;;;alta;Concreto;Inverno ;1;0
+;Cioccolata;Bevanda;Alimentazione;Cucina;Bevanda ottenuta facendo sciogliere il cacao nel latte;;;alta;Concreto;Inverno;1;0
 ;Cioccolataio;Persona;Mestiere;;Chi fabbrica o vende cioccolato;;;alta;Concreto;;0;0
 ;Cioccolatino;Mangiare;Cucina;Dolce;Piccolo dolce di cioccolato solido, di variaforma e variamente confezionato;;;media;Concreto;;0;0
 ;Cioccolato;Mangiare;Cucina;Dolce;Prodotto alimentare composto di polvere di cacao, zucchero e altre sostanze;;;alta;Concreto;;1;0
@@ -1338,7 +1338,7 @@ D;Dado;Oggetto;Giocare;;Oggetto di forma cubica o a base quadrata recante sulle 
 ;Danza;Ballo;Movimento;Sport;Insieme dei movimenti ritmici del corpo, associati a un componimento musicale.;;;alto;astratto;;0;0
 ;Danzare;Verbo;Muoversi;Ritmo;Muoversi a ritmo di danza;;;alto;astratto;;0;0
 ;Danzatore;Ballare;Ballerino;Persona;Chi danza;;;alto;concreto ;;0;0
-;Darsena;barca;mare;turisti;Piccolo porto riparato, a volte coperto, per l'ormeggio di piccole imbarcazioni;;;medio;concreto;estate;0;0
+;Darsena;barca;mare;turisti;Piccolo porto riparato, a volte coperto, per l'ormeggio di piccole imbarcazioni;;;medio;concreto;Estate;0;0
 ;Data;giorno;settimana;periodo;Giorno, mese, o anno in cui è accaduto o deve accadere un fatto;;;alto;astratto;;0;0
 ;Datato;lettera;periodo;ricordo;Che reca una data;;;medio;astratto;;0;0
 ;Dato;regalo;oggetto;;Consegnato, donato, portato;;;alto;astratto;;0;0
@@ -1367,7 +1367,7 @@ D;Dado;Oggetto;Giocare;;Oggetto di forma cubica o a base quadrata recante sulle 
 ;Decolonizzare;popolo;indipendenza;storia;Restituire l'autonomia economica, culturale, tecnologica e sim. A uno Stato, liberandolo da una precedente condizione di dipendenza;;;basso;astratto;;0;0
 ;Decorare;ornamento;creazione;festività;Abbellire con ornamenti. Adornare, addobbare;;;alto;concreto;;0;0
 ;Decoro;Onore ;Dignità;ornamento;Dignità che si manifesta nell'aspetto e nel contegno;Ornamento, decorazione su manufatti di ceramica;;medio;astratto;;0;0
-;Decotto;Bollito;Fallito;Infuso;Alimento bollito a lungo;Bevanda medicinale ottenuta facendo bollire in acqua per un certo tempo una o più sostanze al fine di estrarne le parti attive e solubili;;medio;astratto;Inverno ;0;0
+;Decotto;Bollito;Fallito;Infuso;Alimento bollito a lungo;Bevanda medicinale ottenuta facendo bollire in acqua per un certo tempo una o più sostanze al fine di estrarne le parti attive e solubili;;medio;astratto;Inverno;0;0
 ;Decoupage;Decorazione;Lavorazione;Creazione;Tecnica di decorazione con cui si applicano ritagli di carta o stoffa su scatole o oggetti di vario genere, rinnovandone l'aspetto;Fase della lavorazione di un film, preliminare al montaggio, in cui le scene vengono tagliate, ripartite in inquadrature e numerate progressivamente;;medio;astratto;;0;0
 ;Decrepito ;Persona;Vecchio;Logoro;Che è di estrema vecchiezza;In stato di decadenza estrema e irreversibile;;medio;astratto;;0;0
 ;Decreto;legge;documento;avvocato;Provvedimento dell'autorità giudiziaria in materia civile o penale, motivato solo nei casi prescritti dalla legge;;;alto;concreto;;0;0
@@ -1482,7 +1482,7 @@ D;Dado;Oggetto;Giocare;;Oggetto di forma cubica o a base quadrata recante sulle 
 ;Diamante;oggetto;prezioso;lusso;Gioiello prezioso;;;medio;concreto;;1;0
 ;Diario;libro;compiti;Cameretta;Quaderno personale dove si annotano e si commentano giorno per giorno fatti, avvenimenti, ricordi, considerazioni di cui si vuole conservare memoria;Registro giornaliero, calendario delle attività;;alto;concreto;;0;0
 ;Dibattito;discussione ;riunione;tavola rotonda;Dibattimento, discussione;;;medio;concreto;;0;0
-;Dicembre;mese;natale;regali;Dodicesimo e ultimo mese dell'anno giuliano e gregoriano, di 31 giorni;;;alto;concreto;inverno;0;0
+;Dicembre;mese;natale;regali;Dodicesimo e ultimo mese dell'anno giuliano e gregoriano, di 31 giorni;;;alto;concreto;Inverno;0;0
 ;Dichiarare;Spiegare ;dire;affermare;Dire chiaramente, manifestare, palesare;;;medio;astratto;;0;0
 ;Diciannove;numero;contare;matematica;Numero naturale composto da una decina più nove unità, rappresentato nella numerazione araba da 19, in quella romana da XIX;;;medio;astratto;;0;0
 ;Didascalia;figura;descrizione;immagine;Dicitura esplicativa o informativa aggiunta a un'illustrazione;;;medio;concreto;;0;0
@@ -1497,7 +1497,7 @@ D;Dado;Oggetto;Giocare;;Oggetto di forma cubica o a base quadrata recante sulle 
 ;Digitale;tablet;oggetto;orologio;dispositivo, apparecchio, macchina che utilizza segnali discreti per rappresentare dati in cifre o mediante lettere alfabetiche;;;medio;concreto;;0;0
 ;Digiuno;fame;dieta;cibo;Che non ha preso cibo, che non ha mangiato;;;medio;astratto;;0;0
 ;Dilettante;passione;arte;Hobby;Chi coltiva un'arte, una scienza o esercita un'attività non per professione ma per il proprio piacere;;;basso;concreto;;0;0
-;Diluvio;pioggia;temporale;;Pioggia dirotta;;;alto;astratto;inverno;0;0
+;Diluvio;pioggia;temporale;;Pioggia dirotta;;;alto;astratto;Inverno;0;0
 ;Dimenticare;memoria;ricordo;Lasciare;Perdere il ricordo di qualcuno o qualcosa;;;medio;astratto;;0;0
 ;Dimora;casa;luogo;;Luogo nel quale si abita;;;medio;concreto;;0;0
 ;Dinamico;svelto;persona;veloce;Ricco di forza di energia, di movimento;;;medio;concreto;;0;0
@@ -1672,7 +1672,7 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;Epicentro;luogo;centro;;Punto centrale di superficie da cui si propagano le scosse sismiche, che sovrasta l'ipocentro del terremoto;;;medio;concreto;;0;0
 ;Epidemia;virus;malattia;infezione;Manifestazione di malattia infettiva che colpisce un numero generalm. Assai grande di persone, nel medesimo tempo e in uno stesso luogo;;;alto;concreto;;0;0
 ;Epidermide;pelle;pori;corpo umano;Ultimo strato superficiale della pelle, formato di cellule epiteliali disposte in più strati e privo di vasi sanguigni;;;alto;concreto;;0;0
-;Epifania;festa;bambini;calza;Festa delle Chiese cristiane che commemora la visita dei Re Magi a Gesù bambino a Betlemme, celebrata il 6 gennaio;;;alto;concreto;inverno;0;0
+;Epifania;festa;bambini;calza;Festa delle Chiese cristiane che commemora la visita dei Re Magi a Gesù bambino a Betlemme, celebrata il 6 gennaio;;;alto;concreto;Inverno;0;0
 ;Epilazione;peli;estetica;persone;depilazione;;;alto;concreto;;0;0
 ;Epilessia;malattia;persone;;Malattia del sistema nervoso che si manifesta periodicamente con improvvisa perdita della coscienza e violenti movimenti convulsivi dei muscoli;;;medio;concreto;;0;0
 ;Epilettico;persona;patologia;;che si riferisce ad epilessia;;;medio;concreto;;0;0
@@ -1755,7 +1755,7 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;Esperimento;tentativo;prova;;Ciò che viene fatto per accertare, provare, conoscere qualcuno o qualcosa;;;alto;astratto;;0;0
 ;Esplorare;ricercare;indagare;;Cercare di conoscere, di scoprire qualcosa di non visibile. Scrutare;;;alto;astratto;;0;0
 ;Essenza;profumo;;;Ciò che costituisce la natura, la sostanza propria e permanente di una cosa;;;medio;astratto;;0;0
-;Estate;stagione;mare;caldo;Stagione dell'anno compresa tra il solstizio d'estate (21 giugno) e l'equinozio d'autunno (23 settembre), corrispondente nell'emisfero australe all'inverno;;;alto;astratto;estate;1;0
+;Estate;stagione;mare;caldo;Stagione dell'anno compresa tra il solstizio d'Estate(21 giugno) e l'equinozio d'autunno (23 settembre), corrispondente nell'emisfero australe all'inverno;;;alto;astratto;Estate;1;0
 ;Estetista;cura del corpo;manicure;bellezza;persona esperta nelle cure estetiche;;;alto;concreto;;0;0
 ;Etichetta;formalità;;;Complesso delle norme pratiche che regolano tutte le forme esteriori della vita di corte e dell'alta società;;;medio;concreto;;0;66
 ;Etichetta;adesivo;nominare cose;;Cartellino che si attacca su bottiglie, scatole e sim., o anche sul dorso dei libri;;;alto;concreto;;0;66
@@ -1769,8 +1769,8 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;facile ;aggettivo ;;;il contrario di difficile ;;;alta ;astratto ;;0;0
 ;facoltoso ;aggettivo ;persona ;;chi possiede molti beni materiali ;;;alta ;astratto ;;0;0
 ;fagiano ;animale ;uccello ;;uno degli uccelli più apprezzati per la caccia con una coda molto lunga ;;;alta ;concreto;;0;0
-;fagioli ;cibo ;legumi ;Cucina;i borlotti sono una varietà di questo legume ;;;alta ;concreto;autunno ;1;0
-;fagiolini;cibo ;verdura ;Cucina;varietà di fagiolo con baccello verde sottile e allungato  totalmente commestibile ;;;alta ;concreto;primavera ;1;0
+;fagioli ;cibo ;legumi ;Cucina;i borlotti sono una varietà di questo legume ;;;alta ;concreto;Autunno;1;0
+;fagiolini;cibo ;verdura ;Cucina;varietà di fagiolo con baccello verde sottile e allungato  totalmente commestibile ;;;alta ;concreto;Primavera;1;0
 ;falco ;animale ;uccello ;;uccello rapace con becco curvo e robusto e   ampio campo visivo ;;;alta ;concreto;;1;0
 ;falegname ;persona ;mestiere ;;artigiano che lavora il legno ;;;alta ;concreto;;1;0
 ;fallire;verbo ;;;non conseguire lo scopo prefissato ;;;alta ;astratto ;;0;0
@@ -1811,11 +1811,11 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;fattoria ;luogo ;;;azienda agricola ;;;alta ;concreto;;1;0
 ;fattorino ;persona ;mestiere ;;persona addetta alla consegna ;;;alta ;concreto;;0;0
 ;fattura ;documento ;ricevuta ;;documento in cui si registra l'importo di una merce venduta ;;;alta ;concreto;;0;0
-;fava;cibo ;legumi;Cucina;seme commestibile di colore verde e dalla forma di un grosso fagiolo appiattito ;;;alta ;concreto;Primavera ;1;0
+;fava;cibo ;legumi;Cucina;seme commestibile di colore verde e dalla forma di un grosso fagiolo appiattito ;;;alta ;concreto;Primavera;1;0
 ;favola ;genere narrativo ;;;racconto fantastico , con protagonisti immaginari quali fate e streghe ;;;alta ;astratto ;;0;0
 ;favore ;azione ;;;azione che si compie gratuitamente per aiutare qualcuno ;;;alta ;astratto ;;0;0
 ;fazzoletto ;oggetto ;;;pezzo di stoffa usato per soffiarsi il naso ;;;alta ;concreto;;1;0
-;febbraio;mese ;;;secondo mese dell'anno ;;;alta ;astratto ;inverno ;0;0
+;febbraio;mese ;;;secondo mese dell'anno ;;;alta ;astratto ;Inverno;0;0
 ;febbre ;salute ;malattia ;;aumento della temperatura del corpo ;;;alta ;astratto ;;0;0
 ;fecola ;ingrediente ;;Cucina;amido contenuto nella patata usato come addensante o in sostituzione della farina per rendere i dolci più soffici ;;;alta ;concreto;;0;0
 ;fede;credere ;religione ;;credere fermamente in qualcosa o qualcuno ;;;alta ;astratto ;;0;67
@@ -1824,7 +1824,7 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;fedina ;documentazione ;giustizia ;;certificato penale ;;;alta ;astratto ;;0;0
 ;fegato ;corpo umano;organo ;;organo posto al lato destro dell'addome  che agisce sul metabolismo;;;alta ;concreta ;;0;0
 ;felice;aggettivo ;umore ;;persona che si sente serena e appagata ;;;alta ;astratto ;;0;0
-;felpa ;indumento ;;;indumento a maniche lunghe che può avere cappuccio e cerniera  ;;;alta ;concreto ;Autunno ;1;0
+;felpa ;indumento ;;;indumento a maniche lunghe che può avere cappuccio e cerniera  ;;;alta ;concreto ;Autunno;1;0
 ;femmina ;genere ;;;il sesso opposto a quello del maschio ;;;alta ;astratto ;;0;0
 ;femminile;aggettivo ;;;pertinente alla donna caratteristico della donna ;;;alta  ;astratto ;;0;0
 ;femminismo ;politica;;;movimento politico che si è proposto per dare alla donna gli stessi diritti dell'uomo ;;;media;astratto ;;0;0
@@ -1859,7 +1859,7 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;fiato ;respiro ;;;aria emessa dai polmoni attraverso la bocca e il naso ;;;alta ;astratto ;;0;0
 ;fibbia ;oggetto ;;;fermaglio i diverso materiale e forma usato per tenere chiuse cinture bracciali e collane ;;;alta ;concreto ;;0;0
 ;ficcanaso ;impiccione;;;persona che si intromette in ciò che non la riguarda ;;;media ;astratto ;;0;0
-;fico ;cibo ;frutto ;Cucina;frutto dalla polpa molto dolce , con buccia verde nera o rossicia , che si mangia sia fresco che essiccato ;;;alta ;concreto ;estate ;1;0
+;fico ;cibo ;frutto ;Cucina;frutto dalla polpa molto dolce , con buccia verde nera o rossicia , che si mangia sia fresco che essiccato ;;;alta ;concreto ;Estate;1;0
 ;fidanzamento ;relazione ;promessa ;;relazione tra due persone che precede al matrimonio ;;;alta ;astratto ;;0;0
 ;fidare ;verbo ;;;fare affidamento contare su qualcuno o qualcosa ;;;alta ;astratto ;;0;0
 ;fiducia ;sensazione ;;;sensazione  di sicurezza basata sulla stima riposta a qualcosa o qualcuno ;;;alta ;astratto ;;0;0
@@ -1958,7 +1958,7 @@ E;Ebano;foresta;natura ;legno;Grande albero dei paesi tropicali con il tronco da
 ;fotografo ;persona ;mestiere ;;chi per mestiere fa le foto ;;;alta ;concreto ;;0;0
 ;fotoromanzo;genere narrativo ;;;romanzo narrato mendiante una serie di fotografie e brevi didascalie ;;;media ;concreto;;0;0
 ;fragile ;aggettivo ;;;che si rompe facilmente ;;;alta ;astratto ;;0;0
-;fragola ;cibo ;frutto ;Cucina;frutto di colore rosso preparato spesso con zucchero limone o panna ;;;alta ;concreto ;primavera ;1;0
+;fragola ;cibo ;frutto ;Cucina;frutto di colore rosso preparato spesso con zucchero limone o panna ;;;alta ;concreto ;Primavera;1;0
 ;frana ;evento ;;;caduta o discesa di masse terrose o rocciose lungo i fianchi di colline e di montagne ;;;media ;concreto;;0;0
 ;francese ;aggettivo ;persona ;abitante ;abitante nativo della Francia ;;;alta ;concreto;;0;0
 ;francobollo;oggetto ;lettera ;posta ;adesivo di carta che si applica sulle lettere postali ;;;media ;concreto ;;1;0
@@ -2120,7 +2120,7 @@ G;Gabbia;Oggetto;Struttura;;Struttura, con le pareti formate da sbarre, in cui s
 ;Giavellotto;Arma;Antichità;;Antica arma da getto, costituita da un'asta di legno con punta di ferro acuminata;;;bassa;Concreto;;0;0
 ;Gigante;Dimensione;Aggettivo;;è di grandissime dimensioni;;;alta;Astratto;;0;0
 ;Giglio;Pianta;Natura;Fiore;Pianta dai fiori campanulati bianchi profumatissimi;;;alta;Concreto;;1;0
-;Gilet;Abbigliamento;Indumento;Camera da letto;Capo di abbigliamento costituito da un corpetto senza maniche e abbottonato sul davanti;;;alta;Concreto;Primavera ;1;0
+;Gilet;Abbigliamento;Indumento;Camera da letto;Capo di abbigliamento costituito da un corpetto senza maniche e abbottonato sul davanti;;;alta;Concreto;Primavera;1;0
 ;Gin;Bevanda;Bevanda alcolica;Cucina;Bevanda alcolica aromatizzata con bacche di ginepro;;;media;Concreto;;0;0
 ;Ginepro;Albero;Natura;;Albero sempreverde con foglie pungenti di colore verde chiaro e piccoli frutti sferici di colore blu scuro molto aromatici;;;media;Concreto;;0;0
 ;Ginestra;Pianta;Natura;;Pianta dai rami verdi e fiori odorosi di colore giallo dorato, propria delle zone aride e calde;;;media;Concreto;;0;0
@@ -2157,7 +2157,7 @@ G;Gabbia;Oggetto;Struttura;;Struttura, con le pareti formate da sbarre, in cui s
 ;Gita;Scuola;Turismo;;Lunga passeggiata o breve viaggio, a scopo turistico o ricreativo;;;alta;Astratto;;0;0
 ;Gitano;Persona;;;Zingaro, tipicamente proveniente dalla Spagna o dal Nord Africa;;;media;Concreto;;0;0
 ;Giù;Posizione;;;In basso;;;alta;Astratto;;0;0
-;Giubbotto;Abbigliamento;Indumento;Camera da letto;Giacca corta sportiva, in pelle o stoffa, chiusa da bottoni o cerniera;;;alta;Concreto;Inverno ;1;0
+;Giubbotto;Abbigliamento;Indumento;Camera da letto;Giacca corta sportiva, in pelle o stoffa, chiusa da bottoni o cerniera;;;alta;Concreto;Inverno;1;0
 ;Giubileo;Religione;;;Anno, dichiarato santo dalla Chiesa cattolica, che cade ogni 25 anni in cui vengono concesse grazie ai fedeli;;;media;Astratto;;0;0
 ;Giuda;Religione;;;L'apostolo che tradì Gesù ;;;alta;Astratto;;0;0
 ;Giudicare;Verbo;;;Esprime un parere positivo o negativo;;;alta;Astratto;;0;0
@@ -2259,7 +2259,7 @@ G;Gabbia;Oggetto;Struttura;;Struttura, con le pareti formate da sbarre, in cui s
 ;Guancia;Corpo umano;Volto;;Parte del volto posta tra lo zigomo e la mascella;;;alta;Concreto;;0;0
 ;Guanciale;Ingrediente;Salume;Cucina;Ingrediente fondamentale, insieme all'uovo e al pecorino, nella preparazione della carbonara;;;alta;Concreto;;0;81
 ;Guanciale;Oggetto;;Camera da letto;Cuscino imbottito;;;media;Concreto;;0;81
-;Guanti;Abbigliamento;Accessorio;Camera da letto;Accessorio di abbigliamento che si indossa sulle mani;;;alta;Concreto;Inverno ;0;0
+;Guanti;Abbigliamento;Accessorio;Camera da letto;Accessorio di abbigliamento che si indossa sulle mani;;;alta;Concreto;Inverno;0;0
 ;Guantiera;Contenitore;;;Scatola o astuccio per i guanti;;;bassa;Concreto;;0;0
 ;Guardalinee;Persona;Mestiere;Calcio;Nel calcio, l'assistente dell'arbitro che segnala l'uscita del pallone dalle linee o altre irregolarità;;;alta;Concreto;;0;0
 ;Guardare;Verbo;;;Volgere lo sguardo verso qualcuno o qualcosa;;;alta;Astratto;;0;0
@@ -2520,7 +2520,7 @@ L;labbro;corpo umano ;;;ciascuna delle due pieghe cutanee carnose che delimitano
 ;lampadario ;oggetto ;arredamento ;illuminazione ;apparecchio per l'illuminazione che di appende al soffitto;;;alta;concreto;;1;0
 ;lampadina ;oggetto ;illuminazione ;;globulo di vetro contenente un filamento metallico che percorso da corrente elettrica emette luce ;;;alta ;concreto;;1;0
 ;lampeggiare;verbo ;;;emettere una luce intermittente ;;;alta ;concreto ;;0;0
-;lampone ;cibo ;frutto ;Cucina;frutto di bosco di colore rosso ;;;alta ;concreto ;estate ;1;0
+;lampone ;cibo ;frutto ;Cucina;frutto di bosco di colore rosso ;;;alta ;concreto ;Estate;1;0
 ;lana ;tessuto ;;;pelo della percora ;;;alta ;concreto ;;1;0
 ;lancetta ;orologio ;orario ;;sul quadrato dell'orologio serve a indicare l'ora ;;;alta ;concreto ;;0;0
 ;lanciafiamme ;oggetto ;;;oggetto che serve per il lancio di liquidi infiammabili ;;;bassa;concreto;;0;0
@@ -2584,7 +2584,7 @@ L;labbro;corpo umano ;;;ciascuna delle due pieghe cutanee carnose che delimitano
 ;legno ;natura ;materia ;;materia prima ottenuta dai tronchi degli alberi impiegata per i lavori di falegnameria ;;;alta ;concreto;;1;0
 ;legume ;cibo ;;;lo sono le fave , i fagioli e le lenticchie ;;;alta ;concreto;;0;0
 ;lei ;pronome ;femminile ;;si usa per indicare la persona ma anche l'animale o la cosa di cui si parla ;;;alta ;astratto ;;0;0
-;lenticchia ;cibo ;legume;cucina ;legume dalla forma sferica e piatta  di colore marrone ;;;alta ;concreto;autunno;1;0
+;lenticchia ;cibo ;legume;cucina ;legume dalla forma sferica e piatta  di colore marrone ;;;alta ;concreto;Autunno;1;0
 ;lentiggine ;pelle ;macchia ;;piccola macchia che si forma sulla pelle ai soggetti con carnaggione chiara ;;;alta ;concreto ;;0;0
 ;lento ;aggettivo ;;;che manca di velocità ;;;alta ;astratto ;;0;0
 ;lenzuolo ;biancheria ;;;telo di cotone che si stende sul letto ;;;alta ;concreto;;0;0
@@ -2681,7 +2681,7 @@ M;Macabro;orrido ;orrendo;;Gusto raccapricciante, di chi si compiace in visioni 
 ;Magazzino;locale;stanzone;;Locale, opportunamente attrezzato, adibito al deposito e alla conservazione di ogni genere di merci destinate per lo più alla vendita o al consumo;;;alto;concreto;;0;0
 ;Magenta;colore;polvere;;Di colore scuro;;;medio;concreto;;0;0
 ;Maggese;terreno;riposo;campi;Pratica agricola per cui un terreno viene lasciato a riposo per qualche tempo perché riacquisti fertilità;;;basso;astratto;;0;0
-;Maggio;mese;;;Quinto mese dell'anno giuliano e gregoriano, di 31 giorni;;;alto;astratto;primavera;0;0
+;Maggio;mese;;;Quinto mese dell'anno giuliano e gregoriano, di 31 giorni;;;alto;astratto;Primavera;0;0
 ;Maggiolino;insetto;giardino;;Insetto della famiglia degli Scarabeidi (Melonontha melonontha), comune in maggio, dalle elitre rossobrunicce, che si nutre di radici allo stato larvale;;;basso;concreto;;0;0
 ;Maggiordomo;signore;servitù;;Sovrintendente alla servitù e all'andamento dei servizi domestici in una casa signorile o in un albergo;;;basso;concreto;;0;0
 ;Maggiore;fratello;superiore;grande;Più grande. Di altezza, dimensioni, intensità superiori;;;alto;astratto;;0;0
@@ -2723,7 +2723,7 @@ M;Macabro;orrido ;orrendo;;Gusto raccapricciante, di chi si compiace in visioni 
 ;Malmesso;trascurato;persona;;Vestito male, senza gusto o senza cura;;;medio;concreto;;0;0
 ;Malnutrito;persona;animale;affamato;che ha ricevuto scarsa nutrizione;;;alto;concreto;;0;0
 ;Malpensante;diffidente;persona;;Che, chi pensa in maniera diversa da quella accettata come buona e ritenuta giusta dalla maggioranza, spec. In merito a questioni morali, politiche e religiose;;;medio;concreto;;0;0
-;Maltempo;pioggia;temporale;inverno;cattivo tempo, cattiva stagione;;;alto;concreto;inverno;0;0
+;Maltempo;pioggia;temporale;Inverno;cattivo tempo, cattiva stagione;;;alto;concreto;Inverno;0;0
 ;Malva;pianta;natura;giardino;Pianta erbacea della famiglia delle Malvacee (Malva sylvestris), con foglie crenate e fiori lilla rosati;;;basso;concreto;;0;0
 ;Mambo;ballo;ballare;sala da ballo;danza di origine afro-cubana, affine alla rumba, che si balla in coppia a ritmo veloce;;;medio;concreto;;0;0
 ;Manager;leader;persona;;Nell'organizzazione aziendale, chi guida, cura, dirige gli interessi di un'impresa come amministratore;;;alto;concreto;;0;0
@@ -2783,7 +2783,7 @@ M;Macabro;orrido ;orrendo;;Gusto raccapricciante, di chi si compiace in visioni 
 ;Marciapiede;strada;pedonale;persone;Parte della strada riservata al passaggio dei pedoni, per lo più laterale e rialzata rispetto al piano stradale;;;alto;concreto;;0;0
 ;Marcio;perso;danneggiato;;Di sostanza organica che si è corrotta per azione di microrganismi, umidità, calore o altra causa;;;alto;concreto;;0;0
 ;Marcire;danneggiare;;;diventare marcio;;;medio;concreto;;0;0
-;Mare;sabbia;acqua;pesci;Insieme delle acque salate che circondano i continenti e le isole, ricoprendo tre quarti della superficie terrestre;;;alto;concreto;estate;0;0
+;Mare;sabbia;acqua;pesci;Insieme delle acque salate che circondano i continenti e le isole, ricoprendo tre quarti della superficie terrestre;;;alto;concreto;Estate;0;0
 ;Marea;acqua alta;acqua bassa;;Il periodico alzarsi e abbassarsi della superficie dei mari e degli oceani, che avviene approssimativamente ogni dodici ore, dovuto all'attrazione gravitazionale della Luna e del Sole;;;alto;concreto;;0;0
 ;Maremoto;acqua;movimento ;;Sommovimento violentissimo delle acque marine, a volte con onde alte fino a 20-30 metri, provocato da movimenti tettonici o da fenomeni vulcanici sottomarini;;;medio;concreto;;0;0
 ;Maresciallo;ruolo;divisa;;Supremo grado militare di molti eserciti europei antichi e moderni;;;alto;concreto;;0;0
@@ -3242,10 +3242,10 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;pandemonio ;suono ;;;Frastuono. Grande confusione;;;alto ;astratto ;;0;0
 ;pandispagna ;dolce ;;Cucina;Torta leggera e soffice preparata con fecola di patate, zucchero e uova, usata spesso come base per altri dolci;;;alto ;concreto;;0;0
 ;pandolce ;dolce ;cibo ;;Dolce natalizio tradizionale di Genova simile al panettone, con aggiunta di pinoli;;;alto ;concreto ;;0;0
-;pandoro ;dolce ;cibo ;Cucina;Dolce tradizionale veronese, molto lievitato, a forma di tronco di cono con evidenti costole;;;basso ;concreto ;inverno;1;0
+;pandoro ;dolce ;cibo ;Cucina;Dolce tradizionale veronese, molto lievitato, a forma di tronco di cono con evidenti costole;;;basso ;concreto ;Inverno;1;0
 ;pane ;cibo ;;Cucina;Alimento che si ottiene cuocendo al forno un impasto di acqua e farina, lievitato e condito con sale;;;alto;concreto ;;1;0
 ;panetto ;elemento ;;;Piccola quantità di una sostanza;;;alto ;concreto;;0;0
-;panettone ;dolce ;Natale;Cucina;Dolce tradizionale milanese, spec. Natalizio, a forma di cupola, preparato con farina, uova, zucchero, burro, cedro candito e uva sultanina;;;alto ;concreto ;inverno ;1;0
+;panettone ;dolce ;Natale;Cucina;Dolce tradizionale milanese, spec. Natalizio, a forma di cupola, preparato con farina, uova, zucchero, burro, cedro candito e uva sultanina;;;alto ;concreto ;Inverno;1;0
 ;panfilo ;oggetto ;;;Grossa imbarcazione da diporto, pontata almeno parzialmente;;;alto ;concreto ;;0;0
 ;pangrattato ;cibo ;;Cucina;Pane raffermo grattugiato;;;alto ;concreto ;;0;0
 ;panico ;espressione ;animo ;;Terrore improvviso che porta ad atti avventati e inconsulti;;;alto ;astratto ;;0;0
@@ -3261,7 +3261,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;panorama ;visione ;;;Veduta ampia di un tratto di territorio, spec. Quella che si offre da un luogo elevato:;Insieme di dati e considerazioni che offrono una rassegna complessiva, o un'esposizione riassuntiva, di un fenomeno complesso dell'attività umana;;alto ;astratto ;;0;0
 ;pantalone ;abbigliamento ;Armadio;Camera da letto;Calzoni: p. Da uomo, da donna. P. Da sci;Gonna pantalone, gonna che ha la foggia di un paio di pantaloni molto ampi;;alto ;concreto ;;1;0
 ;pantheon ;edificio ;tempio ;;Nell'antichità classica, tempio dedicato a tutti gli dèi;Edificio, chiesa dove sono sepolti gli uomini illustri di una nazione;;alto ;concreto ;;0;0
-;pantofola ;abbigliameto ;Armadio;Camera da letto;Calzatura comoda e morbida, di tessuto o di pelle, da portare in casa;;;alto ;concreto ;Inverno ;1;0
+;pantofola ;abbigliameto ;Armadio;Camera da letto;Calzatura comoda e morbida, di tessuto o di pelle, da portare in casa;;;alto ;concreto ;Inverno;1;0
 ;panzarotto ;cibo ;Patata;Cucina;Grosso raviolo di pasta sfoglia ripieno di prosciutto e formaggio o altri ingredienti, fritto in olio, tipico della cucina meridionale;;;alto ;concreto ;;0;0
 ;paonazzo ;colore ;;;Di colore violaceo scuro;;;medio ;astratto;;0;0
 ;pap-test ;metodo ;;;Metodo diagnostico dei tumori della cervice uterina e di altre affezioni dell'apparato genitale femminile, consistente nell'esame citologico delle secrezioni vaginali;;;alto ;astratto;;0;0
@@ -3343,7 +3343,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;partorire ;verbo;;;Di femmina di mammifero, espellere naturalmente o con l'ausilio di mezzi artificiali il feto dall'organismo;;;alto ;astratto;;0;0
 ;parziale ;tipologia ;;;Relativo solo a una parte del tutto;;;medio ;astratto;;0;0
 ;pascolo ;oggetto;;;Terreno erboso su cui il bestiame viene portato a brucare: p. Montano, di pianura;;;alto ;concreto;;0;0
-;Pasqua ;festa ;;;Presso gli Ebrei, festa solenne che ricorda la liberazione del popolo d'Israele dalla servitù dell'Egitto;Presso i Cristiani, festa che commemora la risurrezione di Gesù Cristo, che cade tra il 22 marzo e il 25 aprile, e si celebra la prima domenica dopo il plenilunio di primavera;;alto ;astratto;Primavera ;0;0
+;Pasqua ;festa ;;;Presso gli Ebrei, festa solenne che ricorda la liberazione del popolo d'Israele dalla servitù dell'Egitto;Presso i Cristiani, festa che commemora la risurrezione di Gesù Cristo, che cade tra il 22 marzo e il 25 aprile, e si celebra la prima domenica dopo il plenilunio di primavera;;alto ;astratto;Primavera;0;0
 ;passaggio ;azione ;;;Azione del passare per un luogo, attraversandolo o sostandovi brevemente;;;alto ;astratto;;0;0
 ;passante ;persona ;;;che passa ;Passante ferroviario, tronco sotterraneo che collega più stazioni ferroviarie urbane;;alto ;concreto ;;0;0
 ;passare ;verbo ;;;Attraversare uno spazio spostandosi da un luogo a un altro. Transitare;;;alto ;astratto;;0;0
@@ -3363,7 +3363,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;pastello ;oggetto ;;Cameretta;Piccolo cilindro formato di materia colorante in polvere impastata con acqua leggermente collosa e lasciata seccare, usato per disegnare;;;alto ;concreto;;0;0
 ;pasticca ;medicina ;;;Pastiglia: pasticche per la tosse. Pasticche di menta. Preparato in pasticche;;;alto ;concreto;;0;0
 ;pasticceria ;luogo ;;;Negozio dove si vendono dolciumi, generalm. Preparati in un laboratorio annesso;;;alto ;concreto;;1;0
-;pastiera ;dolce ;Pasqua;Cucina;Torta a base di pasta frolla, ripiena di ricotta, cioccolata, grano macerato e canditi, tipica di Napoli;;;medio ;concreto;Primavera ;1;0
+;pastiera ;dolce ;Pasqua;Cucina;Torta a base di pasta frolla, ripiena di ricotta, cioccolata, grano macerato e canditi, tipica di Napoli;;;medio ;concreto;Primavera;1;0
 ;pastiglia ;medicina ;;;Prodotto dolciario o medicinale a forma di piccolo disco, costituito da sostanze in polvere rese compatte;;;alto ;concreto ;;0;0
 ;pasto ;cibo ;;; Azione del nutrirsi di una o più vivande in determinate ore del giorno;;;alto ;astratto;;0;0
 ;pastore ;persona ;;;Chi guida le bestie al pascolo, le custodisce e le governa;;;alto ;concreto ;;0;0
@@ -3441,7 +3441,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;pensionare ;verbo ;azione ;;Mettere in pensione, mandare in pensione;;;alto ;astratto;;0;0
 ;pentagono;figura ;;;Poligono di cinque lati;;;alto ;astratto;;0;0
 ;pentasillabo ;verso ;;;Verso composto da cinque sillabe;;;alto ;astratto ;;0;0
-;Pentecoste ;festa ;;;Festa ebraica celebrata cinquanta giorni dopo la Pasqua;;;alto ;astratto;Pasqua;0;0
+;Pentecoste ;festa ;;;Festa ebraica celebrata cinquanta giorni dopo la Pasqua;;;alto ;astratto;Primavera;0;0
 ;pentirsi ;rimpiangere ;dispiacersi ;rammaricarsi ;Provare dolore, rimorso per un male commesso;Provare dispiacere, insoddisfazione, rammarico, rimpianto per aver fatto o per non aver fatto qualcosa;;alto ;astratto;;0;0
 ;pentola ;oggetto ;;Cucina;Recipiente da cucina, di terracotta o di metallo, di forma più o meno cilindrica, con due manici fissati agli orli e munito di coperchio;;;alto ;concreto;;1;0
 ;pentolata ;riempimento;gesto;;Quantità di roba contenuta in una pentola;Colpo dato o ricevuto con una pentola;;alto ;astratto;;0;0
@@ -3516,7 +3516,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;pesante ;aggettivo ;;;Che ha peso elevato;Di notevole consistenza. Conrapposto a “leggero”;;alto ;astratto;;0;0
 ;pesare ;verbo ;;;Misurare il peso di qualcosa o di qualcuno;;;alto ;astratto;;0;0
 ;pesca;sport ;hobby;passatempo;Il pescare, il catturare pesci o altri animali acquatici;;;alta;concreta ;;0;95
-;pesca ;frutto ;;Cucina;Frutto del pesco;;;alto ;concreto;Estate ;0;95
+;pesca ;frutto ;;Cucina;Frutto del pesco;;;alto ;concreto;Estate;0;95
 ;pescare ;verbo ;azione ;;Tendere insidie a pesci o altri animali acquatici con mezzi appropriati al fine di catturarli;;;alto ;astratto;;1;0
 ;pesce ;animale ;;;Ogni individuo appartenente alla classe dei Pesci;Pesce d'aprile, tradizionale burla che si usa fare il primo di aprile;;alto ;concreto;;1;0
 ;pescheria ;negozio ;;;Mercato, negozio dove si vende il pesce;;;alto ;concreto;;1;0
@@ -3638,7 +3638,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;placido ;carattere ;persona ;;Calmo, tranquillo, senza preoccupazioni;;;alto ;astratto;;0;0
 ;plagiare ;verbo ;azione ;;Copiare, imitare pedissequamente commettendo plagio;;;alto ;astratto ;;0;0
 ;plagio ;azione ;;;Appropriazione, riproduzione e pubblicazione anche parziale di un'opera altrui, letteraria, scientifica, artistica, che si fa passare come propria;;;alto ;astratto;;0;0
-;plaid ;panno ;coperta ;Camera da letto;Coperta di dimensioni ridotte o ampio scialle di lana morbida, di solito con disegni scozzesi;;;alto ;concreto;Inverno ;1;0
+;plaid ;panno ;coperta ;Camera da letto;Coperta di dimensioni ridotte o ampio scialle di lana morbida, di solito con disegni scozzesi;;;alto ;concreto;Inverno;1;0
 ;planare ;verbo ;azione ;;olare in discesa librandosi nell'aria, sfruttando unicamente la forza di gravità;;;alto ;astratto;;0;0
 ;plancton ;organo ;;;Complesso degli organismi animali e vegetali, spesso di dimensioni microscopiche, che vivono sospesi nella massa acquea dolce e marina in balia delle correnti;;;alto ;concreto;;0;0
 ;planisfero ;carta ;;;Rappresentazione in scala della sfera terrestre o celeste sopra una superficie piana;;;alto ;concreto;;0;0
@@ -3674,7 +3674,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;polare ;verbo ;azione ;;Del polo o dei poli terrestri. Che concerne il polo o i poli;Freddo, gelido;Stella polare, l'ultima stella della coda dell'Orsa Minore, la cui posizione coincide quasi con il polo nord celeste;alto;concreto;;0;0
 ;pole dance ;azione ;;;Esibizione erotica in cui una ballerina seminuda o nuda del tutto provoca l'eccitazione degli spettatori, danzando con evoluzioni insinuanti e allusive attorno a una pertica;;;alto ;astratto;;0;0
 ;polemico ;aggettivo ;;;Che è incline alla polemica. Combattivo, aggressivo, battagliero;;;alto ;astratto;;0;0
-;polenta ;cibo;;Cucina;Vivanda preparata con farina di granturco cotta in acqua bollente, rimestando fino a che raggiunga la densità voluta;;;alto ;concreto;inverno;0;0
+;polenta ;cibo;;Cucina;Vivanda preparata con farina di granturco cotta in acqua bollente, rimestando fino a che raggiunga la densità voluta;;;alto ;concreto;Inverno;0;0
 ;policlinico ;struttura ;;;Ospedale suddiviso in più padiglioni e reparti per le varie branche mediche e chirurgiche, con attrezzature apposite e medici specializzati;;;alto ;concreto;;0;0
 ;poligono ;figura ;;;Figura geometrica piana delimitata da una linea spezzata chiusa;;;alto ;astratto;;0;0
 ;poligrafo ;persona ;strumento ;;Chi scrive intorno a vari argomenti;Apparecchio per riprodurre in più copie scritti o disegni realizzati con speciale inchiostro copiativo;;alto ;concreto;;0;0
@@ -3852,7 +3852,7 @@ P;pacare;verbo;calmare ;;Pacificare, placare, acquietare;Sonora sconfitta;;bassa
 ;prezzo ;valore ;;;Valore di un bene o di un servizio espresso in denaro;;;alto ;astratto;;0;0
 ;prigione ;struttura ;;;Luogo di pena destinato alla custodia di coloro che, ritenuti colpevoli di un reato, sono stati definitivamente condannati o sono in attesa di giudizio;;;alto;concreto;;0;0
 ;prima ;tempo ;;;In un tempo precedente, anteriormente;;;alto ;astratto;;0;0
-;primavera ;stagione ;;;stagione dell'anno, tra l'inverno e l'estate, che nell'emisfero boreale va dal 21 marzo al 21 giugno, cioè dall'equinozio di primavera al solstizio d'estate;;;alto ;astratto;Primavera ;0;0
+;Primavera;stagione ;;;stagione dell'anno, tra l’Inverno e l'Estate, che nell'emisfero boreale va dal 21 marzo al 21 giugno, cioè dall'equinozio di Primavera al solstizio d'Estate;;;alto ;astratto;Primavera;0;0
 ;primo ;posto;;;Che in una serie ordinata occupa il posto corrispondente al numero uno;;;alto ;astratto;;0;0
 ;principale ;aggettivo ;;;Che è primo per importanza, autorità, grado, valore;;;alto ;astratto;;0;0
 ;principe ;persona ;;;Signore, sovrano, spec. Assoluto;;;basso ;concreto;;0;0
@@ -4372,7 +4372,7 @@ R;Rabarbaro;Pianta;Medicina;Bevanda;Pianta, di origine asiatica, utilizzata per 
 ;Risorgimento;Epoca;Storia;;Periodo storico durante il quale l'Italia giunse all'unificazione e all'indipendenza nazionale costituendosi in monarchia costituzionale;;;media;Astratto;;0;0
 ;Risorsa;Bene;;;Ogni mezzo, ogni espediente con cui è possibile provvedere a un bisogno;;;alta;Astratto;;0;0
 ;Risorto;Religione;Gesù;;Tornato in vita;;;alta;Astratto;;0;0
-;Risotto;Cibo;Ricetta;Cucina;Primo piatto a base di riso cotto lentamente in un liquido (brodo, vino o acqua) che viene riassorbito nel corso della cottura, insieme a vari condimenti;;;alta;Concreto;Inverno ;0;0
+;Risotto;Cibo;Ricetta;Cucina;Primo piatto a base di riso cotto lentamente in un liquido (brodo, vino o acqua) che viene riassorbito nel corso della cottura, insieme a vari condimenti;;;alta;Concreto;Inverno;0;0
 ;Risparmiare;Verbo;Denaro;;Usare con parsimonia;Ridurre il consumo di qualcosa all'indispensabile;Accantonare denaro spendendo meno;alta;Astratto;;0;0
 ;Rispetto;Sentimento;;;Atteggiamento di riguardo e di stima devota verso una persona;;;alta;Astratto;;0;0
 ;Rispondere;Verbo;Comunicazione;;Replicare a qualcuno, in seguito a una domanda;;;alta;Astratto;;0;0
@@ -4494,7 +4494,7 @@ S;sabato ;giorno ;settimana;;sesto giorno della settimana ;;;alta ;astratto ;;0;
 ;salvare;verbo ;;;trarre da un pericolo;;;alta ;astratto ;;0;0
 ;samba ;danza ;;;danza brasiliana simile alla rumba ma con il ritmo più vivace ;;;media ;astratto ;;0;0
 ;sanare ;verbo ;;;guarire ;;;alta ;astratto ;;0;0
-;sandalo ;abbigliamento ;scarpe ;Camera da letto;calzatura maschile e femminile indossata generalmente in estate ;;;alta ;concreto;estate ;0;0
+;sandalo ;abbigliamento ;scarpe ;Camera da letto;calzatura maschile e femminile indossata generalmente in Estate;;;alta ;concreto;Estate;0;0
 ;sangria ;bevanda ;vino;Cucina;bevanda tipica spagnola , ottenuta con il vino rosso ;;;bassa ;concreto ;;0;0
 ;sangue ;corpo umano ;;;tessuto connettivo , che circola in un sistema di arterie e vene con la funzione di apportare nutrimento e ossigeno agli altri tessuti ;;;alta ;concreto ;;0;0
 ;sanificare ;verbo ;;;complesso dei trattamenti atti a rendere igienicamente sicuro un luogo ;;;alta ;astratto ;;0;0
@@ -4782,7 +4782,7 @@ S;sabato ;giorno ;settimana;;sesto giorno della settimana ;;;alta ;astratto ;;0;
 ;spiffero ;aria ;vento ;;Soffio d'aria che passa attraverso una stretta fessura;;;alta ;concreto ;;0;0
 ;spigolo ;angolo ;;;Linea d'intersezione di due superfici piane contigue, considerato dalla parte sporgente;;;alta ;concreto ;;0;0
 ;spillatrice ;oggetto ;;;Macchinetta a molla per cucire insieme con punti metallici due o più fogli di carta;;;alta ;concreto ;;0;0
-;spinacio ;cibo ;ortaggio ;Cucina;ortaggio dalle foglie triangolari rugose di color verde scuro, ricche di ferro, che si mangiano cotte;;;alta ;concreto ;Primavera ;0;0
+;spinacio ;cibo ;ortaggio ;Cucina;ortaggio dalle foglie triangolari rugose di color verde scuro, ricche di ferro, che si mangiano cotte;;;alta ;concreto ;Primavera;0;0
 ;spiovere ;verbo ;;;Cessare di piovere;;;media ;concreto ;;0;0
 ;spogliare ;verbo ;;;Privare delle vesti, in tutto o in parte;;;alta ;concreto ;;0;0
 ;spolverare ;verbo ;;;togliere la polvere ;;;alta ;concreto ;;0;0
@@ -4898,7 +4898,7 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Tecnica;metodo;;;Complesso di norme su cui si fonda l'esercizio pratico di una determinata attività manuale, intellettuale o artistica;;;alto;concreto;;0;0
 ;Teen-ager;ragazzo;adolescente;;giovane di età compresa tra i tredici e i diciannove anni;;;alto;concreto;;0;0
 ;Tegame;utensile;cucina;pentola;Recipiente da cucina, rotondo, non molto profondo e a fondo piatto, con un lungo manico orizzontale o con due manici ad ansa;;;alto;concreto;;0;0
-;Teiera;oggetto;bollitore;;Recipiente panciuto con beccuccio, manico e coperchio, per preparare e servire il tè;;;medio;concreto;Inverno ;1;0
+;Teiera;oggetto;bollitore;;Recipiente panciuto con beccuccio, manico e coperchio, per preparare e servire il tè;;;medio;concreto;Inverno;1;0
 ;Tela;trama;pittore;;Tessuto ottenuto facendo passare alternativamente il filo dell'ordito sopra e sotto i fili della trama, con un risultato uniforme e uguale al diritto e al rovescio;;;medio;concreto;;0;0
 ;Telecomando;oggetto;televisione;film;Comando a distanza di dispositivi e macchine per mezzo di speciali apparecchi;;;alto;concreto;;1;0
 ;Telefilm;attori;trasmissione;;Film fatto per essere trasmesso per televisione, in genere assai più breve di un film normale e concepito come elemento di una serie con gli stessi ambienti e personaggi;;;alto;concreto;;0;0
@@ -4912,12 +4912,12 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Televisione;apparecchio;canali;telecomando; Sistema di trasmissione a distanza di immagini fisse o in movimento per mezzo di onde elettromagnetiche. Televisione ad alta definizione, che permette, grazie a metodi di ripresa e apparecchi particolarmente sofisticati, un'immagine assai più nitida e costante rispetto ai normali sistemi di trasmissione;;;alto;concreto;;1;0
 ;Tema;argomento;scuola;;Materia, argomento, soggetto di un ragionamento, di una trattazione;;;alto;concreto;;0;0
 ;Temere;sospettare;dubitare;;Avere paura, timore di qualcosa o qualcuno;;;alto;astratto;;0;0
-;Tempaccio;maltempo;diluvio;;Pessime condizioni meteorologiche;;;alto;astratto;inverno;0;0
+;Tempaccio;maltempo;diluvio;;Pessime condizioni meteorologiche;;;alto;astratto;Inverno;0;0
 ;Tempera;colore;pennello;pittore;Tecnica pittorica nella quale si usano colori a colla che si diluiscono con acqua;;;medio;concreto;;0;0
 ;Temperamatite;oggetto;disegno;matita;Arnese di varia foggia e funzionamento, usato per fare la punta alle matite colorate e ai lapis;;;alto;concreto;;0;0
 ;Temperamento;carattere;comportamento;;Complesso dei tratti caratteriali di un individuo;;;alto;astratto;;0;0
 ;Temperatura;pressione;termometro;febbre;Grandezza fisica che consente di misurare lo stato termico di un corpo e la sua capacità di trasmettere o ricevere calore dall'esterno o da un altro corpo, provocando sensazioni di caldo o di freddo;;;alto;astratto;;0;0
-;Tempesta;nubifragio;maltempo;pioggia;Violenta perturbazione atmosferica caratterizzata da forti raffiche di vento, talvolta accompagnate da piogge torrenziali o grandinate;;;alto;astratto;inverno;0;0
+;Tempesta;nubifragio;maltempo;pioggia;Violenta perturbazione atmosferica caratterizzata da forti raffiche di vento, talvolta accompagnate da piogge torrenziali o grandinate;;;alto;astratto;Inverno;0;0
 ;Tempio;religione;altare;colonne;Edificio destinato al culto religioso;;;medio;concreto;;0;0
 ;Tenda;ombra;stoffa;finestra;Tela che si tende sopra o davanti a qualcosa, a scopo di riparo, protezione;;;alto;concreto;;0;0
 ;Tenero;morbido;dolce;;Che non è duro, che può essere facilmente tagliato o lavorato, che è cedevole al tatto;;;alto;concreto;;0;0
@@ -4934,7 +4934,7 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Tergicristallo;vetro;automobile;;Dispositivo automatico costituito di una o più asticciole metalliche con bordo di gomma che, sfregando con moto oscillatorio sul cristallo anteriore, sul lunotto posteriore o sui fari degli autoveicoli, li mantengono puliti in caso di pioggia, neve;;;alto;concreto;;0;0
 ;Terme;cura;fanghi;benessere;Edificio o complesso di edifici e strutture destinato alle cure termali;;;alto;concreto;;0;0
 ;Termometro;temperatura;febbre;Bagno;Strumento che contiene o è costituito di materiale termosensibile, usato per misurare la temperatura di un corpo o di un ambiente, attraverso le modificazioni che la variazione di calore produce su di esso;;;alto;concreto;;1;0
-;Termosifone;impianto;freddo;calore;Sistema di riscaldamento di ambienti singoli o di interi edifici mediante circolazione di acqua calda o vapore in una rete di tubi metallici che fanno capo a una caldaia;;;alto;concreto;inverno;0;0
+;Termosifone;impianto;freddo;calore;Sistema di riscaldamento di ambienti singoli o di interi edifici mediante circolazione di acqua calda o vapore in una rete di tubi metallici che fanno capo a una caldaia;;;alto;concreto;Inverno;0;0
 ;Terno;fortuna;gioco;numeri;Nel gioco del lotto, complesso di tre numeri estratti su una stessa ruota;;;alto;astratto;;0;0
 ;Terra; natura;germogli;boschi;Il nostro pianeta, il terzo del sistema solare in ordine di distanza dal Sole, da cui dista 150 milioni di chilometri, che compie un movimento di rotazione attorno al proprio asse e uno di rivoluzione intorno al Sole;;;alto;concreto;;0;0
 ;Terrazza;panorama;palazzo;;Ripiano orizzontale, scoperto e praticabile, che ricopre in tutto o in parte un edificio in sostituzione del tetto, limitato da un parapetto, da una ringhiera;;;alto;concreto;;0;0
@@ -4951,7 +4951,7 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Testimone;persona;attestare;presenziare; Chi assiste o ha assistito direttamente a un evento;;;alto;concreto;;0;0
 ;Tetro;triste;malinconico;persona;Che ha poca luce. Oscuro;;;medio;concreto;;0;0
 ;Tetto;casa;tegole;; Copertura di un edificio costituita in genere da uno o più spioventi poggianti sui muri perimetrali e coperta da tegole in modo che l'acqua piovana defluisca verso le grondaie senza ristagni;;;alto;concreto;;0;0
-;Thermos;bottiglia;contenitore;cucina;Recipiente, di solito in forma di bottiglia con tappo a chiusura ermetica, a doppia parete argentata con intercapedine a vuoto spinto per impedire la dispersione del calore e consentire di mantenere un liquido alla temperatura originaria;;;alto;concreto;Inverno ;0;0
+;Thermos;bottiglia;contenitore;cucina;Recipiente, di solito in forma di bottiglia con tappo a chiusura ermetica, a doppia parete argentata con intercapedine a vuoto spinto per impedire la dispersione del calore e consentire di mantenere un liquido alla temperatura originaria;;;alto;concreto;Inverno;0;0
 ;Ticket;biglietto;cartellino;pullman;Scontrino che permette di usufruire di determinati servizi a prezzo convenzionato;;;alto;concreto;;0;0
 ;Tiella;pasto;;;Torta salata rustica, ripiena di verdure o frutti di mare;;;medio;concreto;;0;0
 ;Tifoso;persona;sport;squadra;Che fa il tifo per qualcuno o per qualcosa, in part. Per una squadra o un personaggio del mondo dello sport;;;alto;concreto;;0;0
@@ -4959,7 +4959,7 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Timballo;riso;pasta;cucina;Stampo di metallo di forma cilindrica per cucinare pasticci e sformati;;;alto;concreto;;0;0
 ;Timbro;oggetto;bollo;oggetto;Strumento costituito da un marchio di metallo o di gomma unito a un sostegno con funzione di impugnatura che, inchiostrato, si usa per imprimere bolli, scritte, figure e sim. Timbro a secco, strumento che imprime un bollo, una scritta, una figura;;;alto;concreto;;0;0
 ;Timo;pianta;olio;pomata;Pianta arbustiforme della famiglia delle Labiate (Thymus vulgaris), con foglie a losanga e fiori rosei, che cresce spontanea nei luoghi aridi in area mediterranea, fortemente aromatica, usata in cucina come condimento, in profumeria sotto forma di olio essenziale e in medicina come antisettico e antispasmodico;;;medio;concreto;;0;0
-;Timone;nave;mare;direzione;Organo di guida di una nave, costituito da una pala immersa verticalmente nell'acqua e inclinabile a destra e a sinistra, imperniata su un asse fissato al dritto di poppa;;;alto;concreto;estate;1;0
+;Timone;nave;mare;direzione;Organo di guida di una nave, costituito da una pala immersa verticalmente nell'acqua e inclinabile a destra e a sinistra, imperniata su un asse fissato al dritto di poppa;;;alto;concreto;Estate;1;0
 ;Tinta;capelli;pelle;colore;Colore naturale, che qualcosa ha o assume;;;alto;concreto;;0;0
 ;Tipografia;stampa;libri;negozio;Sistema di stampa per mezzo di caratteri in rilievo, i quali, inchiostrati e sottoposti a pressione, lasciano la loro impronta su carta o su un altro supporto;;;alto;concreto;;0;0
 ;Tiralatte;oggetto;neonato;latte;Apparecchio in forma di pompetta che si applica alla mammella per estrarne artificialmente il latte;;;alto;concreto;;0;0
@@ -4967,8 +4967,8 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Tirocinante;persona;apprendista;praticante;Che o chi fa il tirocinio di qualcosa;;;alto;concreto;;0;0
 ;Tirocinio;mestiere;apprendiento;;Addestramento pratico iniziale nell'esercizio di un'arte, di una professione, di un mestiere, compiuto sotto la guida di una persona esperta;;;alto;concreto;;0;0
 ;Tiroide;organo;corpo umano;persona;Ghiandola a secrezione interna, impari, mediana, situata nella parte anteriore del condotto laringotracheale, con importanti funzioni riguardanti l'accrescimento, il metabolismo, l'attività circolatoria ecc.;;;alto;concreto;;0;0
-;Tirreno;mare;vacanza;;Parte del mare Mediterraneo compresa tra la costa occidentale dell'Italia, la Sicilia, la Sardegna e la Corsica;;;alto;concreto;estate;0;0
-;Tisana;bevanda;camomilla;Cucina;Bevanda calmante o emolliente preparata per infusione o decotto con varie sostanze vegetali;;;alto;concreto;Inverno ;1;0
+;Tirreno;mare;vacanza;;Parte del mare Mediterraneo compresa tra la costa occidentale dell'Italia, la Sicilia, la Sardegna e la Corsica;;;alto;concreto;Estate;0;0
+;Tisana;bevanda;camomilla;Cucina;Bevanda calmante o emolliente preparata per infusione o decotto con varie sostanze vegetali;;;alto;concreto;Inverno;1;0
 ;Tisaniera;contenitore;bollitore;;Recipiente simile a una teiera, per la preparazione di tisane;;;alto;concreto;;0;0
 ;Toast;pancarrè;tostapane;Cucina;Coppia di fette di pane, in genere a cassetta, leggermente tostate e variamente farcite. Fetta di pane tostato;;;alto;concreto;;1;0
 ;Tofu;alimento;vegetariano;;Sorta di formaggio a base di soia, di sapore delicato e consistenza molle, specialità della cucina giapponese e cinese;;;medio;concreto;;0;0
@@ -5005,9 +5005,9 @@ T;Tabaccaio;venditore;persona;;Chi gestisce una rivendita di sali e tabacchi;;;a
 ;Torrefazione;tostatura;arrostimento;caffè;Azione e risultato del torrefare. Tostatura, abbrustolimento;;;medio;concreto;;0;0
 ;Torrente;acqua;corso;;Corso d'acqua generalmente montano, di regime molto variabile;;;basso;astratto;;0;0
 ;Torrido;afoso;caldo;bruciato;Bruciato, disseccato dal gran calore;;;medio;astratto;;0;0
-;Torrone;nocciole;cioccolato;dolce;Dolce costituito da un impasto di zucchero, miele, albume d'uovo, mandorle o nocciole tostate, tradizionalmente molto duro;;;alto;concreto;Autunno ;1;0
+;Torrone;nocciole;cioccolato;dolce;Dolce costituito da un impasto di zucchero, miele, albume d'uovo, mandorle o nocciole tostate, tradizionalmente molto duro;;;alto;concreto;Autunno;1;0
 ;Torta;compleanno;panna;pan di spagna;Vivanda dolce caratterizzata dalla forma schiacciata e generalm. Tonda, cotta in teglia al forno e formata di un impasto di vari ingredienti;;;alto;concreto;;0;0
-;Tortellino;brodo;pasta;carne;Pasta da minestra consistente in un involtino di sfoglia di pasta all'uovo ripieno di carne tritata con altri ingredienti e aromi, ravvolto su se stesso ad anello;;;alto;concreto;Inverno ;1;0
+;Tortellino;brodo;pasta;carne;Pasta da minestra consistente in un involtino di sfoglia di pasta all'uovo ripieno di carne tritata con altri ingredienti e aromi, ravvolto su se stesso ad anello;;;alto;concreto;Inverno;1;0
 ;Tortiera;forno;torta;Cucina;Teglia, in genere rotonda, per cuocere in forno le torte;;;medio;concreto;;0;0
 ;Tortuoso;percorso;confuso;;Che procede, si svolge a curve. Sinuoso, serpeggiante;;;basso;concreto;;0;0
 ;Tortura;sofferenza;;;Supplizio, tormento corporale inflitto allo scopo di estorcere confessioni, dichiarazioni, testimonianze;;;medio;concreto;;0;0
@@ -5192,8 +5192,8 @@ V;Vacanza;Viaggio;Riposo;Pausa;Interruzione temporanea dell'attività consueta n
 ;Veleno;Sostanza;Pericolo;Dannoso;Estremamente nocivo per l'organismo, tale da poter procurare la morte;;;alta;Concreto;;0;0
 ;Veliero;Mezzo di trasporto;Mare;Imbarcazione;Nave a vela, che sfrutta come unica forza propulsiva il vento;;;alta;Concreto;;0;0
 ;Velina;Tipografia;Stampa;;Foglio di carta trasparente su cui un tempo veniva impressa la composizione da riprodurre poi sulle matrici per la stampa;;;media;Concreto;;0;0
-;Vellutata;Cibo;Gastronomia;Cucina;Passato di verdure molto cremoso;;;alta;Concreto;Inverno ;0;0
-;Velluto;Materiale;Stoffa;;Tessuto che presenta una peluria molto corta e fitta, morbida e piacevole al tatto;;;alta;Concreto;Inverno ;0;0
+;Vellutata;Cibo;Gastronomia;Cucina;Passato di verdure molto cremoso;;;alta;Concreto;Inverno;0;0
+;Velluto;Materiale;Stoffa;;Tessuto che presenta una peluria molto corta e fitta, morbida e piacevole al tatto;;;alta;Concreto;Inverno;0;0
 ;Velo;Stoffa;;;Tessuto trasparente molto fine e leggero;;;alta;Concreto;;0;0
 ;Veloce;Aggettivo;Movimento;Velocità;Rapido nel compiere azioni e movimenti;;;alta;Astratto;;0;0
 ;Velocipede;Mezzo di trasporto;Passato;;Tipo di veicolo precursore della bicicletta, costituito da una grande ruota anteriore, fornita di pedali e una piccola ruota posteriore;;;bassa;Concreto;;0;0

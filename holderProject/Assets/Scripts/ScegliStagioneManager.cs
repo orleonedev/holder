@@ -19,19 +19,19 @@ public class ScegliStagioneManager : MonoBehaviour
 	GameObject autunnoBtn;
 	[SerializeField]
 	GameObject invernoBtn;
+	[SerializeField]
+	GameObject endgame;
 	Dictionary<string,string> dictWithSolutions;
+	Dictionary<string,string> dictWithSolutionsCopy;
+	public static int nWords = 4;
 	string correctSeasonOfWord;
 	int answersGiven;
 	int correctAnswers;
     // Start is called before the first frame update
     void Start()
     {
-        dictWithSolutions = new Dictionary<string, string>();
-		dictWithSolutions.Add("ALBERO DI NATALE", "INVERNO");
-		dictWithSolutions.Add("FRAGOLA", "PRIMAVERA");
-		dictWithSolutions.Add("PELLICCIA", "INVERNO");
-		dictWithSolutions.Add("OMBRELLO", "AUTUNNO");
-		dictWithSolutions.Add("OMBRELLONE", "ESTATE");
+        dictWithSolutions = CreateDictionary(CSVData.Instance.FilteredForSeason());
+		dictWithSolutionsCopy = dictWithSolutions;
 		NewWord();
     }
 
@@ -50,11 +50,34 @@ public class ScegliStagioneManager : MonoBehaviour
 		}
 		answersGiven++;
 		print(correctAnswers + " di " + answersGiven + " sono corrette");
-		NewWord();
+		if (dictWithSolutionsCopy.Count != 0){
+			NewWord();
+		}
+		else{
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA SESSIONE");
+		}
 	}
 	void NewWord(){
-		int rnd = Random.Range(0 , dictWithSolutions.Count);
-		ParolaDaIndovinare.GetComponent<TMP_Text>().text = dictWithSolutions.ElementAt(rnd).Key;
-		correctSeasonOfWord = dictWithSolutions[ParolaDaIndovinare.GetComponent<TMP_Text>().text];
+		int rnd = Random.Range(0 , dictWithSolutionsCopy.Count);
+		ParolaDaIndovinare.GetComponent<TMP_Text>().text = dictWithSolutionsCopy.ElementAt(rnd).Key;
+		correctSeasonOfWord = dictWithSolutionsCopy[ParolaDaIndovinare.GetComponent<TMP_Text>().text];
+
+		print(dictWithSolutionsCopy.ElementAt(rnd).Key + " - " + correctSeasonOfWord);
+		dictWithSolutionsCopy.Remove(dictWithSolutionsCopy.ElementAt(rnd).Key);
+	}
+
+	public Dictionary<string, string> CreateDictionary(CSVData.WordObject[] Data){
+		Dictionary<string, string> newDict = new Dictionary<string, string>();
+		CSVData.WordObject[] CopyData = Data;
+
+		for (int i = 0; i < nWords; i++)
+		{
+			CSVData.WordObject random = CopyData.ElementAt(Random.Range(0,CopyData.Count()));
+			newDict.Add(random.Word, random.Season);
+			CopyData = CopyData.Where(c=> c!=random).ToArray();
+		}
+
+		return newDict;
 	}
 }

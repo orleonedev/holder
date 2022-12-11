@@ -118,4 +118,22 @@ public class CSVData : MonoBehaviour
     public CSVData.WordObject[] FilteredForAnello(){
         return Instance.holderWordList.wordobject.Where(c=> c.Anello != "0").ToArray();
     }
+
+    public CSVData.WordObject[] FilteredForSeason(){
+        return Instance.holderWordList.wordobject.Where(c=> c.Season != "").ToArray();
+    }
+
+    public CSVData.WordObject[] FilteredForSeasonWithImages(){
+        return Instance.holderWordList.wordobject.Where(c=> c.Season != "" && 
+        (c.HasImage == true) &&
+        // Use Normalization if working with macos filesystem
+        (
+            #if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+c.Word.ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+c.Word.ToLower()))
+            #endif
+       )
+       ).ToArray();
+    }
 }

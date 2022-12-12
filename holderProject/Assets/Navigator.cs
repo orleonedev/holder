@@ -61,6 +61,21 @@ public class Navigator : MonoBehaviour
             case "AttenzioneElemento":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "SeguiFlusso":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "FiumeParole":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "CercaElemento":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "PescaParola":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
+            case "SelezionaBersaglio":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

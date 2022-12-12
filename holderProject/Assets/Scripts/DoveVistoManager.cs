@@ -228,6 +228,7 @@ public class DoveVistoManager : MonoBehaviour
 			newScheda();
 		}
 		else {
+			nSchede = 4;
 			endgame.GetComponent<EndGame>().startEndGame();
 			print("FINITA SESSIONE");
 		}

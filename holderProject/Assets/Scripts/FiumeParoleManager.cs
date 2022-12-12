@@ -20,35 +20,31 @@ public class FiumeParoleManager : MonoBehaviour
 	GameObject FiumeParoleButtonPrefab;
 	[SerializeField]
 	GameObject FiumeParoleWordPrefab;
+	[SerializeField]
+	GameObject endgame;
 	List<string> possibleWords;
+	List<string> possibleWordsCopy;
 	List<string> wordsToShow;
 	List<string> correctWords;
 	List<GameObject> listOfButtons;
 	int answersGiven = 0;
 	int correctAnswersGiven = 0;
 	int amountofCorrectWords;
+	public static int sequenceLenghtMax = 15;
+	public static int numberOfSequence = 2;
+	int iteration = 0;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		possibleWords = new List<string>();
+		possibleWords = CreateList(CSVData.Instance.holderWordList.wordobject);
 		wordsToShow = new List<string>();
 		correctWords = new List<string>();
 		listOfButtons = new List<GameObject>();
-		possibleWords.Add("PIZZA");
-		possibleWords.Add("MOZZARELLA");
-		possibleWords.Add("ACQUA");
-		possibleWords.Add("FARINA");
-		possibleWords.Add("LETTO");
-		possibleWords.Add("CUSCINO");
-		possibleWords.Add("ATTREZZO");
-		possibleWords.Add("SCALE");
-		possibleWords.Add("PIANO");
-		possibleWords.Add("CHITARRA");
-		var possibleWordsCopy = new List<string>(possibleWords);
-		amountofCorrectWords = Random.Range(2, 4);
+		possibleWordsCopy = new List<string>(possibleWords);
+		amountofCorrectWords = 4;//Random.Range(2, 4);
 		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectWords.ToString();
-		int amountOfWordsToPick = Random.Range(amountofCorrectWords + 2, amountofCorrectWords + 5);
+		int amountOfWordsToPick = sequenceLenghtMax;//Random.Range(amountofCorrectWords + 4, sequenceLenghtMax);
 		for (int i = 0; i < amountOfWordsToPick; i++)
 		{
 			int rnd = Random.Range(0, possibleWordsCopy.Count);
@@ -59,6 +55,7 @@ public class FiumeParoleManager : MonoBehaviour
 			}
 			possibleWordsCopy.RemoveAt(rnd);
 		}
+		iteration++;
 		//DebugPrint(wordsToShow);
 		DebugPrint(correctWords);
 		SetupButtons();
@@ -154,7 +151,66 @@ public class FiumeParoleManager : MonoBehaviour
 		if(correct)
 			correctAnswersGiven++;
 		answersGiven++;
-		if(answersGiven == amountofCorrectWords)
+		if(answersGiven == amountofCorrectWords){
 			print(correctAnswersGiven + " di " + amountofCorrectWords + " risposte sono corrette");
+			if (iteration<numberOfSequence){
+				NewSequence();
+			} else {
+				iteration = 0;
+				endgame.GetComponent<EndGame>().startEndGame();
+				print("FINITA SESSIONE");
+			}
+			
+		}
+			
+	}
+
+	public List<string> CreateList(CSVData.WordObject[] Data){
+		List<string> newList = new List<string>();
+		CSVData.WordObject[] CopyData = Data;
+
+		for (int i = 0; i < sequenceLenghtMax*numberOfSequence; i++)
+		{
+			CSVData.WordObject random = CopyData.ElementAt(Random.Range(0,CopyData.Count()));
+			newList.Add(random.Word);
+			CopyData = CopyData.Where(c=> c!= random).ToArray();
+		}
+
+		return newList;
+	}
+
+	void ClearEverything(){
+		for (var i = HorizontalLayoutButtons.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(HorizontalLayoutButtons.transform.GetChild(i).gameObject);
+		}
+
+	}
+
+	void NewSequence(){
+		ClearEverything();
+
+		answersGiven = 0;
+		correctAnswersGiven = 0;
+		wordsToShow = new List<string>();
+		correctWords = new List<string>();
+		listOfButtons = new List<GameObject>();
+		amountofCorrectWords = Random.Range(2, 4);
+		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectWords.ToString();
+		int amountOfWordsToPick = Random.Range(amountofCorrectWords + 4, sequenceLenghtMax);
+		for (int i = 0; i < amountOfWordsToPick; i++)
+		{
+			int rnd = Random.Range(0, possibleWordsCopy.Count);
+			wordsToShow.Add(possibleWordsCopy[rnd]);
+			if (i >= amountOfWordsToPick - amountofCorrectWords)
+			{
+				correctWords.Add(possibleWordsCopy[rnd]);
+			}
+			possibleWordsCopy.RemoveAt(rnd);
+		}
+		iteration++;
+		//DebugPrint(wordsToShow);
+		DebugPrint(correctWords);
+		SetupButtons();
+		StartGame();
 	}
 }

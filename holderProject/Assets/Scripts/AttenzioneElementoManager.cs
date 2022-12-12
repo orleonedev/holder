@@ -12,13 +12,16 @@ public class AttenzioneElementoManager : MonoBehaviour
 	GameObject GridLayout;
 	[SerializeField]
 	GameObject ElementoPrefab;
+	[SerializeField]
+	GameObject endgame;
 	List<Color> colors;
 	List<string> imageNames;
 	string imageNameToTouch;
 	Color colorOfImageToTouch;
-	int GridSizeX;
-	int GridSizeY;
-	int amountOfCorrectAnswers;
+	public static int GridSizeX = 4;
+	public static int GridSizeY = 4;
+	public static int nSchede = 5;
+	public static int occurrences;
 	int correctAnswersRegistered;
 	int answersRegistered;
 
@@ -42,12 +45,11 @@ public class AttenzioneElementoManager : MonoBehaviour
 		colorOfImageToTouch = colors[rndColor];
 		ElementToTouch.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + imageNameToTouch);
 		ElementToTouch.GetComponent<UnityEngine.UI.Image>().color = colorOfImageToTouch;
-		GridSizeX = 4;
-		GridSizeY = 4;
-		amountOfCorrectAnswers = 3;
+		occurrences = Random.Range(1,(GridSizeX*GridSizeY)/2);
 		correctAnswersRegistered = 0;
 		answersRegistered = 0;
 		SetupGrid();
+		nSchede -= 1;
 	}
 
 	// Update is called once per frame
@@ -77,7 +79,7 @@ public class AttenzioneElementoManager : MonoBehaviour
 		{
 			int rnd = Random.Range(0, 2);
 			var tmp = Instantiate(ElementoPrefab, GridLayout.transform);
-			if (rnd == 0 && correctAnswersGenerated != amountOfCorrectAnswers)
+			if (rnd == 0 && correctAnswersGenerated != occurrences)
 			{
 				tmp.transform.GetChild(0).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + imageNameToTouch);
 				tmp.transform.GetChild(0).GetComponent<UnityEngine.UI.Image>().color = colorOfImageToTouch;
@@ -104,6 +106,36 @@ public class AttenzioneElementoManager : MonoBehaviour
 		if (correct)
 			correctAnswersRegistered++;
 		answersRegistered++;
-		print(correctAnswersRegistered + " di " + amountOfCorrectAnswers + " risposte sono corrette");
+		print(correctAnswersRegistered + " di " + answersRegistered + " risposte sono corrette");
+		if (correctAnswersRegistered == occurrences){
+			if (nSchede>0){
+			newScheda();
+		} else {
+			nSchede = 5;
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA SESSIONE");
+		}
+		}
+	}
+
+	void newScheda(){
+		ClearEverything();
+
+		int rndImg = Random.Range(0, imageNames.Count);
+		int rndColor = Random.Range(0, colors.Count);
+		imageNameToTouch = imageNames[rndImg];
+		colorOfImageToTouch = colors[rndColor];
+		ElementToTouch.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + imageNameToTouch);
+		ElementToTouch.GetComponent<UnityEngine.UI.Image>().color = colorOfImageToTouch;
+		occurrences = Random.Range(1,(GridSizeX*GridSizeY)/2);
+		correctAnswersRegistered = 0;
+		SetupGrid();
+		nSchede -= 1;
+	}
+
+	void ClearEverything(){
+		for (var i = GridLayout.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(GridLayout.transform.GetChild(i).gameObject);
+		}
 	}
 }

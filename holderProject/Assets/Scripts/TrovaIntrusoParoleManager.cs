@@ -68,6 +68,7 @@ public class TrovaIntrusoParoleManager : MonoBehaviour
 		if (nSchede > 0){
 			NewScheda();
 		} else {
+			nSchede = 3;
 			endgame.GetComponent<EndGame>().startEndGame();
 			print("FINITA SESSIONE");
 		}

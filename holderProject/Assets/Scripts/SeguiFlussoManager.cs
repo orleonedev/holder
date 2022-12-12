@@ -21,34 +21,30 @@ public class SeguiFlussoManager : MonoBehaviour
 	[SerializeField]
 	GameObject SeguiFlussoImagePrefab;
 	List<string> possibleImages;
+	List<string> possibleImagesCopy;
 	List<string> imagesToShow;
 	List<string> correctImages;
 	List<GameObject> listOfButtons;
+	[SerializeField]
+	GameObject endgame;
 	int answersGiven = 0;
 	int correctAnswersGiven = 0;
 	int amountofCorrectImages;
+	public static int sequenceLenghtMax = 15;
+	public static int numberOfSequence = 2;
+	int iteration = 0;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		possibleImages = new List<string>();
+		possibleImages = CreateList(CSVData.Instance.FilteredWithImages());
 		imagesToShow = new List<string>();
 		correctImages = new List<string>();
 		listOfButtons = new List<GameObject>();
-		possibleImages.Add("Image 1");
-		possibleImages.Add("Image 2");
-		possibleImages.Add("Image 3");
-		possibleImages.Add("Image 4");
-		possibleImages.Add("Image 5");
-		possibleImages.Add("Image 6");
-		possibleImages.Add("Image 7");
-		possibleImages.Add("Image 8");
-		possibleImages.Add("Image 9");
-		possibleImages.Add("Image 10");
-		var possibleImagesCopy = new List<string>(possibleImages);
+		possibleImagesCopy = new List<string>(possibleImages);
 		amountofCorrectImages = Random.Range(2, 4);
 		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectImages.ToString();
-		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 2, amountofCorrectImages + 5);
+		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 4, sequenceLenghtMax);
 		for (int i = 0; i < amountOfImagesToPick; i++)
 		{
 			int rnd = Random.Range(0, possibleImagesCopy.Count);
@@ -59,7 +55,7 @@ public class SeguiFlussoManager : MonoBehaviour
 			}
 			possibleImagesCopy.RemoveAt(rnd);
 		}
-		//DebugPrint(imagesToShow);
+		iteration++;
 		DebugPrint(correctImages);
 		SetupButtons();
 		StartGame();
@@ -100,7 +96,14 @@ public class SeguiFlussoManager : MonoBehaviour
 		foreach (string image in shuffledlistOfBtnsImages)
 		{
 			var tmp = Instantiate(SeguiFlussoButtonPrefab, HorizontalLayoutButtons.transform);
-			tmp.transform.GetChild(0).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + image);
+			var sprite = (
+            #if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+image.ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+image.ToLower()))
+            #endif
+       );
+			tmp.transform.GetChild(0).GetComponent<UnityEngine.UI.Image>().sprite = sprite;
 			listOfButtons.Add(tmp);
 			if(correctImages.Contains(image))
 				tmp.GetComponent<SeguiFlussoBtnScript>().correct = true;
@@ -117,7 +120,14 @@ public class SeguiFlussoManager : MonoBehaviour
 		while (i < imagesToShow.Count)
 		{
 			var tmp = Instantiate(SeguiFlussoImagePrefab, this.gameObject.transform);
-			tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + imagesToShow[i]);
+			var sprite = (
+            #if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+imagesToShow[i].ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/"+imagesToShow[i].ToLower()))
+            #endif
+       		);
+			tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = sprite;
 			tmp.transform.localPosition = new Vector3(-1400f, 0f, 0f);
 			Vector3 startingPos = tmp.transform.localPosition;
 			Vector3 finalPos = new Vector3(0f, 0f, 0f);
@@ -150,11 +160,69 @@ public class SeguiFlussoManager : MonoBehaviour
 			button.SetActive(true);
 		}
 	}
+
 	public void GetClick(bool correct){
 		if(correct)
 			correctAnswersGiven++;
 		answersGiven++;
-		if(answersGiven == amountofCorrectImages)
+		if(answersGiven == amountofCorrectImages){
 			print(correctAnswersGiven + " di " + amountofCorrectImages + " risposte sono corrette");
+			if (iteration<numberOfSequence){
+				NewSequence();
+			} else {
+				iteration = 0;
+				endgame.GetComponent<EndGame>().startEndGame();
+				print("FINITA SESSIONE");
+			}
+			
+		}
+			
+	}
+
+	public List<string> CreateList(CSVData.WordObject[] Data){
+		List<string> newList = new List<string>();
+		CSVData.WordObject[] CopyData = Data;
+
+		for (int i = 0; i < sequenceLenghtMax*numberOfSequence; i++)
+		{
+			CSVData.WordObject random = CopyData.ElementAt(Random.Range(0,CopyData.Count()));
+			newList.Add(random.Word);
+			CopyData = CopyData.Where(c=> c!= random).ToArray();
+		}
+
+		return newList;
+	}
+
+	void ClearEverything(){
+		for (var i = HorizontalLayoutButtons.transform.childCount - 1; i >= 0; i--){
+  			Object.Destroy(HorizontalLayoutButtons.transform.GetChild(i).gameObject);
+		}
+
+	}
+
+	void NewSequence(){
+		ClearEverything();
+		answersGiven = 0;
+		correctAnswersGiven = 0;
+		imagesToShow = new List<string>();
+		correctImages = new List<string>();
+		listOfButtons = new List<GameObject>();
+		amountofCorrectImages = Random.Range(2, 4);
+		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectImages.ToString();
+		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 4, sequenceLenghtMax);
+		for (int i = 0; i < amountOfImagesToPick; i++)
+		{
+			int rnd = Random.Range(0, possibleImagesCopy.Count);
+			imagesToShow.Add(possibleImagesCopy[rnd]);
+			if (i >= amountOfImagesToPick - amountofCorrectImages)
+			{
+				correctImages.Add(possibleImagesCopy[rnd]);
+			}
+			possibleImagesCopy.RemoveAt(rnd);
+		}
+		iteration++;
+		DebugPrint(correctImages);
+		SetupButtons();
+		StartGame();
 	}
 }

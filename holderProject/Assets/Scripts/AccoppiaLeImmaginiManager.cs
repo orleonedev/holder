@@ -31,7 +31,7 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 	[SerializeField]
 	GameObject endgame;
 
-	public static int size = 4;
+	public static int size = 3;
 	public static int nSchede = 2;
 	// Start is called before the first frame update
 	void Start()
@@ -61,10 +61,24 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 			int firstRandom = Random.Range(0, ListOfKeys.Count);
 			int secondRandom = Random.Range(0, ListOfValues.Count);
 			Word1tmp.GetComponentInChildren<TMP_Text>().text = ListOfKeys[firstRandom];
-			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfKeys[firstRandom] );
+			var sprite1 = (
+				#if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfKeys[firstRandom].ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfKeys[firstRandom].ToLower()))
+            #endif
+			);
+			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = sprite1;
 			Word1tmp.gameObject.tag = "FirstLayoutAccoppia";
 			Word2tmp.GetComponentInChildren<TMP_Text>().text = ListOfValues[secondRandom];
-			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfValues[secondRandom] );
+			var sprite2 = (
+				#if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfValues[secondRandom].ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfValues[secondRandom].ToLower()))
+            #endif
+			);
+			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = sprite2;
 			Word2tmp.gameObject.tag = "SecondLayoutAccoppia";
 			KeysGameObj.Add(Word1tmp);
 			ValuesGameObj.Add(Word2tmp);
@@ -189,15 +203,31 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 			int firstRandom = Random.Range(0, ListOfKeys.Count);
 			int secondRandom = Random.Range(0, ListOfValues.Count);
 			Word1tmp.GetComponentInChildren<TMP_Text>().text = ListOfKeys[firstRandom];
-			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfKeys[firstRandom] );
+			var sprite1 = (
+				#if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfKeys[firstRandom].ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfKeys[firstRandom].ToLower()))
+            #endif
+			);
+			Word1tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = sprite1;
 			Word1tmp.gameObject.tag = "FirstLayoutAccoppia";
 			Word2tmp.GetComponentInChildren<TMP_Text>().text = ListOfValues[secondRandom];
-			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>( "Images/abatjour-guidare/" + ListOfValues[secondRandom] );
+			var sprite2 = (
+				#if UNITY_IOS || UNITY_EDITOR_OSX
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfValues[secondRandom].ToLower().Normalize(System.Text.NormalizationForm.FormD)))
+            #else
+            (Resources.Load<Sprite>("Images/abatjour-guidare/" + ListOfValues[secondRandom].ToLower()))
+            #endif
+			);
+			Word2tmp.GetComponentInChildren<UnityEngine.UI.Image>().sprite = sprite2;
 			Word2tmp.gameObject.tag = "SecondLayoutAccoppia";
 			KeysGameObj.Add(Word1tmp);
 			ValuesGameObj.Add(Word2tmp);
 			ListOfKeys.RemoveAt(firstRandom);
 			ListOfValues.RemoveAt(secondRandom);
+
+			
 		}
 		print(DictOfWords.Count);
 		nSchede -= 1;

@@ -78,14 +78,21 @@ public class CercaElementoManager : MonoBehaviour
 
 	List<string> CreateListFromTangram(){
 		List<string> newList = new List<string>();
-
-		var objects = Resources.LoadAll("Images/tangram/" );
 		Regex regex = new Regex("^[A-z][1-9]$");
+		var objects = Resources.LoadAll("Images/tangram/" ).Where(c=> regex.IsMatch(c.name)).ToList();
+		objects.ForEach(delegate(Object obj){
+			if (!newList.Contains(obj.name)){
+				newList.Add(obj.name);
+			}
+		});
+		
+		
 
-		foreach (var obj in objects.Where(c=> regex.IsMatch(c.name)))
+		/* foreach (var obj in objects.Where(c=> regex.IsMatch(c.name)))
 		{
 			newList.Add(obj.name);
-		}
+		} */
+
 		
 
 		return newList;

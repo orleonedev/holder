@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using TMPro;
+using System.Text.RegularExpressions;
+using System.Linq;
 
 public class GiaVistoManager : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class GiaVistoManager : MonoBehaviour
 	List<string> imageNames;
 	[SerializeField]
 	GameObject WaitCover;
+	[SerializeField]
+	GameObject endgame;
 	string currentImageName;
 	Color currentColor;
 	List<Color> colors;
@@ -27,12 +31,14 @@ public class GiaVistoManager : MonoBehaviour
 	int sameOrNot;
 	int answersGiven;
 	int correctAnswers;
+	public static int maxFigures = 30;
+	int iterations = 0;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		Application.targetFrameRate = 60;
-		imageNames = new List<string>();
+		imageNames = CreateListFromTangram();
 		colors = new List<Color>();
 		colors.Add(Color.black);
 		colors.Add(Color.green);
@@ -40,9 +46,6 @@ public class GiaVistoManager : MonoBehaviour
 		colors.Add(Color.blue);
 		colors.Add(Color.magenta);
 		colors.Add(Color.yellow);
-		imageNames.Add("Circle");
-		imageNames.Add("Cube");
-		imageNames.Add("Rectangle");
 		firstRun = true;
 		timeToWait = 2;
 		answersGiven = 0;
@@ -72,7 +75,7 @@ public class GiaVistoManager : MonoBehaviour
 			int rndColor = Random.Range(0, colors.Count);
 			currentImageName = imageNames[rndImg];
 			currentColor = colors[rndColor];
-			ImageToRecognize.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + currentImageName);
+			ImageToRecognize.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Images/tangram/" + currentImageName);
 			ImageToRecognize.GetComponent<UnityEngine.UI.Image>().color = currentColor;
 			YesButton.SetActive(false);
 			NoButton.SetActive(false);
@@ -93,7 +96,7 @@ public class GiaVistoManager : MonoBehaviour
 				} while (imageNames[rndImg] == currentImageName && colors[rndColor] == currentColor);
 				currentImageName = imageNames[rndImg];
 				currentColor = colors[rndColor];
-				ImageToRecognize.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("testImages/" + currentImageName);
+				ImageToRecognize.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Images/tangram/" + currentImageName);
 				ImageToRecognize.GetComponent<UnityEngine.UI.Image>().color = currentColor;
 				StartCoroutine(WaitForSeconds(timeToWait, true));
 			}
@@ -136,14 +139,37 @@ public class GiaVistoManager : MonoBehaviour
 	}
 	public void GetClick(bool yesClicked){
 		answersGiven++;
+		iterations++;
 		if(sameOrNot > 5){
 			if(!yesClicked)
 				correctAnswers++;
+				
 		}else{
 			if(yesClicked)
 				correctAnswers++;
 		}
 		print(correctAnswers + " di " + answersGiven + " risposte sono corrette");
-		SetupGame();
+
+		if (iterations < maxFigures){
+			SetupGame();
+		} else {
+			endgame.GetComponent<EndGame>().startEndGame();
+			print("FINITA SESSIONE");
+		}
+		
+	}
+
+	List<string> CreateListFromTangram(){
+		List<string> newList = new List<string>();
+		Regex regex = new Regex("^[A-z][1-9]$");
+		var objects = Resources.LoadAll("Images/tangram/" ).Where(c=> regex.IsMatch(c.name)).ToList();
+		objects.ForEach(delegate(Object obj){
+			if (!newList.Contains(obj.name)){
+				newList.Add(obj.name);
+			}
+		});
+
+
+		return newList;
 	}
 }

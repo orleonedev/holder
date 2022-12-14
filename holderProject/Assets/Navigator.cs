@@ -76,6 +76,9 @@ public class Navigator : MonoBehaviour
             case "SelezionaBersaglio":
             SceneManager.LoadScene(gameName+"Scene");
             break;
+            case "GiaVisto":
+            SceneManager.LoadScene(gameName+"Scene");
+            break;
             default:
             print("Gioco non trovato");
             break;

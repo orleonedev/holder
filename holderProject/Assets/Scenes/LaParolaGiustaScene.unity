@@ -262,7 +262,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 2048, y: 2732}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.3
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -890,17 +890,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0defb3b7711142c981628e305cb8ebe, type: 3}
---- !u!114 &746988015119928541 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 746988014630220157, guid: c0defb3b7711142c981628e305cb8ebe, type: 3}
-  m_PrefabInstance: {fileID: 746988015119928540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730c4ece17225448c9f0d4c1cc30bbe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1749339752857615953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -999,7 +988,7 @@ PrefabInstance:
     - target: {fileID: 1749339753436896613, guid: 87b159d615c01444187928b62e74ef73, type: 3}
       propertyPath: button
       value: 
-      objectReference: {fileID: 746988015119928541}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b159d615c01444187928b62e74ef73, type: 3}
 --- !u!1001 &6933309335070662839

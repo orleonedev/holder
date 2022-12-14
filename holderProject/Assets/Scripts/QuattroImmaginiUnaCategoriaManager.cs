@@ -32,7 +32,7 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
 	GameObject endgame;
 
 	public static int imagesNumber = 4;
-	public static int size = 5;
+	public static int size = 15;
 
     // Start is called before the first frame update
     void Start()
@@ -182,7 +182,7 @@ public class QuattroImmaginiUnaCategoriaManager : MonoBehaviour
 	}
 
 	public void setParameters(){
-		size = 5;
+		size = 15;
 		imagesNumber = 4;
 	}
 }

@@ -9,7 +9,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 	public static AccoppiaLeParoleManager Instance { get { return instance; } }
 
 	public static int size = 6;
-	public static int nSchede = 2;
+	public static int nSchede = 40;
 
 	[SerializeField]
 	GameObject AccoppiaParolePrefab;

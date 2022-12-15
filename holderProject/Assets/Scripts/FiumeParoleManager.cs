@@ -30,8 +30,8 @@ public class FiumeParoleManager : MonoBehaviour
 	int answersGiven = 0;
 	int correctAnswersGiven = 0;
 	int amountofCorrectWords;
-	public static int sequenceLenghtMax = 15;
-	public static int numberOfSequence = 2;
+	public static int sequenceLenghtMax = 7;
+	public static int numberOfSequence = 4;
 	int iteration = 0;
 
 	// Start is called before the first frame update
@@ -42,9 +42,9 @@ public class FiumeParoleManager : MonoBehaviour
 		correctWords = new List<string>();
 		listOfButtons = new List<GameObject>();
 		possibleWordsCopy = new List<string>(possibleWords);
-		amountofCorrectWords = 4;//Random.Range(2, 4);
+		amountofCorrectWords = Random.Range(2, 4);
 		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectWords.ToString();
-		int amountOfWordsToPick = sequenceLenghtMax;//Random.Range(amountofCorrectWords + 4, sequenceLenghtMax);
+		int amountOfWordsToPick = Random.Range(amountofCorrectWords + 1, sequenceLenghtMax);
 		for (int i = 0; i < amountOfWordsToPick; i++)
 		{
 			int rnd = Random.Range(0, possibleWordsCopy.Count);
@@ -196,7 +196,7 @@ public class FiumeParoleManager : MonoBehaviour
 		listOfButtons = new List<GameObject>();
 		amountofCorrectWords = Random.Range(2, 4);
 		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectWords.ToString();
-		int amountOfWordsToPick = Random.Range(amountofCorrectWords + 4, sequenceLenghtMax);
+		int amountOfWordsToPick = Random.Range(amountofCorrectWords + 1, sequenceLenghtMax);
 		for (int i = 0; i < amountOfWordsToPick; i++)
 		{
 			int rnd = Random.Range(0, possibleWordsCopy.Count);

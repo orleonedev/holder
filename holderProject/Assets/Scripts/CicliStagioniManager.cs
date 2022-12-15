@@ -23,7 +23,7 @@ public class CicliStagioniManager : MonoBehaviour
 	GameObject endgame;
 	Dictionary<string,string> dictWithSolutions;
 	Dictionary<string,string> dictWithSolutionsCopy;
-	public static int nSchede = 4;
+	public static int nSchede = 30;
 	string correctSeasonOfWord;
 	int answersGiven;
 	int correctAnswers;

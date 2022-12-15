@@ -37,7 +37,7 @@ public class DoveVistoManager : MonoBehaviour
 	List<GameObject> buttonObj;
 	int imagesPlaced;
 
-	public static int nSchede = 4;
+	public static int nSchede = 30;
 
 	[SerializeField]
 	GameObject endgame;

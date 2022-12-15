@@ -20,7 +20,7 @@ public class AttenzioneElementoManager : MonoBehaviour
 	Color colorOfImageToTouch;
 	public static int GridSizeX = 4;
 	public static int GridSizeY = 4;
-	public static int nSchede = 5;
+	public static int nSchede = 50;
 	public static int occurrences;
 	int correctAnswersRegistered;
 	int answersRegistered;

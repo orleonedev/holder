@@ -36,7 +36,7 @@ public class AnelloDellaCatenaManager : MonoBehaviour
 	[SerializeField]
 	GameObject endgame;
 
-	public static int nSchede = 5;
+	public static int nSchede = 15;
 	public static int nhints = 2;
 
     // Start is called before the first frame update

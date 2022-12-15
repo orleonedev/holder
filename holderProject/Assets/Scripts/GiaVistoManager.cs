@@ -31,7 +31,7 @@ public class GiaVistoManager : MonoBehaviour
 	int sameOrNot;
 	int answersGiven;
 	int correctAnswers;
-	public static int maxFigures = 30;
+	public static int maxFigures = 80;
 	int iterations = 0;
 
 	// Start is called before the first frame update

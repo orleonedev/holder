@@ -30,8 +30,8 @@ public class SeguiFlussoManager : MonoBehaviour
 	int answersGiven = 0;
 	int correctAnswersGiven = 0;
 	int amountofCorrectImages;
-	public static int sequenceLenghtMax = 15;
-	public static int numberOfSequence = 2;
+	public static int sequenceLenghtMax = 7;
+	public static int numberOfSequence = 4;
 	int iteration = 0;
 
 	// Start is called before the first frame update
@@ -44,7 +44,7 @@ public class SeguiFlussoManager : MonoBehaviour
 		possibleImagesCopy = new List<string>(possibleImages);
 		amountofCorrectImages = Random.Range(2, 4);
 		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectImages.ToString();
-		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 4, sequenceLenghtMax);
+		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 1, sequenceLenghtMax);
 		for (int i = 0; i < amountOfImagesToPick; i++)
 		{
 			int rnd = Random.Range(0, possibleImagesCopy.Count);
@@ -209,7 +209,7 @@ public class SeguiFlussoManager : MonoBehaviour
 		listOfButtons = new List<GameObject>();
 		amountofCorrectImages = Random.Range(2, 4);
 		CriteriaOfExercise.GetComponent<TMP_Text>().text = amountofCorrectImages.ToString();
-		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 4, sequenceLenghtMax);
+		int amountOfImagesToPick = Random.Range(amountofCorrectImages + 1, sequenceLenghtMax);
 		for (int i = 0; i < amountOfImagesToPick; i++)
 		{
 			int rnd = Random.Range(0, possibleImagesCopy.Count);

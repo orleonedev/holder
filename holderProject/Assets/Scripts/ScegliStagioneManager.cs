@@ -23,7 +23,7 @@ public class ScegliStagioneManager : MonoBehaviour
 	GameObject endgame;
 	Dictionary<string,string> dictWithSolutions;
 	Dictionary<string,string> dictWithSolutionsCopy;
-	public static int nWords = 4;
+	public static int nWords = 50;
 	string correctSeasonOfWord;
 	int answersGiven;
 	int correctAnswers;

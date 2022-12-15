@@ -25,7 +25,7 @@ public class SelezionaBersaglioManager : MonoBehaviour
 	public int imagesShown;
 	int correctAnswers;
 	List<Color> colors = new List<Color>();
-	public static int maxDistractors = 10;
+	public static int maxDistractors = 30;
 	
 	// Start is called before the first frame update
 	void Start()

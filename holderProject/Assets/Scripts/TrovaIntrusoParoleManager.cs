@@ -17,7 +17,7 @@ public class TrovaIntrusoParoleManager : MonoBehaviour
 	List<Dictionary<string, bool>> dictOfWords;
 	public static int amountOfRows;
 	public static int amountOfColumns = 4;
-	public static int nSchede = 3;
+	public static int nSchede = 50;
 	int CorrectAnswers;
 	int answersCount;
 	// Start is called before the first frame update

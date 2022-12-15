@@ -21,7 +21,7 @@ public class PescaParolaManager : MonoBehaviour
 	GameObject endgame;
 	List<string> possibleWords;
 	List<string> possibleWordsCopy;
-	public static int maxNumberWords = 15;
+	public static int maxNumberWords = 20;
 	public int wordsShown;
 	int correctAnswers;
 	// Start is called before the first frame update

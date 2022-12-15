@@ -169,7 +169,7 @@ public class ParolaGiustaManager : MonoBehaviour
 	}
 
 	public void setParameters (){
-		size = 10;
+		size = 60;
 	 	showWordSize = true;
 	 	withImage = false;
 	 	type = wordType.Mixed;

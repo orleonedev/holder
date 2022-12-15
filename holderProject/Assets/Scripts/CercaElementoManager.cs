@@ -26,7 +26,7 @@ public class CercaElementoManager : MonoBehaviour
 	{
 		possibleImages = CreateListFromTangram();
 		DebugPrint(possibleImages);
-		amountOfElementToShow = 10;
+		amountOfElementToShow = 90;
 		destroyObjectAfterTapDelay = 2;
 		StartGame();
 	}

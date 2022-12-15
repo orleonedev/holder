@@ -32,7 +32,7 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 	GameObject endgame;
 
 	public static int size = 3;
-	public static int nSchede = 2;
+	public static int nSchede = 30;
 	// Start is called before the first frame update
 	void Start()
 	{

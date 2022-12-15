@@ -19,7 +19,7 @@ public class TrovaIntrusoImmaginiManager : MonoBehaviour
 	int CorrectAnswers;
 	int answersCount;
 
-	public static int nSchede = 4;
+	public static int nSchede = 20;
 	public static int nImages = 4;
 
 	[SerializeField]

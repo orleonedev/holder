@@ -24,7 +24,7 @@ public class CosaCeraManager : MonoBehaviour
 	GameObject endgame;
 	
 	public static int nRows = 5;
-	public static int nSchede = 5;
+	public static int nSchede = 10;
 	public static int maximumTries = 3;
 	int WordsFound;
 	int tries;

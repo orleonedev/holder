@@ -105,6 +105,7 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 		if (!wordState)
 		{
 			selectedImages.TryAdd(obj, null);
+			obj.transform.Find("Ring").gameObject.SetActive(true);
 			print("Selected");
 			//DebugDict();
 			tmp = obj;
@@ -116,8 +117,10 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 			if (obj == tmp)
 			{
 				print("Deselected");
+				obj.transform.Find("Ring").gameObject.SetActive(false);
 				selectedImages.Remove(tmp);
 				wordState = !wordState;
+				
 			}
 			else if (obj.gameObject.tag != tmp.gameObject.tag)
 			{
@@ -129,6 +132,7 @@ public class AccoppiaLeImmaginiManager : MonoBehaviour
 				lineObj.GetComponent<LineScript>().InitializeLine(tmp, obj);
 				tmp.GetComponent<UnityEngine.UI.Button>().enabled = false;
 				obj.GetComponent<UnityEngine.UI.Button>().enabled = false;
+				tmp.transform.Find("Ring").gameObject.SetActive(false);
 				selectedImagesCount++;
 				wordState = !wordState;
 				DebugDict();

@@ -91,6 +91,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 		{
 			selectedWords.TryAdd(obj, null);
 			print("Selected");
+			obj.transform.Find("Ring").gameObject.SetActive(true);
 			//DebugDict();
 			tmp = obj;
 			wordState = !wordState;
@@ -101,6 +102,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 			if (obj == tmp)
 			{
 				print("Deselected");
+				obj.transform.Find("Ring").gameObject.SetActive(false);
 				selectedWords.Remove(tmp);
 				wordState = !wordState;
 			}
@@ -114,6 +116,7 @@ public class AccoppiaLeParoleManager : MonoBehaviour
 				lineObj.GetComponent<LineScript>().InitializeLine(tmp, obj);
 				tmp.GetComponent<UnityEngine.UI.Button>().enabled = false;
 				obj.GetComponent<UnityEngine.UI.Button>().enabled = false;
+				tmp.transform.Find("Ring").gameObject.SetActive(false);
 				selectedWordsCount++;
 				wordState = !wordState;
 				DebugDict();
